@@ -1,10 +1,11 @@
-/* Cyber Glow for Obsidian - v1 - a Mix by TheOppaianEmperor
+/* Cyber Glow for Obsidian - v2 - a Mix by TheOppaianEmperor
 /* Please leave credits if you modify for your own theme */
 /*
 This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Neon Theme
 (With some color modifications). All Credits go to them
 */
 /*I know it's a bit messy at the moment, will do Spring Cleaning of the code soon with proper comments*/
+
 
 .theme-dark {
   --background-primary: #000000;
@@ -67,15 +68,10 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
 
 }
 
-/******************************************
-** Customize
-** —— You can customized the theme using the variables below
-******************************************/
-
 :root {
-  /***************************************/
-  /*    FONTS RELATED                    */
-  /***************************************/
+/*=======================
+* Fonts
+*==========================*/
 
   /** Font Customization **/
   --default-font: 'Rubik', 'Glow Sans SC', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -90,9 +86,9 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
     'Helvetica Neue', 'Helvetica', Arial, sans-serif !important;
 }
 
-/**-------------------**
-| CUSTOMIZED TAG COLOURS
-**--------------------**/
+/*=======================
+* Customized Tag Colors
+*==========================*/
 
 /* For preview mode */
 a.tag[href*='#todo'],
@@ -155,14 +151,13 @@ a.tag[href*='#想法'] {
   color: #ffdc82;
 }
 
-/**************************************
-| GENERAL STYLES
-| -------------------------------------
-| Obsidian main controls related.
-/**************************************/
+/*=======================
+* General UI
+*==========================*/
 
-/** GENERAL STYLES **/
-
+/*---------------------------------------------------
+* Title Bar
+*------------------------------------------------------*/
 body {
   font-weight: var(--body-font-weight, normal);
 }
@@ -171,7 +166,6 @@ body {
   background-color: var(--background-primary-alt);
 }
 
-/* 2.1. Title bar ✔*/
 .titlebar-inner {
   color: var(--text-faint);
 }
@@ -183,26 +177,6 @@ body {
   color: var(--text-muted);
 }
 
-
-/* 3. Editor and preview ✔*/
-.cm-s-obsidian,
-.markdown-preview-view {
-  --text-accent: var(--accent-2);
-  color: var(--text-normal);
-}
-
-.CodeMirror-guttermarker-subtle {
-  color: var(--accent-1);
-}
-
-
-
-.status-bar {
-  background-color: var(--background-primary-alt);
-  border-color: #101014;
-  color: var(--text-faint);
-}
-
 .titlebar-text {
   color: var(--text-accent);
 }
@@ -212,8 +186,31 @@ body {
   color: var(--text-accent);
 }
 
-/** NAVIGATION / SIDE-DOCK **/
 
+/*---------------------------------------------------
+* Statusbar
+*------------------------------------------------------*/
+
+/*.cm-s-obsidian,
+.markdown-preview-view {
+  //--text-accent: var(--accent-2);
+  //color: var(--text-normal);
+}
+
+.CodeMirror-guttermarker-subtle {
+  color: var(--accent-1);
+}*/
+
+.status-bar {
+  background-color: var(--background-primary-alt);
+  border-color: #101014;
+  color: var(--text-faint);
+}
+
+
+/*---------------------------------------------------
+* Side Dock
+*------------------------------------------------------*/
 .nav-folder-collapse-indicator {
   color: var(--text-accent);
 }
@@ -226,7 +223,10 @@ body {
   color: var(--text-accent);
 }
 
-/** Side-dock icons **/
+/*---------------------------------------------------
+* Side Dock Icons and Title
+*------------------------------------------------------*/
+
 .side-dock-ribbon-tab,
 .side-dock-ribbon-action,
 .workspace-ribbon-collapse-btn,
@@ -242,66 +242,57 @@ body {
   color: var(--text-accent);
 }
 
-/** Left side menu -- collapsed **/
-.workspace-ribbon.is-collapsed {
-  background-color: var(--background-primary-alt); //Maybe
-}
-/** Left side menu border **/
-.workspace-ribbon.mod-left.is-collapsed,
-.workspace-ribbon.mod-right.is-collapsed {
-  border-color: var(--editor-border-color);
-}
-
-/** Navigation tabs **/
 .workspace-tab-header.is-active {
   opacity: 1;
   color: var(--text-accent);
 }
 
-/** Folder Lists **/
 body:not(.is-grabbing) .nav-file-title:hover,
 body:not(.is-grabbing) .nav-folder-title:hover {
   color: var(--text-accent);
 }
-/** Folder list active arrow **/
-body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
-body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
-  color: var(--text-accent);
-}
-/** Folder List main title **/
+
 .nav-folder.mod-root > .nav-file-title,
 .nav-folder.mod-root > .nav-folder-title {
   color: var(--text-accent);
 }
 
-/** View Header title **/
+body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
+body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
+  color: var(--text-accent);
+}
+
+/*---------------------------------------------------
+* Side Dock Collapse and Border
+*------------------------------------------------------*/
+
+.workspace-ribbon.is-collapsed {
+  background-color: var(--background-primary-alt); //Maybe
+}
+
+.workspace-ribbon.mod-left.is-collapsed,
+.workspace-ribbon.mod-right.is-collapsed {
+  border-color: var(--editor-border-color);
+}
+
+
+/*---------------------------------------------------
+* Workspace
+*------------------------------------------------------*/
+
 .workspace-leaf.mod-active .view-header-title {
   color: var(--text-accent);
 }
 
-/** Little tag styles (at links) **/
 .pane-list-item:hover .pane-list-item-ending-flair {
   background-color: var(--background-secondary);
   color: var(--text-accent);
 }
 
-/** SETTINGS STYLES **/
-/*.checkbox-container.is-enabled {
-  background-color: rgba(14, 210, 247, 0.7);
-}*/
-
 .workspace-drop-overlay {
- background-color: var(--background-primary-alt); //check this
+ background-color: var(--background-primary-alt);
 }
 
-/* except list markers */
-span.cm-formatting-list,
-/*code block backticks */ span.cm-formatting-code-block.cm-hmd-codeblock,
-/* optionally header hashes */ span.cm-formatting-header {
-  display: inline !important;
-}
-
-/* 3.2. Formatting operators */
 .cm-s-obsidian .cm-formatting,
 .cm-s-obsidian span.cm-formatting-link,
 .cm-s-obsidian span.cm-formatting-link-string.cm-url,
@@ -314,43 +305,36 @@ span.cm-formatting-list,
   color: #BCA6FF;
 }
 
-/***************************************/
-/*    EDITOR GENERAL STYLES            */
-/***************************************/
 
-/* OBSIDIANITE CHECKBOXES */
-
-.contains-task-list .task-list-item .contains-task-list {
-  padding-inline-start: 5px;
+/*code block backticks */ span.cm-formatting-code-block.cm-hmd-codeblock,
+/* optionally header hashes */ span.cm-formatting-header {
+  display: inline !important;
 }
 
-.contains-task-list .task-list-item ul.contains-task-list::before {
+/*---------------------------------------------------
+* CheckBox
+*------------------------------------------------------*/
+
+/*.contains-task-list .task-list-item .contains-task-list {
+  padding-inline-start: 5px;
+}*/
+
+/*.contains-task-list .task-list-item ul.contains-task-list::before {
   left: -46px !important;
   border-width: 2px;
-}
+}*/
 
-.contains-task-list .task-list-item {
+/*.contains-task-list .task-list-item {
   position: relative;
   vertical-align: middle;
   box-sizing: border-box;
   padding-left: 30px;
-}
+}*/
 
-.contains-task-list .task-list-item input[type='checkbox'] {
-  position: absolute;
-  top: 4px;
-  left: -23px;
-  width: 20px;
-  height: 20px;
-  margin: 0;
-  opacity: 0;
-  z-index: 10;
-}
-
-.markdown-preview-view .list-collapse-indicator {
+/*.markdown-preview-view .list-collapse-indicator {
   margin-left: -80px !important;
   box-sizing: border-box;
-}
+}*/
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
   content: '✓';
@@ -362,39 +346,7 @@ span.cm-formatting-list,
   text-align: center;
   text-shadow: 0 0 0.5em var(--accent-2);
 }
-/* 3.9.1. Bullet lists ✔*/
-ul {
-  list-style: none;
-}
 
-li>p {
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul li:not(.task-list-item)::before {
-  content: "•";
-  /* 🤔 need to think of some better bullet chars */
-  color: var(--accent-2);
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-  padding: 0;
-  font-weight: bold;
-  text-shadow: 0 0 0.5em var(--accent-2);
-}
-
-ul ul li:not(.task-list-item)::before {
-  content: "▪"
-}
-
-ul ul ul li:not(.task-list-item)::before {
-  content: "◦"
-}
-
-
-/*Task lists! */
 .markdown-preview-view .task-list-item-checkbox {
   -webkit-appearance: none;
   box-sizing: border-box;
@@ -407,7 +359,101 @@ ul ul ul li:not(.task-list-item)::before {
   box-shadow: 0 0 0.5em var(--accent-2);
 }
 
-/* 3.9.2. Numbered lists */
+/*
+/* rule line when there are checkboxes*/
+ul .task-list-item ul::before {
+  left: 0.15em !important;
+}*/
+
+/*---------------------------------------------------
+* Bullet list
+*------------------------------------------------------*/
+ul {
+  list-style: none;
+}
+
+li>p {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul li:not(.task-list-item)::before {
+  content: "▻"!important;
+  color: var(--accent-2);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  padding: 0;
+  font-weight: bold;
+  text-shadow: 0 0 0.5em var(--accent-2);
+}
+
+ul ul li:not(.task-list-item)::before {
+  content: "↳"!important;
+}
+
+ul ul ul li:not(.task-list-item)::before {
+  content: "↳"!important;
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked {
+  text-decoration: line-through !important;
+  color: var(--interactive-accent) !important;
+}
+
+//↱↠↦↣↳►▶▻⇀
+/* Adding a rule line before ul list -- PREVIEW Mode */
+ul ul,
+.cm-s-obsidian pre.HyperMD-list-line {
+  position: relative;
+}
+.markdown-preview-section > ul > li > ul::before {
+  content: '';
+  border-left: 1px solid var(--text-accent);
+  position: absolute;
+  opacity: 0.35;
+  left: -1em;
+  top: 0;
+  bottom: 0;
+}
+
+/* bullet lists */
+ul,
+ul ul,
+ol ul,
+ul ul ul,
+ol ul ul {
+  list-style: none;
+}
+li > p {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul li:not(.task-list-item)::before {
+  content: '▻';
+  color: var(--text-accent);
+  display: inline-block;
+  width: 1.25em;
+  margin-left: -1.15em;
+  padding: 0;
+  font-weight: bold;
+  text-shadow: 0 0 0.5em var(--accent-2);
+}
+ul ul li:not(.task-list-item)::before {
+  content: '↳';
+}
+ul ul ul li:not(.task-list-item)::before {
+  content: '↳';
+}
+
+
+/*---------------------------------------------------
+* Number list
+*------------------------------------------------------*/
+
 ol {
   list-style: none;
   counter-reset: li
@@ -424,97 +470,43 @@ ul ul ul ol>li:not(.task-list-item)::before {
 text-shadow: 0 0 0.5em var(--accent-2);
 }
 
-.contains-task-list .task-list-item::before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: -25px;
-  width: 20px;
-  height: 20px;
-  display: inline-flex;
-  justify-content: center;
-  border: 2px solid #9e9e9e;
-  margin-right: 15px;
-  border-radius: 3px;
-  transition: all 0.3s;
-  box-sizing: border-box;
-  z-index: 1;
+ol {
+  list-style: none;
+  counter-reset: li;
+}
+ol > li {
+  counter-increment: li;
+}
+ol > li:not(.task-list-item)::before,
+ul ol > li:not(.task-list-item)::before,
+ul ul ol > li:not(.task-list-item)::before,
+ul ul ul ol > li:not(.task-list-item)::before {
+  content: '.' counter(li);
+  color: var(--text-accent);
+  font-weight: normal;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  text-align: right;
+  direction: rtl;
+  overflow: visible;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 
-.contains-task-list .is-checked.task-list-item::before {
-  border: 10px solid var(--text-accent);
-  animation: bounce 300ms;
+.cm-s-obsidian span.cm-formatting-list,
+.cm-s-obsidian span.cm-formatting-task {
+  color: var(--text-accent);
 }
 
-.contains-task-list .is-checked.task-list-item::after {
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: -21px;
-  border-right: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  transform: rotate(45deg);
-  transform-origin: 0% 100%;
-  animation: checked-box 125ms 250ms forwards;
-  z-index: 5;
+.cm-s-obsidian span.cm-formatting-list {
+  font-weight: bold;
 }
 
-.markdown-preview-view ul > li.task-list-item.is-checked {
-  text-decoration: line-through !important;
-  color: var(--interactive-accent) !important;
-}
-
-.markdown-preview-view ul > li.task-list-item.is-checked ul > li:not(.is-checked) {
-  text-decoration: none !important;
-  color: var(--text-normal) !important;
-}
-
-@keyframes checked-box {
-  0% {
-    width: 0;
-    height: 0;
-    border-color: #212121;
-    transform: translate(0, 0) rotate(45deg);
-  }
-  33% {
-    width: 4px;
-    height: 0;
-    border-color: #212121;
-    transform: translate(0, 0) rotate(45deg);
-  }
-  100% {
-    width: 4px;
-    height: 8px;
-    border-color: #212121;
-    transform: translate(0, -8px) rotate(45deg);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    border-width: 2px;
-    /* transform: scale(1); */
-  }
-  33% {
-    border-width: 4px;
-    /* transform: scale(0.7); */
-  }
-  100% {
-    border-width: 10px;
-    /* transform: scale(1); */
-  }
-}
-
-/**************************************
-| MAIN EDITOR / PREVIEW MODE
-| -------------------------------------
-| Write in the same section to keep them
-| relatively sync with css.
-/**************************************/
-
-/**-------------------**
-| HEADING STYLES
-**--------------------**/
+/*---------------------------------------------------
+* Headings
+*------------------------------------------------------*/
 h1,
 h2,
 h3,
@@ -575,7 +567,10 @@ pre.HyperMD-header.HyperMD-header-6 {
   color: var(--text-title-h5);
 }
 
-/** headings */
+/*---------------------------------------------------
+* Heading Previews
+*------------------------------------------------------*/
+
 .markdown-preview-view h2,
 .markdown-preview-view h3,
 .markdown-preview-view h4,
@@ -595,7 +590,10 @@ pre.HyperMD-header.HyperMD-header-6 {
   color: var(--text-accent);
 }
 
-/* 3.1. Headers ✔*/
+/*---------------------------------------------------
+* Heading Glow
+*------------------------------------------------------*/
+
 .cm-s-obsidian .cm-header,
 h1,
 h2,
@@ -642,14 +640,14 @@ h6 {
 }
 
 
-/**-------------------**
-| HR STYLES
-**--------------------**/
+/*---------------------------------------------------
+* Heading Styling
+*------------------------------------------------------*/
 
 /** hr styles -- PREVIEW MODE */
 .markdown-preview-view hr {
-  margin-block-start: 4em;
-  margin-block-end: 4em;
+  margin-block-start: 3em;
+  margin-block-end: 2em;
   border: none;
   height: 0;
   border-bottom: 1px solid;
@@ -659,20 +657,23 @@ h6 {
 }
 
 .markdown-preview-view hr::after {
-  content: '§';
-  display: inline-block;
+  content: '₪'; 
+  display: inline-block; 
+  font-size: 1.65rem;
   position: absolute;
+ color: var(--text-sub-accent);
   left: 50%;
-  transform: translate(-50%, -50%) rotate(60deg);
-  transform-origin: 50% 50%;
+  transform: translate(-50%, -50%);
+ 
+  transform-origin: 5% 50%;
   padding: 0.5rem;
-  color: var(--text-sub-accent);
+  color: #E69900;
   background-color: var(--background-primary);
 }
 
-/**-------------------**
-| STRONG/BOLD STYLES
-**--------------------**/
+/*---------------------------------------------------
+* Bold and Italic Styling
+*------------------------------------------------------*/
 
 .cm-strong,
 strong {
@@ -693,19 +694,15 @@ strong::selection {
   -webkit-text-fill-color: var(--text-faint);
 }
 
-/**-------------------**
-| ITALIC STYLES
-**--------------------**/
-
 .cm-em,
 em {
   color: #bb9af7 !important;
   font-family: OperatorMonoSSmLig-Book, Rubik !important;
 }
 
-/**-------------------**
-| LISTING STYLES (ul, li, ol)
-**--------------------**/
+/*---------------------------------------------------
+* List Styles (ul, li, ol)
+*------------------------------------------------------*/
 
 .cm-s-obsidian span.cm-formatting-list {
   color: var(--text-accent);
@@ -730,86 +727,9 @@ em {
 .cm-s-obsidian pre.HyperMD-list-line.HyperMD-list-line-4 {
 }
 
-/* Adding a rule line before ul list -- PREVIEW Mode */
-ul ul,
-.cm-s-obsidian pre.HyperMD-list-line {
-  position: relative;
-}
-.markdown-preview-section > ul > li > ul::before {
-  content: '';
-  border-left: 1px solid var(--text-accent);
-  position: absolute;
-  opacity: 0.35;
-  left: -1em;
-  top: 0;
-  bottom: 0;
-}
-
-/* bullet lists */
-ul,
-ul ul,
-ol ul,
-ul ul ul,
-ol ul ul {
-  list-style: none;
-}
-li > p {
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul li:not(.task-list-item)::before {
-  content: '•';
-  color: var(--text-accent);
-  display: inline-block;
-  width: 1em;
-  margin-left: -1.15em;
-  padding: 0;
-  font-weight: bold;
-  text-shadow: 0 0 0.5em var(--accent-2);
-}
-ul ul li:not(.task-list-item)::before {
-  content: '•';
-}
-ul ul ul li:not(.task-list-item)::before {
-  content: '•';
-}
-
-/* numbered lists */
-ol {
-  list-style: none;
-  counter-reset: li;
-}
-ol > li {
-  counter-increment: li;
-}
-ol > li:not(.task-list-item)::before,
-ul ol > li:not(.task-list-item)::before,
-ul ul ol > li:not(.task-list-item)::before,
-ul ul ul ol > li:not(.task-list-item)::before {
-  content: '.' counter(li);
-  color: var(--text-accent);
-  font-weight: normal;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1.5em;
-  margin-right: 0.5em;
-  text-align: right;
-  direction: rtl;
-  overflow: visible;
-  word-break: keep-all;
-  white-space: nowrap;
-}
-
-/* rule line when there are checkboxes*/
-ul .task-list-item ul::before {
-  left: 0.15em !important;
-}
-
-/**-------------------**
-| LINKS STYLING
-**--------------------**/
+/*---------------------------------------------------
+* Links Styling
+*------------------------------------------------------*/
 
 /** editor mode **/
 .cm-s-obsidian span.cm-link,
@@ -912,31 +832,6 @@ a:hover,
   color: var(--text-accent);
 }
 
-/* 3.7. Strikethrough ✔*/
-.cm-strikethrough,
-s {
-  text-decoration-color: var(--accent-1);
-}
-
-/* 3.8. Escape chars ✔*/
-.cm-s-obsidian span.cm-hmd-escape-backslash {
-  color: var(--text-faint);
-}
-
-.cm-s-obsidian span.cm-hmd-escape-char {
-  color: var(--text-normal);
-}
-
-/* 3.9. Bullets and numbering */
-.cm-s-obsidian span.cm-formatting-list,
-.cm-s-obsidian span.cm-formatting-task {
-  color: var(--text-accent);
-}
-
-.cm-s-obsidian span.cm-formatting-list {
-  font-weight: bold;
-}
-
 /* 3.3. External links */
 .cm-s-obsidian .cm-formatting-link+.cm-formatting-link-string+.cm-url,
 .cm-s-obsidian .cm-string.cm-url,
@@ -951,12 +846,29 @@ a {
 .cm-s-obsidian span.cm-hmd-internal-link,
 a.internal-link,
 a.tag {
-  color: var(--accent-1);
+  color: var(--accent-4-muted);
 }
 
-/**-------------------**
-| TAG STYLING
-**--------------------**/
+/*---------------------------------------------------
+* Strikethrough and Escape Chars
+*------------------------------------------------------*/
+
+.cm-strikethrough {
+  text-decoration-color: var(--accent-1);
+}
+
+.cm-s-obsidian span.cm-hmd-escape-backslash {
+  color: var(--text-faint);
+}
+
+.cm-s-obsidian span.cm-hmd-escape-char {
+  color: var(--text-normal);
+}
+
+
+/*---------------------------------------------------
+* Tag Style
+*------------------------------------------------------*/
 
 .cm-s-obsidian .CodeMirror-line span.cm-hashtag {
   position: relative;
@@ -995,20 +907,19 @@ a.tag {
 
 a.tag:hover {
   color: var(--text-normal) !important;
-  border-color: var(--text-accent);
+  border-color: var(--accent-5);
   opacity: 1;
   background-size: 4px 50px;
 }
 
-/**-------------------**
-| INLINE CODE STYLING
-**--------------------**/
+/*---------------------------------------------------
+* Inline Code Style
+*------------------------------------------------------*/
 
 .CodeMirror-activeline
   span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
   padding: 0 !important;
-  margin: 0 !important;
-   
+  margin: 0 !important; 
 }
 
 .cm-s-obsidian span.cm-inline-code {
@@ -1016,9 +927,9 @@ a.tag:hover {
    background-color: #232323 !important;
 }
 
-/**-------------------**
-| CODE FENCE STYLING
-**--------------------**/
+/*---------------------------------------------------
+* Code Fence Style
+*------------------------------------------------------*/
 
 .cm-s-obsidian pre.HyperMD-codeblock {
   color: var(--text-sub-accent);
@@ -1048,7 +959,7 @@ pre {
   font-family: Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: #fff;
   position: absolute;
   top: 0rem;
@@ -1115,10 +1026,20 @@ pre[class$='terminal']:before {
 pre[class$='rman']:before {
   content: 'rman';
 }
+pre[class$='C']:before {
+  content: 'C';
+}
+pre[class$='C++']:before {
+  content: 'C++';
+}
 
-/**-------------------**
-| BLOCKQUOTE STYLING
-**--------------------**/
+pre[class$='Java']:before {
+  content: 'Java';
+}
+
+/*---------------------------------------------------
+* Blockquotes Style
+*------------------------------------------------------*/
 
 /* Remove blockquote left margin */
 blockquote {
@@ -1149,7 +1070,7 @@ blockquote {
   left: 0px;
   height: 2px;
   width: 60%;
-  background: linear-gradient(90deg, rgba(13, 185, 215, 0.5), #13111a);
+  background: linear-gradient(90deg, rgba(13, 185, 215, 0.5),#201A2F );
 }
 
 .markdown-preview-view blockquote::after {
@@ -1158,8 +1079,8 @@ blockquote {
   bottom: 0;
   left: 0px;
   height: 2px;
-  width: 25%;
-  background: linear-gradient(90deg, rgba(13, 185, 215, 0.5), #15131c);
+  width: 60%;
+  background: linear-gradient(90deg, rgba(13, 185, 215, 0.5), #201A2F);
 }
 
 .markdown-preview-view blockquote p {
@@ -1167,7 +1088,7 @@ blockquote {
 }
 
 .markdown-preview-view blockquote p:first-of-type::before {
-  content: '!!';
+  content: '!!!';
   font-style: italic;
   font-weight: 700;
   font-size: 18px;
@@ -1184,17 +1105,15 @@ blockquote {
 .markdown-preview-view th,
 .markdown-preview-view td {
   box-shadow: 0 0 0.25em var(--accent-2),
-    inset 0 0 0.25em var(--accent-2);
+    inset 0 0 0.75em var(--accent-2);
 }
 
 .markdown-preview-view hr {
-  box-shadow: 0 0 0.5em var(--accent-2);
 }
 
-/**-------------------**
-| FRONT-META STYLING
-**--------------------**/
-
+/*---------------------------------------------------
+* Front=Meta Style
+*------------------------------------------------------*
 .cm-s-obsidian span.cm-def,
 .cm-s-obsidian span.cm-atom {
   color: var(--text-faint);
@@ -1207,10 +1126,10 @@ blockquote {
   color: var(--text-sub-accent);
 }
 
-/**-------------------**
-| CODE STYLING
-**--------------------**/
 
+/*---------------------------------------------------
+* Code Style
+*------------------------------------------------------*
 /** inline code */
 .markdown-preview-view code {
   overflow-wrap: break-word;
@@ -1709,11 +1628,82 @@ pre.line-numbers > code {
   text-align: right;
 }
 
+/*=======================
+* Highlighter
+*==========================*/
+/*---------------------------------------------------
+* add more colors you want here and apply a default
+*------------------------------------------------------*/
+body{ //  --fluro-yellow-rgb: 255, 255, 0;
+  --fluro-pink-rgb: 255, 0, 255;
+  --fluro-blue-rgb: 0, 255, 255;
+  --fluro-green-rgb: 0, 255, 0;
+  --fluro-violet-rgb: 191,128,255;
+  --fluro-red-rgb: 204,0,0;
+  --text-highlight-rgb: var(--fluro-red-rgb);
+}
 
+/*---------------------------------------------------
+* Add how you want to enable/use the highlight color.
+*------------------------------------------------------*/
 
+mark.yellow{ --text-highlight-rgb: var(--fluro-yellow-rgb); }
+mark.pink{ --text-highlight-rgb: var(--fluro-pink-rgb); }
+mark.blue{ --text-highlight-rgb: var(--fluro-blue-rgb); }
+mark.green{ --text-highlight-rgb: var(--fluro-green-rgb); }
+mark.red{ --text-highlight-rgb: var(--fluro-red-rgb); }
+mark.violet{ --text-highlight-rgb: var(--fluro-violet-rgb); }
 
+.markdown-preview-view mark {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(105deg,
+    transparent 0,
+    transparent 0.3em,
+    rgba(var(--text-highlight-rgb), 0.7) 0.5em,
+    rgba(var(--text-highlight-rgb), 0.4) 1.6em,
+    rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),
+    rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),
+    transparent calc(100% - 0.3em),
+    transparent 100%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  text-shadow: 0 0 0.75em var(--background-primary-alt);
+}
 
+.cm-s-obsidian span.cm-highlight {
+  padding:0.1em 0;
+  background: rgba(var(--text-highlight-rgb), 0.4);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  text-shadow: 0 0 0.75em var(--background-primary-alt);
+}
 
-
-
-
+.cm-s-obsidian span.cm-formatting-highlight{
+  margin: 0 0 0 -0.4em;
+  padding: 0.1em 0 0.1em 0.4em;
+  border-radius: 0.8em 0 0 0.4em;
+  background: none;
+  background-image: linear-gradient(105deg,
+    transparent 0,
+    transparent 0.3em,
+    rgba(var(--text-highlight-rgb), 0.7) 0.5em,
+    rgba(var(--text-highlight-rgb), 0.4) 1.6em);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.cm-s-obsidian .cm-highlight+span.cm-formatting-highlight {
+  margin: 0 -0.4em 0 0;
+  padding: 0.1em 0.4em 0.1em 0;
+  border-radius: 0 0.4em 0.8em 0;
+  background: none;
+  background-image: linear-gradient(105deg,
+    rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),
+    rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),
+    transparent calc(100% - 0.3em),
+    transparent 100%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
