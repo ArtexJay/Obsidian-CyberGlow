@@ -1,18 +1,17 @@
-/* Cyber Glow for Obsidian - v3 - a Mix by TheOppaianEmperor
+/* Cyber Glow for Obsidian - v3.2 - a Mix by TheOppaianEmperor
 /* Please leave credits if you modify for your own theme */
 /*
 This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Neon Theme
 (With some color modifications). All Credits go to them
 */
-
-.theme-dark,.lightheme {
-  --background-primary: #000000;
-  --background-primary-alt: #1e1e1e;
-  --background-secondary: #1e1e1e;
-  --background-secondary-alt: #1e1e1e;
-  --text-normal: #bebebe;
-  --text-accent: #AC99F9;
-  --text-sub-accent: #f4569d;
+.theme-light {
+ --background-primary: #ffffff;
+  --background-primary-alt: #E5E5E5;
+  --background-secondary: #E5E5E5;
+  --background-secondary-alt: #E5E5E5;
+  --text-normal: #1e1e1e;
+  --text-accent: #41317F;
+    --text-sub-accent: #f4569d;
   --text-dim: #45aaff;
   --text-faint: #B05FFF;
   --text-title-h1: var(--text-accent);
@@ -66,6 +65,67 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
 
 }
 
+.theme-dark {
+  --background-primary: #000000;
+  --background-primary-alt: #1e1e1e;
+  --background-secondary: #1e1e1e;
+  --background-secondary-alt: #1e1e1e;
+  --text-normal: #bebebe;
+  --text-accent: #AC99F9;
+  --text-sub-accent: #f4569d;
+  --text-dim: #45aaff;
+  --text-faint: #B05FFF;
+
+  --text-title-h1: var(--text-accent);
+  --text-title-h2: #cbdbe5;
+  --text-title-h3: #cbdbe5;
+  --text-title-h4: #cbdbe5;
+  --text-title-h5: #cbdbe5;
+  --text-link: #b4b4b4;
+  --text-a: #6bcafb;
+  --text-a-hover: #6bcafb;
+  --text-mark: #263d92;
+  --pre-code: #252525;
+  --interactive-accent: rgba(14, 210, 247, 0.5);
+  --interactive-accent-hover: #AC99F9;
+  --interactive-before: #5e6565;
+  --background-modifier-border: #92a1a17a;
+  --blockquote-border: #4aa8fb;
+  --tag-background: #a7b0b3;
+  --interactive-accent-rgb: #3dd7fb;
+  --font-family-editor: 'Rubik';
+  --font-family-preview: 'Rubik';
+  --bg-sub-accent-55: rgba(244, 86, 157, 0.55);
+  --bg-accent-55: rgba(14, 210, 247, 0.55);
+  --text-highlight-bg: rgba(244, 86, 157, 0.25);
+  --background-modifier-border: rgba(14, 210, 247, 0.05);
+  --test-color: rgb(122, 162, 247);
+  --editor-border-color: #101014;
+  
+  --accent-1: #FF00FF;
+  --accent-2: #5943BF;
+  --accent-3: #00FF00;
+  --accent-4: #FFFF00;
+  --accent-5: #FF0000;
+  --accent-6: #0000FF;
+  --accent-7: #00FFFF;
+
+  --accent-1-muted: #ff79c6;
+  --accent-2-muted: #B05FFF;
+  --accent-3-muted: #50fa7b;
+  --accent-4-muted: #ffb86c;
+  --accent-5-muted: #ff5555;
+  --accent-6-muted: #bd93f9;
+    
+  --interactive-hover: var(--accent-2-muted);
+  --interactive-accent: var(--accent-2);
+  --interactive-accent-hover: var(--accent-2-muted);
+
+  --background-accent: #000;
+  --background-modifier-border: var(--accent-2);
+  --text-highlight-bg: #ffd319;
+}
+
 :root {
 /*=======================
 * Fonts
@@ -97,6 +157,7 @@ a.tag[href*='#待完成'] {
 /* For Editor Mode */
 .cm-s-obsidian .CodeMirror-line span.cm-tag-todo:not(.cm-formatting-hashtag) {
   color: #ee6a96;
+  
   
 }
 
@@ -145,12 +206,12 @@ a.tag[href*='#文章'] {
 a.tag[href*='#ideas'],
 a.tag[href*='#想法'] {
 
-  color: #ffc93c;
-     box-shadow: 0px 0px 7.5px #ffc93c;
+  color: #f29f20;
+     box-shadow: 0px 0px 7.5px #f29f20;
 }
 
 .cm-s-obsidian .CodeMirror-line span.cm-tag-ideas:not(.cm-formatting-hashtag) {
-  color: #ffdc82;
+  color: #f29f20;
 }
 
 /*=======================
@@ -204,6 +265,7 @@ color: var(--text-faint);
 .view-action:hover{
 opacity:1;
 color: var(--text-accent);
+
 }
 
 /*---------------------------------------------------
@@ -226,6 +288,25 @@ color: var(--text-accent);
   color: var(--text-faint);
 }
 
+/*---------------------------------------------------
+* Scrollbar
+*------------------------------------------------------*/
+
+::-webkit-scrollbar{
+background:transparent!important;
+   border-radius: 0px!important;
+}
+::-webkit-scrollbar-thumb {
+background:#444444!important;
+     border-radius: 0px!important;
+
+}
+::-webkit-scrollbar-thumb:hover{
+   background:#565656!important;
+}
+
+::-webkit-scrollbar-thumb:active{
+background:#626A78!important;}
 
 /*---------------------------------------------------
 * Side Dock
@@ -243,7 +324,7 @@ color: var(--text-accent);
 
 body:not(.is-grabbing) .nav-file-title:hover,
 body:not(.is-grabbing) .nav-folder-title:hover {
-  background-color: #000000;
+  background-color: var(--background-primary);
   
 }
 
@@ -268,6 +349,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   font-weight: 600;
   opacity:1;
   color:  var(--text-accent);
+  
 
 }
 
@@ -275,9 +357,9 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   opacity:1;
   color: var(--text-accent);
   background:var(--background-primary);
+  box-shadow: 0px -.75px 0px   var(--text-accent);
+       border-radius: 0px!important;
 }
-
-
 
 /*---------------------------------------------------
 * Side Dock Icons and Title
@@ -293,15 +375,23 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 }
 .side-dock-ribbon-tab:hover,
 .side-dock-ribbon-action:hover,
-.workspace-ribbon-collapse-btn:hover,
+.workspace-ribbon-collapse-btn:hover{
+  opacity: 1;
+  color: var(--text-accent);
+
+}
 .workspace-tab-header:hover {
   opacity: 1;
   color: var(--text-accent);
+  box-shadow: 0px -1.5px 0px   var(--text-accent);
+  
 }
 
 .workspace-tab-header.is-active {
   opacity: 1;
   color: var(--text-accent);
+    background: var(--background-primary);
+
 }
 
 body:not(.is-grabbing) .nav-file-title:hover,
@@ -318,6 +408,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
 body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
   color: var(--text-accent);
+  
 }
 .workspace-tab-header{
 border-radius: 0px!important;
@@ -330,14 +421,21 @@ box-shadow: 0px -1.5px 0px   var(--text-accent);
 .view-header-title, .view-header-icon{
 color:var(--text-faint);
 }
-
+.nav-action-button{
+color:var(--text-faint);
+}
+.nav-action-button:hover{
+  color: var(--text-accent);
+     border-radius: 0px!important;
+    box-shadow: 0px -1.5px 0px   var(--text-accent);
+}
 
 /*---------------------------------------------------
 * Side Dock Collapse and Border
 *------------------------------------------------------*/
 
 .workspace-ribbon.is-collapsed {
-  background-color: var(--background-primary-alt); //Maybe
+  background-color: var(--background-primary-alt);
   
 }
 
@@ -346,7 +444,6 @@ color:var(--text-faint);
   border-color: var(--background-primary-alt);
   
 }
-
 
 /*---------------------------------------------------
 * Workspace
@@ -413,9 +510,8 @@ background:var(--text-accent) !important;
 /*code block backticks */ span.cm-formatting-code-block.cm-hmd-codeblock,
 /* optionally header hashes */ span.cm-formatting-header {
   display: inline !important;
+  
 }
-
-
 
 /*---------------------------------------------------
 * CheckBox
@@ -470,8 +566,6 @@ background:var(--text-accent) !important;
 ul .task-list-item ul::before {
   left: 0.15em !important;
 }
-
-
 
 /*---------------------------------------------------
 * Bullet list
@@ -559,7 +653,6 @@ ul ul ul li:not(.task-list-item)::before {
   content: '↳';
 }
 
-
 /*---------------------------------------------------
 * Number list
 *------------------------------------------------------*/
@@ -639,7 +732,6 @@ ul .task-list-item ul::before {left: 0.15em !important}
 .cm-hmd-list-indent .cm-tab::before { left: 0.5em; top: -5px; bottom: -4px; }
 ul ul::before { left: -1em; top: 0; bottom: 0; }
 
-
 /*---------------------------------------------------
 * Headings
 *------------------------------------------------------*/
@@ -658,7 +750,6 @@ pre.HyperMD-header.HyperMD-header-3,
 pre.HyperMD-header.HyperMD-header-4,
 pre.HyperMD-header.HyperMD-header-5,
 pre.HyperMD-header.HyperMD-header-6 {
- margin: 35px 0 15px 0;
   position: relative;
   padding-bottom: 5px;
   border-bottom: 2px solid;
@@ -702,6 +793,7 @@ pre.HyperMD-header.HyperMD-header-6 {
   font-size: 18px;
   color: var(--text-title-h5);
 }
+
 
 /*---------------------------------------------------
 * Heading Previews
@@ -1028,7 +1120,6 @@ a.tag {
 
 a.tag {
   background: #100e18;
-  color: #7a7a8c;
   color: #8C92AC;
   white-space: nowrap;
   border: 2px solid;
@@ -1037,7 +1128,7 @@ a.tag {
   padding: 0.05rem 0.5rem;
   font-family: var(--tag-font-family);
   font-size: 0.8rem;
-  background:#000000;
+  background:var(--background-primary);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 0 0;
@@ -1061,11 +1152,13 @@ a.tag:hover {
   span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
   padding: 0 !important;
   margin: 0 !important; 
+  
 }
 
 .cm-s-obsidian span.cm-inline-code {
   color: rgba(14, 210, 247, 0.9) !important;
    background-color: #232323 !important;
+   
 }
 
 /*---------------------------------------------------
@@ -1074,16 +1167,18 @@ a.tag:hover {
 
 .cm-s-obsidian pre.HyperMD-codeblock {
   color: var(--text-sub-accent);
+  
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-bg {
-  
+       border-radius: 0px!important;
  background-color: #282828 !important;
 }
 .markdown-preview-view code,
 .markdown-preview-view pre {
  background-color: #282828;
   color: rgba(14, 210, 247, 0.9);
+       border-radius: 0px!important;
 
 }
 .markdown-preview-view p code {
@@ -1226,6 +1321,7 @@ blockquote {
   border-bottom: transparent;
   border-right: transparent;
   background: linear-gradient(135deg, rgba(32, 28, 41, 0.45), #100e17);
+  border-radius: 0px!important;
 }
 
 .markdown-preview-view blockquote::before {
@@ -1298,10 +1394,7 @@ blockquote {
   word-wrap: break-word;
   padding: 0 5px;
   border-radius: 0.3rem;
-
- // color: rgba(14, 210, 247, 0.9) !important;
- //  background-color: #282828 !important;
-}
+  }
 
 .theme-dark :not(pre) > code[class*='language-'],
 .theme-dark pre[class*='language-'] {
@@ -1426,6 +1519,7 @@ code[class*='language-'] ::selection {
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
   background: rgba(40, 41, 54, 1);
+  
 }
 
 
@@ -1539,6 +1633,7 @@ code[class*='language-'] ::selection {
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
   background: rgba(40, 41, 54, 1);
+  
 }
 
 /* Inline code */
@@ -1546,6 +1641,7 @@ pre[class*='language-'] {
   padding: 4px 7px;
   border-radius: 0.3em;
   white-space: normal;
+  
 }
 
 .limit-300 {
@@ -2051,30 +2147,4 @@ mark.violet{ --text-highlight-rgb: var(--fluro-violet-rgb); }
 .red {
   color: var(--text-white);
 }
-
-
-/*---------------------------------------------------
-* Scrollbar
-*------------------------------------------------------*/
-
-::-webkit-scrollbar{
-background:transparent!important;
-   border-radius: 0px!important;
-}
-::-webkit-scrollbar-thumb {
-background:#444444!important;
-     border-radius: 0px!important;
-
-}
-::-webkit-scrollbar-thumb:hover{
-   background:#565656!important;
-}
-
-::-webkit-scrollbar-thumb:active{
-background:#626A78!important;}
-
-
-
-
-
 
