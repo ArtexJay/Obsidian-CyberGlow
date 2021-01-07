@@ -1,19 +1,17 @@
-/* Cyber Glow for Obsidian - v2 - a Mix by TheOppaianEmperor
+/* Cyber Glow for Obsidian - v3 - a Mix by TheOppaianEmperor
 /* Please leave credits if you modify for your own theme */
 /*
 This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Neon Theme
 (With some color modifications). All Credits go to them
 */
-/*I know it's a bit messy at the moment, will do Spring Cleaning of the code soon with proper comments*/
 
-
-.theme-dark {
+.theme-dark,.lightheme {
   --background-primary: #000000;
-  --background-primary-alt: #000000;
-  --background-secondary: #111111;
-  --background-secondary-alt: #000000;
+  --background-primary-alt: #1e1e1e;
+  --background-secondary: #1e1e1e;
+  --background-secondary-alt: #1e1e1e;
   --text-normal: #bebebe;
-  --text-accent: #8571D9;
+  --text-accent: #AC99F9;
   --text-sub-accent: #f4569d;
   --text-dim: #45aaff;
   --text-faint: #B05FFF;
@@ -28,7 +26,7 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
   --text-mark: #263d92;
   --pre-code: #252525;
   --interactive-accent: rgba(14, 210, 247, 0.5);
-  --interactive-accent-hover: rgba(14, 210, 247, 0.8);
+  --interactive-accent-hover: #AC99F9;
   --interactive-before: #5e6565;
   --background-modifier-border: #92a1a17a;
   --blockquote-border: #4aa8fb;
@@ -93,18 +91,19 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
 /* For preview mode */
 a.tag[href*='#todo'],
 a.tag[href*='#待完成'] {
-  background-color: #be2e5e;
-  color: #fff;
+  color: #be2e5e;
+    box-shadow: 0px 0px 7.5px #be2e5e;
 }
 /* For Editor Mode */
 .cm-s-obsidian .CodeMirror-line span.cm-tag-todo:not(.cm-formatting-hashtag) {
   color: #ee6a96;
+  
 }
 
-a.tag[href*='#working-draft'],
+a.tag[href*='#wip'],
 a.tag[href*='#进行中'] {
-  background-color: #4d3ca6;
-  color: #fff;
+   color:#FE5000;
+   box-shadow: 0px 0px 7.5px #FE5000;
 }
 
 .cm-s-obsidian .CodeMirror-line span.cm-tag-working-draft:not(.cm-formatting-hashtag) {
@@ -113,8 +112,8 @@ a.tag[href*='#进行中'] {
 
 a.tag[href*='#notes'],
 a.tag[href*='#笔记'] {
-  background-color: #17b978;
-  color: #fff;
+  color:#17b978;
+     box-shadow: 0px 0px 7.5px #17b978;
 }
 
 .cm-s-obsidian .CodeMirror-line span.cm-tag-notes:not(.cm-formatting-hashtag) {
@@ -123,8 +122,9 @@ a.tag[href*='#笔记'] {
 
 a.tag[href*='#knowledge'],
 a.tag[href*='#知识'] {
-  background-color: #005792;
-  color: #fff;
+
+  color:#00BCE3;
+     box-shadow: 0px 0px 7.5px #00BCE3;
 }
 
 .cm-s-obsidian .CodeMirror-line span.cm-tag-knowledge:not(.cm-formatting-hashtag) {
@@ -133,8 +133,9 @@ a.tag[href*='#知识'] {
 
 a.tag[href*='#article'],
 a.tag[href*='#文章'] {
-  background-color: #f95959;
-  color: #fff;
+
+  color: #B77729;
+     box-shadow: 0px 0px 7.5px #B77729;
 }
 
 .cm-s-obsidian .CodeMirror-line span.cm-tag-article:not(.cm-formatting-hashtag) {
@@ -143,8 +144,9 @@ a.tag[href*='#文章'] {
 
 a.tag[href*='#ideas'],
 a.tag[href*='#想法'] {
-  background-color: #ffc93c;
-  color: #000;
+
+  color: #ffc93c;
+     box-shadow: 0px 0px 7.5px #ffc93c;
 }
 
 .cm-s-obsidian .CodeMirror-line span.cm-tag-ideas:not(.cm-formatting-hashtag) {
@@ -164,17 +166,26 @@ body {
 
 .titlebar {
   background-color: var(--background-primary-alt);
+  height: 32px !important;
 }
 
-.titlebar-inner {
-  color: var(--text-faint);
+html, body{
+  padding-top: 16px !important;
 }
+
 .titlebar-button {
   opacity: 1;
+    padding: 5px 20px;
+  
+}
+.titlebar-button:active{
+  background-color: #948CB4!important;
 }
 .titlebar-button:hover {
-  background-color: #2D142D;
-  color: var(--text-muted);
+  background-color: #4A465A;
+}
+.titlebar-button.is-active{
+  background-color: #67627D!important;
 }
 
 .titlebar-text {
@@ -186,12 +197,20 @@ body {
   color: var(--text-accent);
 }
 
+.view-action{
+opacity:.65;
+color: var(--text-faint);
+}
+.view-action:hover{
+opacity:1;
+color: var(--text-accent);
+}
 
 /*---------------------------------------------------
 * Statusbar
 *------------------------------------------------------*/
 
-/*.cm-s-obsidian,
+.cm-s-obsidian,
 .markdown-preview-view {
   //--text-accent: var(--accent-2);
   //color: var(--text-normal);
@@ -199,11 +218,11 @@ body {
 
 .CodeMirror-guttermarker-subtle {
   color: var(--accent-1);
-}*/
+}
 
 .status-bar {
   background-color: var(--background-primary-alt);
-  border-color: #101014;
+   border-color: var(--background-primary-alt);
   color: var(--text-faint);
 }
 
@@ -211,9 +230,7 @@ body {
 /*---------------------------------------------------
 * Side Dock
 *------------------------------------------------------*/
-.nav-folder-collapse-indicator {
-  color: var(--text-accent);
-}
+
 .nav-file.is-active > .nav-file-title,
 .nav-file.is-active > .nav-folder-title,
 .nav-file.is-active > .nav-folder-collapse-indicator,
@@ -221,7 +238,46 @@ body {
 .nav-folder.is-active > .nav-folder-title,
 .nav-folder.is-active > .nav-folder-collapse-indicator {
   color: var(--text-accent);
+  
 }
+
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover {
+  background-color: #000000;
+  
+}
+
+.nav-folder-title {
+  font-weight: 600;
+  opacity:.65;
+  color: #B05FFF;
+}
+.nav-file-title {
+  opacity:.65;
+  color: #B05FFF;
+}
+
+.nav-file-title:hover{
+  opacity:1;
+  color: var(--text-accent);
+  background:var(--background-primary);
+
+}
+
+.nav-folder-title:hover {
+  font-weight: 600;
+  opacity:1;
+  color:  var(--text-accent);
+
+}
+
+.nav-file-title.is-active{
+  opacity:1;
+  color: var(--text-accent);
+  background:var(--background-primary);
+}
+
+
 
 /*---------------------------------------------------
 * Side Dock Icons and Title
@@ -233,6 +289,7 @@ body {
 .workspace-tab-header {
   opacity: 0.5;
   cursor: pointer;
+  
 }
 .side-dock-ribbon-tab:hover,
 .side-dock-ribbon-action:hover,
@@ -254,6 +311,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 
 .nav-folder.mod-root > .nav-file-title,
 .nav-folder.mod-root > .nav-folder-title {
+  opacity:1;
   color: var(--text-accent);
 }
 
@@ -261,6 +319,18 @@ body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
 body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
   color: var(--text-accent);
 }
+.workspace-tab-header{
+border-radius: 0px!important;
+}
+
+.workspace-tab-header.is-active {  
+box-shadow: 0px -1.5px 0px   var(--text-accent);
+  }
+
+.view-header-title, .view-header-icon{
+color:var(--text-faint);
+}
+
 
 /*---------------------------------------------------
 * Side Dock Collapse and Border
@@ -268,11 +338,13 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 
 .workspace-ribbon.is-collapsed {
   background-color: var(--background-primary-alt); //Maybe
+  
 }
 
 .workspace-ribbon.mod-left.is-collapsed,
 .workspace-ribbon.mod-right.is-collapsed {
-  border-color: var(--editor-border-color);
+  border-color: var(--background-primary-alt);
+  
 }
 
 
@@ -280,9 +352,41 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 * Workspace
 *------------------------------------------------------*/
 
-.workspace-leaf.mod-active .view-header-title {
+.workspace-leaf.mod-active .view-header-title, .view-header-icon {
   color: var(--text-accent);
 }
+.workspace-leaf.mod-active .view-header-icon{
+  color: var(--text-accent);
+}
+.workspace-leaf .view-header-icon{
+color: var(--text-faint);
+}
+.workspace-leaf.mod-active{
+  box-shadow: 0px -10px 0px   var(--text-accent);
+}
+
+.workspace-leaf.mod-active .view-header {
+background: var(--background-primary);
+}
+
+.workspace-split.mod-root, .view-header, .view-header-title-container:after, .view-header-title-container:after{
+background: var(--background-primary)!important;
+border-color: var(--background-primary)!important;
+border-bottom: 0px !important;
+border-top: 1px solid  var(--interactive-accent-hover);
+
+}
+
+
+.view-header-title-container:after{
+background: var(--background-primary);
+}
+
+.is-translucent .workspace-leaf-resize-handle:hover{
+background:var(--text-accent) !important;
+  box-shadow: 0 0 0.4em var(--text-accent);
+}
+
 
 .pane-list-item:hover .pane-list-item-ending-flair {
   background-color: var(--background-secondary);
@@ -310,6 +414,8 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 /* optionally header hashes */ span.cm-formatting-header {
   display: inline !important;
 }
+
+
 
 /*---------------------------------------------------
 * CheckBox
@@ -359,15 +465,19 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
   box-shadow: 0 0 0.5em var(--accent-2);
 }
 
-/*
+
 /* rule line when there are checkboxes*/
 ul .task-list-item ul::before {
   left: 0.15em !important;
-}*/
+}
+
+
 
 /*---------------------------------------------------
 * Bullet list
 *------------------------------------------------------*/
+
+
 ul {
   list-style: none;
 }
@@ -503,6 +613,32 @@ ul ul ul ol > li:not(.task-list-item)::before {
 .cm-s-obsidian span.cm-formatting-list {
   font-weight: bold;
 }
+
+/***************************************/
+/*    at a rule line before ul list     */
+/***************************************/
+
+ul ul { position: relative; }
+ul ul::before {
+  content:'';
+  border-left: 1px solid var(--border-color);
+  position: absolute;
+}
+ul ul::before { left: -1em; top: 0; bottom: 0; }
+
+/* rule line when there are checkboxes*/
+ul .task-list-item ul::before {left: 0.15em !important}
+
+ no good idea yet
+.cm-hmd-list-indent .cm-tab, ul ul { position: relative; }
+.cm-hmd-list-indent .cm-tab::before, ul ul::before {
+  content:'';
+  border-left: 1px solid var(--border-color);
+  position: absolute;
+}
+.cm-hmd-list-indent .cm-tab::before { left: 0.5em; top: -5px; bottom: -4px; }
+ul ul::before { left: -1em; top: 0; bottom: 0; }
+
 
 /*---------------------------------------------------
 * Headings
@@ -671,6 +807,8 @@ h6 {
   background-color: var(--background-primary);
 }
 
+
+
 /*---------------------------------------------------
 * Bold and Italic Styling
 *------------------------------------------------------*/
@@ -741,6 +879,7 @@ em {
   background-repeat: repeat-x;
   background-size: 5px 5px;
   text-decoration: none;
+  
 }
 
 .cm-s-obsidian span.cm-link {
@@ -890,14 +1029,15 @@ a.tag {
 a.tag {
   background: #100e18;
   color: #7a7a8c;
-  color: var(--text-accent);
+  color: #8C92AC;
   white-space: nowrap;
-  border: 2px solid #28242f;
+  border: 2px solid;
   border-radius: 2rem;
+  box-shadow: 0px 0px 7.5px #8C92AC;
   padding: 0.05rem 0.5rem;
   font-family: var(--tag-font-family);
   font-size: 0.8rem;
-  background: linear-gradient(to bottom, rgba(25, 22, 33) 0%, rgba(25, 22, 33) 100%);
+  background:#000000;
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 0 0;
@@ -906,10 +1046,11 @@ a.tag {
 }
 
 a.tag:hover {
-  color: var(--text-normal) !important;
-  border-color: var(--accent-5);
+  color: var(--text-accent) !important;
+  border-color: var(--text-accent);
   opacity: 1;
   background-size: 4px 50px;
+    box-shadow: 0px 0px 10px var(--text-accent);
 }
 
 /*---------------------------------------------------
@@ -941,7 +1082,7 @@ a.tag:hover {
 }
 .markdown-preview-view code,
 .markdown-preview-view pre {
- background-color: #282828 !important;
+ background-color: #282828;
   color: rgba(14, 210, 247, 0.9);
 
 }
@@ -1026,15 +1167,39 @@ pre[class$='terminal']:before {
 pre[class$='rman']:before {
   content: 'rman';
 }
-pre[class$='C']:before {
+pre[class$='c']:before {
   content: 'C';
 }
-pre[class$='C++']:before {
+pre[class$='c++']:before {
   content: 'C++';
 }
 
-pre[class$='Java']:before {
+pre[class$='java']:before {
   content: 'Java';
+}
+
+pre[class$='note-purple-bg']:before,
+pre[class$='note-purple']:before, 
+pre[class$='note-gray-bg']:before, 
+pre[class$='note-gray']:before, 
+pre[class$='note-brown-bg']:before, 
+pre[class$='note-brown']:before, 
+pre[class$='note-orange-bg']:before, 
+pre[class$='note-orange']:before, 
+pre[class$='note-yellow-bg']:before, 
+pre[class$='note-yellow']:before, 
+pre[class$='note-green-bg']:before, 
+pre[class$='note-green']:before, 
+pre[class$='note-blue-bg']:before, 
+pre[class$='note-blue']:before, 
+pre[class$='note-pink-bg']:before, 
+pre[class$='note-pink']:before, 
+pre[class$='note-white-bg']:before, 
+pre[class$='note-white']:before, 
+pre[class$='note-red-bg']:before, 
+pre[class$='note-red']:before 
+{
+  content: 'note';
 }
 
 /*---------------------------------------------------
@@ -1108,9 +1273,6 @@ blockquote {
     inset 0 0 0.75em var(--accent-2);
 }
 
-.markdown-preview-view hr {
-}
-
 /*---------------------------------------------------
 * Front=Meta Style
 *------------------------------------------------------*
@@ -1138,7 +1300,7 @@ blockquote {
   border-radius: 0.3rem;
 
  // color: rgba(14, 210, 247, 0.9) !important;
-  background-color: #282828 !important;
+ //  background-color: #282828 !important;
 }
 
 .theme-dark :not(pre) > code[class*='language-'],
@@ -1671,6 +1833,7 @@ mark.violet{ --text-highlight-rgb: var(--fluro-violet-rgb); }
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   text-shadow: 0 0 0.75em var(--background-primary-alt);
+  
 }
 
 .cm-s-obsidian span.cm-highlight {
@@ -1679,6 +1842,7 @@ mark.violet{ --text-highlight-rgb: var(--fluro-violet-rgb); }
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   text-shadow: 0 0 0.75em var(--background-primary-alt);
+  
 }
 
 .cm-s-obsidian span.cm-formatting-highlight{
@@ -1693,6 +1857,7 @@ mark.violet{ --text-highlight-rgb: var(--fluro-violet-rgb); }
     rgba(var(--text-highlight-rgb), 0.4) 1.6em);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+  
 }
 .cm-s-obsidian .cm-highlight+span.cm-formatting-highlight {
   margin: 0 -0.4em 0 0;
@@ -1706,4 +1871,210 @@ mark.violet{ --text-highlight-rgb: var(--fluro-violet-rgb); }
     transparent 100%);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+  
 }
+
+/* Dark theme */
+.theme-dark {
+  --text-gray: rgba(255, 255, 255, 0.6);
+  --text-brown: rgb(147, 114, 100);
+  --text-orange: rgb(255, 163, 68);
+  --text-yellow: rgb(255, 220, 73);
+  --text-green: rgb(77, 171, 154);
+  --text-blue: rgb(82, 156, 202);
+  --text-purple: rgb(154, 109, 215);
+  --text-pink: rgb(226, 85, 161);
+  --text-red: rgb(255, 115, 105);
+  --text-white: #FFFFFF;
+
+  --background-gray: rgb(69, 75, 78);
+  --background-brown: rgb(67, 64, 64);
+  --background-orange: rgb(89, 74, 58);
+  --background-yellow: rgb(89, 86, 59);
+  --background-green: rgb(53, 76, 75);
+  --background-blue: rgb(54, 73, 84);
+  --background-purple: rgb(68, 63, 87);
+  --background-pink: rgb(83, 59, 76);
+  --background-red: rgb(89, 65, 65);
+    --background-white: #FFFFFF;
+}
+
+/* 6. Notion Colour Blocks */
+/* Original idea from: https://gist.github.com/mklepaczewski/54e451f09994b9d450de81c8baaf8aa4 */
+/* but also with simpler classes so you can use `<span class='colour'>` as well */
+
+.app-container .markdown-preview-view pre[class*="language-note-"] {
+  padding: 3px 2px;
+  border-radius: 0;
+}
+
+.app-container .markdown-preview-view pre[class*="language-note-"] code[class*="language-note-"] {
+  color: var(--text-normal);
+  white-space: pre-wrap;
+  font-family: var(--default-font);
+  font-size: 1rem;
+  padding: 0;
+}
+
+.app-container .markdown-preview-view pre.language-note-notice,
+.app-container .markdown-preview-view pre.language-note-gray-background,
+.app-container .markdown-preview-view pre.language-note-gray-bg,
+.gray-background,
+.gray-bg {
+  background-color: var(--background-gray)!important;
+}
+
+.app-container .markdown-preview-view pre.language-note-brown-background,
+.app-container .markdown-preview-view pre.language-note-brown-bg,
+.brown-background,
+.brown-bg {
+  background-color: var(--background-brown)!important;
+}
+
+.app-container .markdown-preview-view pre.language-note-orange-background,
+.app-container .markdown-preview-view pre.language-note-orange-bg,
+.orange-background,
+.orange-bg {
+  background-color: var(--background-orange)!important;
+}
+
+.app-container .markdown-preview-view pre.language-note-warn,
+.app-container .markdown-preview-view pre.language-note-yellow-background,
+.app-container .markdown-preview-view pre.language-note-yellow-bg,
+.yellow-background,
+.yellow-bg {
+  background-color: var(--background-yellow)!important;
+}
+
+.app-container .markdown-preview-view pre.language-note-success,
+.app-container .markdown-preview-view pre.language-note-green-background,
+.app-container .markdown-preview-view pre.language-note-green-bg,
+.green-background,
+.green-bg {
+  background-color: var(--background-green);
+}
+
+.app-container .markdown-preview-view pre.language-note-info,
+.app-container .markdown-preview-view pre.language-note-blue-background,
+.app-container .markdown-preview-view pre.language-note-blue-bg,
+.blue-background,.blue-bg {
+  background-color: var(--background-blue)!important;
+}
+
+.app-container .markdown-preview-view pre.language-note-purple-background,
+.app-container .markdown-preview-view pre.language-note-purple-bg,
+.purple-background,
+.purple-bg {
+  background-color: var(--background-purple)!important;
+}
+
+.app-container .markdown-preview-view pre.language-note-pink-background,
+.app-container .markdown-preview-view pre.language-note-pink-bg,
+.pink-background,
+.pink-bg {
+  background-color: var(--background-pink)!important;
+}
+.app-container .markdown-preview-view pre.language-note-white-background,
+.app-container .markdown-preview-view pre.language-note-white-bg,
+.white-background,
+.white-bg {
+  background-color: var(--background-white)!important;
+}
+
+
+.app-container .markdown-preview-view pre.language-note-danger,
+.app-container .markdown-preview-view pre.language-note-red-background,
+.app-container .markdown-preview-view pre.language-note-red-bg,
+.red-background,
+.red-bg {
+  background-color: var(--background-red)!important;
+}
+
+.app-container .markdown-preview-view pre.language-note-gray,
+.app-container .markdown-preview-view pre.language-note-white,
+.app-container .markdown-preview-view pre.language-note-brown,
+.app-container .markdown-preview-view pre.language-note-orange,
+.app-container .markdown-preview-view pre.language-note-yellow,
+.app-container .markdown-preview-view pre.language-note-green,
+.app-container .markdown-preview-view pre.language-note-blue,
+.app-container .markdown-preview-view pre.language-note-purple,
+.app-container .markdown-preview-view pre.language-note-pink,
+.app-container .markdown-preview-view pre.language-note-red {
+  background-color: transparent;
+}
+
+.app-container .markdown-preview-view pre.language-note-gray code.language-note-gray,
+.gray {
+  color: var(--text-gray);
+}
+
+.app-container .markdown-preview-view pre.language-note-brown code.language-note-brown,
+.brown {
+  color: var(--text-brown);
+}
+
+.app-container .markdown-preview-view pre.language-note-orange code.language-note-orange,
+.orange {
+  color: var(--text-orange);
+}
+
+.app-container .markdown-preview-view pre.language-note-yellow code.language-note-yellow,
+.yellow {
+  color: var(--text-yellow)
+}
+
+.app-container .markdown-preview-view pre.language-note-green code.language-note-green,
+.green {
+  color: var(--text-green);
+}
+
+.app-container .markdown-preview-view pre.language-note-blue code.language-note-blue,
+.blue {
+  color: var(--text-blue);
+}
+
+.app-container .markdown-preview-view pre.language-note-purple code.language-note-purple,
+.purple {
+  color: var(--text-purple);
+}
+
+.app-container .markdown-preview-view pre.language-note-pink code.language-note-pink,
+.pink {
+  color: var(--text-pink);
+}
+
+.app-container .markdown-preview-view pre.language-note-red code.language-note-red,
+.red {
+  color: var(--text-red);
+}
+.app-container .markdown-preview-view pre.language-note-white code.language-note-white,
+.red {
+  color: var(--text-white);
+}
+
+
+/*---------------------------------------------------
+* Scrollbar
+*------------------------------------------------------*/
+
+::-webkit-scrollbar{
+background:transparent!important;
+   border-radius: 0px!important;
+}
+::-webkit-scrollbar-thumb {
+background:#444444!important;
+     border-radius: 0px!important;
+
+}
+::-webkit-scrollbar-thumb:hover{
+   background:#565656!important;
+}
+
+::-webkit-scrollbar-thumb:active{
+background:#626A78!important;}
+
+
+
+
+
+
