@@ -5,24 +5,24 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
 (With some color modifications). All Credits go to them
 */
 .theme-light {
- --background-primary: #ffffff;
+  --background-primary: #ffffff;
   --background-primary-alt: #E5E5E5;
   --background-secondary: #E5E5E5;
   --background-secondary-alt: #E5E5E5;
   --text-normal: #1e1e1e;
   --text-accent: #41317F;
-    --text-sub-accent: #f4569d;
-  --text-dim: #45aaff;
+  --text-sub-accent: #f4569d;
+  //--text-dim: #45aaff;
   --text-faint: #B05FFF;
   --text-title-h1: var(--text-accent);
-  --text-title-h2: #cbdbe5;
-  --text-title-h3: #cbdbe5;
-  --text-title-h4: #cbdbe5;
-  --text-title-h5: #cbdbe5;
-  --text-link: #b4b4b4;
+  --text-title-h2: #656D72;
+  --text-title-h3: #656D72;
+  --text-title-h4: #656D72;
+  --text-title-h5: #656D72;
+ // --text-link: #b4b4b4;
   --text-a: #6bcafb;
-  --text-a-hover: #6bcafb;
-  --text-mark: #263d92;
+ // --text-a-hover: #6bcafb;
+  // --text-mark: #263d92;
   --pre-code: #252525;
   --interactive-accent: rgba(14, 210, 247, 0.5);
   --interactive-accent-hover: #AC99F9;
@@ -36,7 +36,6 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
   --bg-sub-accent-55: rgba(244, 86, 157, 0.55);
   --bg-accent-55: rgba(14, 210, 247, 0.55);
   --text-highlight-bg: rgba(244, 86, 157, 0.25);
-  --background-modifier-border: rgba(14, 210, 247, 0.05);
   --test-color: rgb(122, 162, 247);
   --editor-border-color: #101014;
   
@@ -57,11 +56,41 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
     
   --interactive-hover: var(--accent-2-muted);
   --interactive-accent: var(--accent-2);
-  --interactive-accent-hover: var(--accent-2-muted);
-
+ 
   --background-accent: #000;
-  --background-modifier-border: var(--accent-2);
   --text-highlight-bg: #ffd319;
+  
+    --text-gray: rgba(255, 255, 255, 0.6);
+  --text-brown: rgb(147, 114, 100);
+  --text-orange: rgb(255, 163, 68);
+  --text-yellow: rgb(255, 220, 73);
+  --text-green: rgb(77, 171, 154);
+  --text-blue: rgb(82, 156, 202);
+  --text-purple: #6B2B86;
+  --text-pink: #C37785;
+  --text-red: #990000;
+  --text-white: #FFFFFF;
+
+  --background-gray: #D8D8D8;
+  --background-brown: #C6B7B7;
+  --background-orange: #F2C97F;
+  --background-yellow: #FFFFB2;
+  --background-green: #6FB76F;
+  --background-blue: #C1C1FF;
+  --background-purple: #CC99CC;
+  --background-pink: #FFD9DF;
+  --background-red:  #FF9A9A;
+  --background-white: #E5E5E5;
+
+  --code-color: #A9A9A9;
+  --scroll-color: #D9D9D9;
+  --scroll-hover: #B4B4B4;
+  --scroll-active: #A0A5AE;
+  
+  --titlebar-hover:#CBC7DB;
+   --titlebar-active:#A9A3C3;
+   
+   --font-color-fix:#000000;
 
 }
 
@@ -73,7 +102,7 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
   --text-normal: #bebebe;
   --text-accent: #AC99F9;
   --text-sub-accent: #f4569d;
-  --text-dim: #45aaff;
+  //--text-dim: #45aaff;
   --text-faint: #B05FFF;
 
   --text-title-h1: var(--text-accent);
@@ -81,9 +110,9 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
   --text-title-h3: #cbdbe5;
   --text-title-h4: #cbdbe5;
   --text-title-h5: #cbdbe5;
-  --text-link: #b4b4b4;
+//  --text-link: #b4b4b4;
   --text-a: #6bcafb;
-  --text-a-hover: #6bcafb;
+ // --text-a-hover: #6bcafb;
   --text-mark: #263d92;
   --pre-code: #252525;
   --interactive-accent: rgba(14, 210, 247, 0.5);
@@ -98,9 +127,9 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
   --bg-sub-accent-55: rgba(244, 86, 157, 0.55);
   --bg-accent-55: rgba(14, 210, 247, 0.55);
   --text-highlight-bg: rgba(244, 86, 157, 0.25);
-  --background-modifier-border: rgba(14, 210, 247, 0.05);
   --test-color: rgb(122, 162, 247);
   --editor-border-color: #101014;
+  --code-color: #282828;
   
   --accent-1: #FF00FF;
   --accent-2: #5943BF;
@@ -122,8 +151,40 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
   --interactive-accent-hover: var(--accent-2-muted);
 
   --background-accent: #000;
-  --background-modifier-border: var(--accent-2);
   --text-highlight-bg: #ffd319;
+  
+  
+    --text-gray: rgba(255, 255, 255, 0.6);
+  --text-brown: rgb(147, 114, 100);
+  --text-orange: rgb(255, 163, 68);
+  --text-yellow: rgb(255, 220, 73);
+  --text-green: rgb(77, 171, 154);
+  --text-blue: rgb(82, 156, 202);
+  --text-purple: #6B2B86;
+  --text-pink: #C37785;
+  --text-red: #6B0000;
+  --text-white: #FFFFFF;
+
+  --background-gray: rgb(69, 75, 78);
+  --background-brown: #542727;
+  --background-orange: #A06700;
+  --background-yellow: #5B5B00;
+  --background-green: rgb(53, 76, 75);
+  --background-blue: #0000A3;
+  --background-purple: #6B2B86;
+  --background-pink: #C37785;
+  --background-red: #6B0000;
+    --background-white: #FFFFFF;
+    
+  --scroll-color: #444444;
+  --scroll-hover: #565656;
+  --scroll-active: #626A78;
+
+--titlebar-hover:#4A465A;
+--titlebar-active:#948CB4;
+
+--font-color-fix:#ffffff;
+
 }
 
 :root {
@@ -217,7 +278,105 @@ a.tag[href*='#想法'] {
 /*=======================
 * General UI
 *==========================*/
+/*---------------------------------------------------
+* Modal
+*------------------------------------------------------*/
 
+.modal-close-button{
+  //  padding: 5px !important;
+    padding: 5px 20px;
+    font-size: 1.5em;
+    color:var(--font-color-fix)!important;
+    opacity: 0.5;
+right: 0;
+top: 0;
+}
+.modal-close-button:hover{
+  background-color: var(--titlebar-hover)!important;
+}
+
+.modal-close-button:active{
+  background-color: var(--titlebar-active)!important;
+}
+
+.modal{
+border: none;
+ border-radius: 0px!important;
+}
+
+.vertical-tab-nav-item.is-active{
+  opacity:1;
+  color: var(--text-accent);
+  background:var(--background-primary);
+  box-shadow: 0px -1.75px 0px   var(--text-accent);
+border-left-color: transparent;
+   z-index: 1;
+}
+.vertical-tab-nav-item:hover{
+  opacity:1;
+  color: var(--text-accent);
+  background:var(--background-primary);
+}
+.checkbox-container:after{
+      border-radius: 0px !important;
+}
+.checkbox-container{
+background-color: #7d0624;
+      border-radius: 0px !important;
+}
+
+.checkbox-container:hover{
+background-color: #AC99F9;
+}
+.modal.mod-settings button:not(.mod-cta):hover, .modal button:not(.mod-cta):not(.mod-warning):hover{
+background-color: #AC99F9;
+}
+.modal.mod-settings button:not(.mod-cta), .modal button:not(.mod-cta):not(.mod-warning){
+background-color: #5943BF;
+color: var(--background-primary);
+}
+.setting-editor-extra-setting-button, {
+   color: #B05FFF;
+}
+
+.setting-editor-extra-setting-button:hover{
+  color: var(--text-accent);
+}
+.vertical-tab-nav-item{
+  opacity:.65;
+   color: #B05FFF;
+
+}
+.vertical-tab-header-group-title,.setting-item-name{
+  color: var(--text-accent);
+}
+.setting-item-description{
+opacity:0.8;
+   color: #B05FFF;
+}
+.dropdown{
+    border: 1px solid var(--background-primary);
+    color: #B05FFF;
+   border-radius: 0px!important;
+}
+
+.dropdown:hover{
+    border: 1px solid  var(--text-accent);
+  color: var(--text-accent);
+  background: transparency!important;
+}
+
+button{
+   border-radius: 0px!important;
+   color:#fffff!important; 
+   
+}
+input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number']{
+   border-radius: 0px!important;
+}
+.modal.mod-settings .vertical-tab-content-container {
+    padding: 70px 0px 0px 0;
+}
 /*---------------------------------------------------
 * Title Bar
 *------------------------------------------------------*/
@@ -237,16 +396,16 @@ html, body{
 .titlebar-button {
   opacity: 1;
     padding: 5px 20px;
+  }
   
+.titlebar-inner{
+color:inherit;
+} 
+.titlebar-button:hover {
+  background-color: var(--titlebar-hover)!important;
 }
 .titlebar-button:active{
-  background-color: #948CB4!important;
-}
-.titlebar-button:hover {
-  background-color: #4A465A;
-}
-.titlebar-button.is-active{
-  background-color: #67627D!important;
+  background-color: var(--titlebar-active)!important;
 }
 
 .titlebar-text {
@@ -266,6 +425,35 @@ color: var(--text-faint);
 opacity:1;
 color: var(--text-accent);
 
+}
+
+
+/*---------------------------------------------------
+* Prompt
+*------------------------------------------------------*/
+
+.suggestion-item.is-selected{
+  opacity:1;
+  color: var(--text-accent);
+  background:var(--background-primary);
+}
+
+.suggestion-item{
+  opacity:.65;
+  color: #B05FFF;
+}
+
+.prompt{
+   border-radius: 0px!important;
+   background:var(--background-primary-alt)
+}
+
+
+/*---------------------------------------------------
+* Graph
+*------------------------------------------------------*/
+.graph-controls{
+   border-radius: 0px!important;
 }
 
 /*---------------------------------------------------
@@ -297,16 +485,16 @@ background:transparent!important;
    border-radius: 0px!important;
 }
 ::-webkit-scrollbar-thumb {
-background:#444444!important;
+background:var(--scroll-color)!important;
      border-radius: 0px!important;
 
 }
 ::-webkit-scrollbar-thumb:hover{
-   background:#565656!important;
+   background:var(--scroll-hover)!important;
 }
 
 ::-webkit-scrollbar-thumb:active{
-background:#626A78!important;}
+background:var(--scroll-active)!important;}
 
 /*---------------------------------------------------
 * Side Dock
@@ -342,6 +530,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   opacity:1;
   color: var(--text-accent);
   background:var(--background-primary);
+     border-radius: 0px!important;
 
 }
 
@@ -350,17 +539,20 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   opacity:1;
   color:  var(--text-accent);
   
-
 }
 
 .nav-file-title.is-active{
   opacity:1;
   color: var(--text-accent);
   background:var(--background-primary);
-  box-shadow: 0px -.75px 0px   var(--text-accent);
+  box-shadow: 0px -1.75px 0px   var(--text-accent);
        border-radius: 0px!important;
 }
-
+.notice{
+   border-radius: 0px!important;
+     background:var(--background-primary-alt);
+     color:var(--font-color-fix);
+}
 /*---------------------------------------------------
 * Side Dock Icons and Title
 *------------------------------------------------------*/
@@ -429,7 +621,22 @@ color:var(--text-faint);
      border-radius: 0px!important;
     box-shadow: 0px -1.5px 0px   var(--text-accent);
 }
-
+.tree-item-self.is-clickable, .collapse-icon{
+color:#B05FFF;
+  opacity:.65;
+}
+.tree-item-self.is-clickable:hover,.tree-item-self .collapse-icon:hover{
+  opacity:1;
+    background: var(--background-primary);
+         border-radius: 0px!important;
+           color: var(--text-accent)!important;
+}
+.nav-action-button.is-active{
+ border-radius: 0px!important;
+     background: var(--background-primary);
+         box-shadow: 0px -1.5px 0px   var(--text-accent);
+         color: var(--text-accent)!important;
+}
 /*---------------------------------------------------
 * Side Dock Collapse and Border
 *------------------------------------------------------*/
@@ -522,7 +729,7 @@ background:var(--text-accent) !important;
 }*/
 
 /*.contains-task-list .task-list-item ul.contains-task-list::before {
-  left: -46px !important;
+  left: -46px !important;	
   border-width: 2px;
 }*/
 
@@ -755,7 +962,7 @@ pre.HyperMD-header.HyperMD-header-6 {
   border-bottom: 2px solid;
   border-width: 1px;
   border-image-slice: 1;
- border-image-source: linear-gradient(to right, var(--text-sub-accent),#000000);
+ border-image-source: linear-gradient(to right, var(--text-sub-accent),var(--background-primary));
 }
 
 .markdown-preview-section h1,
@@ -773,7 +980,7 @@ pre.HyperMD-header.HyperMD-header-6 {
 .markdown-preview-section h3,
 .cm-header-3 {
   font-size: 22px;
-  color: var(--text-title-h2);
+  color: var(--text-title-h3);
 }
 
 .markdown-preview-section h4,
@@ -811,7 +1018,8 @@ pre.HyperMD-header.HyperMD-header-6 {
   border-bottom: 2px solid;
   border-width: 35%;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, var(--text-sub-accent),#000000);
+border-image-source: linear-gradient(to right, var(--text-sub-accent),var(--background-primary));
+
 }
 
 .view-header-icon {
@@ -1156,9 +1364,12 @@ a.tag:hover {
 }
 
 .cm-s-obsidian span.cm-inline-code {
-  color: rgba(14, 210, 247, 0.9) !important;
-   background-color: #232323 !important;
-   
+  color: #378190 !important;
+ //  background-color: #232323 !important;
+}
+
+.markdown-preview-view p code {
+  color:#378190 !important;
 }
 
 /*---------------------------------------------------
@@ -1172,23 +1383,17 @@ a.tag:hover {
 
 .cm-s-obsidian div.HyperMD-codeblock-bg {
        border-radius: 0px!important;
- background-color: #282828 !important;
+ //background-color: #282828 !important;
 }
 .markdown-preview-view code,
 .markdown-preview-view pre {
- background-color: #282828;
-  color: rgba(14, 210, 247, 0.9);
-       border-radius: 0px!important;
-
-}
-.markdown-preview-view p code {
- background-color: #282828 !important;
-  color: rgba(14, 210, 247, 0.9) !important;
-
+   color: rgba(14, 210, 247, 0.9);
+  border-radius: 0px!important;
 }
 
 pre {
   position: relative;
+    
 }
  
   pre[class*='language-']:before {
@@ -1204,7 +1409,7 @@ pre {
   color: var(--text-accent) !important;
   content: '';
   text-transform: uppercase;
-  background: rgba(16, 14, 23, 0.86);
+  background: var(--background-primary-alt);
   padding: 0.1em 0.8em;
   z-index: 10;
 }
@@ -1308,10 +1513,21 @@ blockquote {
 
 /* blockquote style overwrite */
 
+.markdown-preview-view blockquote p:first-of-type::before {
+  content: '❝';
+  font-size: 55px;
+  color: var(--text-accent);
+  position: absolute;
+  top: 0.1rem;
+  left: -2.5rem;
+opacity:.5px;
+
+}
+
 .markdown-preview-view blockquote {
   position: relative;
   padding: 1rem 2rem 1rem 3rem;
-  color: #bdbdbd;
+  color: #ffffff;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   margin-bottom: 2em;
@@ -1320,8 +1536,9 @@ blockquote {
   border-top: transparent;
   border-bottom: transparent;
   border-right: transparent;
-  background: linear-gradient(135deg, rgba(32, 28, 41, 0.45), #100e17);
+  background: linear-gradient(125deg, rgba(14, 210, 247, 0.5), #20517A);
   border-radius: 0px!important;
+  
 }
 
 .markdown-preview-view blockquote::before {
@@ -1331,7 +1548,7 @@ blockquote {
   left: 0px;
   height: 2px;
   width: 60%;
-  background: linear-gradient(90deg, rgba(13, 185, 215, 0.5),#201A2F );
+  background: linear-gradient(90deg, rgba(13, 185, 215, 0.5),transparent );
 }
 
 .markdown-preview-view blockquote::after {
@@ -1341,22 +1558,11 @@ blockquote {
   left: 0px;
   height: 2px;
   width: 60%;
-  background: linear-gradient(90deg, rgba(13, 185, 215, 0.5), #201A2F);
+  background: linear-gradient(90deg, rgba(13, 185, 215, 0.5), transparent);
 }
 
 .markdown-preview-view blockquote p {
   position: relative;
-}
-
-.markdown-preview-view blockquote p:first-of-type::before {
-  content: '!!!';
-  font-style: italic;
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--text-accent);
-  position: absolute;
-  top: 0.1rem;
-  left: -1.8rem;
 }
 
 /* 3.5. blockquotes, embeds, tables */
@@ -1970,31 +2176,6 @@ mark.violet{ --text-highlight-rgb: var(--fluro-violet-rgb); }
   
 }
 
-/* Dark theme */
-.theme-dark {
-  --text-gray: rgba(255, 255, 255, 0.6);
-  --text-brown: rgb(147, 114, 100);
-  --text-orange: rgb(255, 163, 68);
-  --text-yellow: rgb(255, 220, 73);
-  --text-green: rgb(77, 171, 154);
-  --text-blue: rgb(82, 156, 202);
-  --text-purple: rgb(154, 109, 215);
-  --text-pink: rgb(226, 85, 161);
-  --text-red: rgb(255, 115, 105);
-  --text-white: #FFFFFF;
-
-  --background-gray: rgb(69, 75, 78);
-  --background-brown: rgb(67, 64, 64);
-  --background-orange: rgb(89, 74, 58);
-  --background-yellow: rgb(89, 86, 59);
-  --background-green: rgb(53, 76, 75);
-  --background-blue: rgb(54, 73, 84);
-  --background-purple: rgb(68, 63, 87);
-  --background-pink: rgb(83, 59, 76);
-  --background-red: rgb(89, 65, 65);
-    --background-white: #FFFFFF;
-}
-
 /* 6. Notion Colour Blocks */
 /* Original idea from: https://gist.github.com/mklepaczewski/54e451f09994b9d450de81c8baaf8aa4 */
 /* but also with simpler classes so you can use `<span class='colour'>` as well */
@@ -2047,7 +2228,7 @@ mark.violet{ --text-highlight-rgb: var(--fluro-violet-rgb); }
 .app-container .markdown-preview-view pre.language-note-green-bg,
 .green-background,
 .green-bg {
-  background-color: var(--background-green);
+  background-color: var(--background-green)!important;
 }
 
 .app-container .markdown-preview-view pre.language-note-info,
@@ -2147,4 +2328,9 @@ mark.violet{ --text-highlight-rgb: var(--fluro-violet-rgb); }
 .red {
   color: var(--text-white);
 }
+
+
+
+
+
 
