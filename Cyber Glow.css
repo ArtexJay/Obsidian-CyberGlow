@@ -1,44 +1,36 @@
-/* Cyber Glow for Obsidian - v3.2 - a Mix by TheOppaianEmperor
-/* Please leave credits if you modify for your own theme */
-/*
-This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Neon Theme
-(With some color modifications). All Credits go to them
-*/
+/* Cyber Glow for Obsidian - v4.8 by TheOppaianEmperor
+/* Please leave credits if you modify*/
+
 .theme-light {
   --background-primary: #ffffff;
   --background-primary-alt: #E5E5E5;
   --background-secondary: #E5E5E5;
   --background-secondary-alt: #E5E5E5;
+  
   --text-normal: #1e1e1e;
   --text-accent: #41317F;
   --text-sub-accent: #f4569d;
-  //--text-dim: #45aaff;
   --text-faint: #B05FFF;
+  --font-color-fix:#000000;
+      --popover-color:#9993B1;
+--inline-code-color:#378190;
+
   --text-title-h1: var(--text-accent);
   --text-title-h2: #656D72;
   --text-title-h3: #656D72;
   --text-title-h4: #656D72;
   --text-title-h5: #656D72;
- // --text-link: #b4b4b4;
-  --text-a: #6bcafb;
- // --text-a-hover: #6bcafb;
-  // --text-mark: #263d92;
-  --pre-code: #252525;
+  
   --interactive-accent: rgba(14, 210, 247, 0.5);
   --interactive-accent-hover: #AC99F9;
   --interactive-before: #5e6565;
+  
   --background-modifier-border: #92a1a17a;
-  --blockquote-border: #4aa8fb;
-  --tag-background: #a7b0b3;
-  --interactive-accent-rgb: #3dd7fb;
   --font-family-editor: 'Rubik';
   --font-family-preview: 'Rubik';
   --bg-sub-accent-55: rgba(244, 86, 157, 0.55);
   --bg-accent-55: rgba(14, 210, 247, 0.55);
-  --text-highlight-bg: rgba(244, 86, 157, 0.25);
-  --test-color: rgb(122, 162, 247);
-  --editor-border-color: #101014;
-  
+  --bg-color:#5943BF;
   --accent-1: #FF00FF;
   --accent-2: #5943BF;
   --accent-3: #00FF00;
@@ -56,11 +48,8 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
     
   --interactive-hover: var(--accent-2-muted);
   --interactive-accent: var(--accent-2);
- 
-  --background-accent: #000;
-  --text-highlight-bg: #ffd319;
   
-    --text-gray: rgba(255, 255, 255, 0.6);
+  --text-gray: rgba(255, 255, 255, 0.6);
   --text-brown: rgb(147, 114, 100);
   --text-orange: rgb(255, 163, 68);
   --text-yellow: rgb(255, 220, 73);
@@ -90,7 +79,6 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
   --titlebar-hover:#CBC7DB;
    --titlebar-active:#A9A3C3;
    
-   --font-color-fix:#000000;
 
 }
 
@@ -99,38 +87,33 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
   --background-primary-alt: #1e1e1e;
   --background-secondary: #1e1e1e;
   --background-secondary-alt: #1e1e1e;
+  
+  --font-color-fix:#ffffff;
   --text-normal: #bebebe;
   --text-accent: #AC99F9;
   --text-sub-accent: #f4569d;
-  //--text-dim: #45aaff;
   --text-faint: #B05FFF;
+
+  --inline-code-color:rgb(14 210 247);
 
   --text-title-h1: var(--text-accent);
   --text-title-h2: #cbdbe5;
   --text-title-h3: #cbdbe5;
   --text-title-h4: #cbdbe5;
   --text-title-h5: #cbdbe5;
-//  --text-link: #b4b4b4;
-  --text-a: #6bcafb;
- // --text-a-hover: #6bcafb;
-  --text-mark: #263d92;
-  --pre-code: #252525;
+    --bg-color:#5943BF;
   --interactive-accent: rgba(14, 210, 247, 0.5);
   --interactive-accent-hover: #AC99F9;
   --interactive-before: #5e6565;
+  
   --background-modifier-border: #92a1a17a;
-  --blockquote-border: #4aa8fb;
-  --tag-background: #a7b0b3;
-  --interactive-accent-rgb: #3dd7fb;
   --font-family-editor: 'Rubik';
   --font-family-preview: 'Rubik';
   --bg-sub-accent-55: rgba(244, 86, 157, 0.55);
   --bg-accent-55: rgba(14, 210, 247, 0.55);
-  --text-highlight-bg: rgba(244, 86, 157, 0.25);
-  --test-color: rgb(122, 162, 247);
-  --editor-border-color: #101014;
-  --code-color: #282828;
   
+  --code-color: #282828;
+    --popover-color:#564C7D;
   --accent-1: #FF00FF;
   --accent-2: #5943BF;
   --accent-3: #00FF00;
@@ -148,13 +131,9 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
     
   --interactive-hover: var(--accent-2-muted);
   --interactive-accent: var(--accent-2);
-  --interactive-accent-hover: var(--accent-2-muted);
 
-  --background-accent: #000;
-  --text-highlight-bg: #ffd319;
   
-  
-    --text-gray: rgba(255, 255, 255, 0.6);
+  --text-gray: rgba(255, 255, 255, 0.6);
   --text-brown: rgb(147, 114, 100);
   --text-orange: rgb(255, 163, 68);
   --text-yellow: rgb(255, 220, 73);
@@ -174,16 +153,14 @@ This Theme is a Mix of TriDiamond's Obsidianite v1.13 theme and Deathau's 80s Ne
   --background-purple: #6B2B86;
   --background-pink: #C37785;
   --background-red: #6B0000;
-    --background-white: #FFFFFF;
+  --background-white: #FFFFFF;
     
   --scroll-color: #444444;
   --scroll-hover: #565656;
   --scroll-active: #626A78;
 
---titlebar-hover:#4A465A;
---titlebar-active:#948CB4;
-
---font-color-fix:#ffffff;
+  --titlebar-hover:#4A465A;
+  --titlebar-active:#948CB4;
 
 }
 
@@ -326,17 +303,19 @@ background-color: #7d0624;
 }
 
 .checkbox-container:hover{
-background-color: #AC99F9;
+background-color: var(--interactive-accent-hover);
 }
-.modal.mod-settings button:not(.mod-cta):hover, .modal button:not(.mod-cta):not(.mod-warning):hover{
-background-color: #AC99F9;
+.modal.mod-settings button:not(.mod-cta), .modal button:not(.mod-cta):not(.mod-warning), .copy-code-button{
+background-color: var(--bg-color)!important;
+color: #ffffff!important;
 }
-.modal.mod-settings button:not(.mod-cta), .modal button:not(.mod-cta):not(.mod-warning){
-background-color: #5943BF;
-color: var(--background-primary);
+
+button.mod-cta:hover, .modal.mod-settings button:not(.mod-cta):hover, 
+.modal button:not(.mod-cta):not(.mod-warning):hover, .copy-code-button:hover{
+background-color: var(--interactive-accent-hover)!important;
 }
 .setting-editor-extra-setting-button, {
-   color: #B05FFF;
+   color:var(--text-faint)!important;
 }
 
 .setting-editor-extra-setting-button:hover{
@@ -344,7 +323,7 @@ color: var(--background-primary);
 }
 .vertical-tab-nav-item{
   opacity:.65;
-   color: #B05FFF;
+   color:var(--text-faint);
 
 }
 .vertical-tab-header-group-title,.setting-item-name{
@@ -352,11 +331,11 @@ color: var(--background-primary);
 }
 .setting-item-description{
 opacity:0.8;
-   color: #B05FFF;
+   color:var(--text-faint);
 }
 .dropdown{
     border: 1px solid var(--background-primary);
-    color: #B05FFF;
+    color:var(--text-faint);
    border-radius: 0px!important;
 }
 
@@ -377,6 +356,32 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
 .modal.mod-settings .vertical-tab-content-container {
     padding: 70px 0px 0px 0;
 }
+
+.menu{
+       border: 0px solid transparent;
+       background: var( --background-secondary)!important;
+
+}
+.menu-item{
+  backdrop-filter: blur(0px);
+opacity:0.65;
+          color:var(--text-faint);
+}
+.menu-item:hover{
+opacity:1;
+background: var(--background-primary)!important;
+  color: var(--text-accent);
+}
+
+    button.mod-warning{
+    background: #881616;
+    }
+        button.mod-warning:hover{
+     background: #af2b2b;}
+    
+    
+
+
 /*---------------------------------------------------
 * Title Bar
 *------------------------------------------------------*/
@@ -396,6 +401,7 @@ html, body{
 .titlebar-button {
   opacity: 1;
     padding: 5px 20px;
+    color: var(--font-color-fix);
   }
   
 .titlebar-inner{
@@ -440,7 +446,7 @@ color: var(--text-accent);
 
 .suggestion-item{
   opacity:.65;
-  color: #B05FFF;
+  color:var(--text-faint);
 }
 
 .prompt{
@@ -454,6 +460,12 @@ color: var(--text-accent);
 *------------------------------------------------------*/
 .graph-controls{
    border-radius: 0px!important;
+      border-color: var(--background-primary-alt);
+        padding-top: 2rem;}
+.tree-item-self:hover{
+      background: var(--background-primary);
+         border-radius: 0px!important;
+         
 }
 
 /*---------------------------------------------------
@@ -474,6 +486,82 @@ color: var(--text-accent);
   background-color: var(--background-primary-alt);
    border-color: var(--background-primary-alt);
   color: var(--text-faint);
+}
+
+/*---------------------------------------------------
+* Popover
+*------------------------------------------------------*/
+
+.popover.hover-popover {
+    position: absolute;
+    transform: scale(.95); /* makes the content smaller */
+    max-height: 600px;    /* was 300 */
+    min-height: 500px;
+    	  margin-left: -35px !important;
+    width: 600px; /* was 400 */
+    border-bottom: none;
+    border-radius: 0px !important;
+  }
+  .markdown-embed .markdown-preview-view{
+    height: 500px;
+}
+
+
+  .tooltip {
+background-color:var(--popover-color);
+border-color:var(--text-accent)!important;
+color:var(--color-fix);
+   border-radius: 0px!important;
+}
+.tooltip .tooltip-arrow {
+border-color: transparent !important;
+}
+
+.popover.hover-popover img {
+    max-width: 600px;
+    }
+    
+    .suggestion-container{
+     border-radius: 0px!important;
+     background: var(--background-secondary);
+     border-color: transparent;
+    }
+    
+    .markdown-preview-view img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+ border-radius: 0px !important;  
+}
+
+
+
+.markdown-preview-view .internal-embed img {
+	cursor:zoom-in;}
+
+.markdown-preview-view .internal-embed img:active {
+	cursor:zoom-out;
+	display:block;
+	z-index:100;
+	position:fixed;
+    max-height:100%;
+    max-width:100%;
+    height:100%;
+    width:100%;
+    object-fit: contain;
+    margin:0 auto;
+    text-align:center;
+    top: 50%;
+  	transform: translateY(-50%);
+    padding:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:var(--background-primary);}
+
+
+.markdown-embed .markdown-preview-view{
+    height: 500px;
 }
 
 /*---------------------------------------------------
@@ -519,11 +607,11 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .nav-folder-title {
   font-weight: 600;
   opacity:.65;
-  color: #B05FFF;
+  color:var(--text-faint);
 }
 .nav-file-title {
   opacity:.65;
-  color: #B05FFF;
+  color:var(--text-faint);
 }
 
 .nav-file-title:hover{
@@ -553,6 +641,21 @@ body:not(.is-grabbing) .nav-folder-title:hover {
      background:var(--background-primary-alt);
      color:var(--font-color-fix);
 }
+
+/* Connectining lines for files and folders in File Explorer*/
+.nav-folder-children .nav-folder-children {
+  margin-left: 15px;
+  padding-left: 0;
+  border-left: 1px inset var(--text-faint);
+  border-radius: 5px;
+  //transition:all 0.5s ease-in-out;
+  
+}
+
+.nav-folder-children .nav-folder-children:hover {
+  border-left: 1px outset var(--text-accent);
+}
+
 /*---------------------------------------------------
 * Side Dock Icons and Title
 *------------------------------------------------------*/
@@ -561,7 +664,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .side-dock-ribbon-action,
 .workspace-ribbon-collapse-btn,
 .workspace-tab-header {
-  opacity: 0.5;
+  opacity: 0.65;
   cursor: pointer;
   
 }
@@ -610,13 +713,20 @@ border-radius: 0px!important;
 box-shadow: 0px -1.5px 0px   var(--text-accent);
   }
 
-.view-header-title, .view-header-icon{
+.view-header-title, .view-header-icon, .setting-editor-extra-setting-button{
+opacity:.65;
 color:var(--text-faint);
 }
 .nav-action-button{
+opacity:.65;
 color:var(--text-faint);
 }
+.setting-editor-extra-setting-button:hover{
+  color: var(--text-accent);
+  opacity:1;
+}
 .nav-action-button:hover{
+opacity:1;
   color: var(--text-accent);
      border-radius: 0px!important;
     box-shadow: 0px -1.5px 0px   var(--text-accent);
@@ -637,6 +747,12 @@ color:#B05FFF;
          box-shadow: 0px -1.5px 0px   var(--text-accent);
          color: var(--text-accent)!important;
 }
+
+/* Folder and file icons */
+.nav-folder-children .nav-file-title-content:first-child::before { content: '📄 '; }
+.nav-folder-children .nav-folder-title-content::before { content: '📂 '; }
+.nav-file-title-content, .nav-folder-title-content::before { content: '🗄 '; }
+
 /*---------------------------------------------------
 * Side Dock Collapse and Border
 *------------------------------------------------------*/
@@ -656,7 +772,8 @@ color:#B05FFF;
 * Workspace
 *------------------------------------------------------*/
 
-.workspace-leaf.mod-active .view-header-title, .view-header-icon {
+.workspace-leaf.mod-active .view-header-title, .workspace-leaf.mod-active .view-header-icon {
+opacity:1;
   color: var(--text-accent);
 }
 .workspace-leaf.mod-active .view-header-icon{
@@ -939,6 +1056,18 @@ ul .task-list-item ul::before {left: 0.15em !important}
 .cm-hmd-list-indent .cm-tab::before { left: 0.5em; top: -5px; bottom: -4px; }
 ul ul::before { left: -1em; top: 0; bottom: 0; }
 
+.cm-hmd-list-indent .cm-tab, ul ul { position: relative; }
+.cm-hmd-list-indent .cm-tab::before, ul ul::before {
+ content:'';
+ border-left: 1px solid var(--text-accent);
+ position: absolute;
+}
+.cm-hmd-list-indent .cm-tab::before { left: 0; top: -5px; bottom: -4px; 
+}
+ul ul::before { left: -18px; top: 0; bottom: 0; 
+} 
+
+
 /*---------------------------------------------------
 * Headings
 *------------------------------------------------------*/
@@ -1138,32 +1267,6 @@ em {
   font-family: OperatorMonoSSmLig-Book, Rubik !important;
 }
 
-/*---------------------------------------------------
-* List Styles (ul, li, ol)
-*------------------------------------------------------*/
-
-.cm-s-obsidian span.cm-formatting-list {
-  color: var(--text-accent);
-}
-
-/* Adding a rule line before ul list -- EDITOR Mode  */
-.cm-s-obsidian pre.HyperMD-list-line.HyperMD-list-line-2::before,
-.cm-s-obsidian pre.HyperMD-list-line.HyperMD-list-line-3::before,
-.cm-s-obsidian pre.HyperMD-list-line.HyperMD-list-line-4::before {
-  content: '';
-  border-left: 1px solid var(--text-accent);
-  position: absolute;
-  opacity: 0.35;
-  left: 0.5em;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-}
-/** Syncing the space in font of the list symbol with preview mode **/
-.cm-s-obsidian pre.HyperMD-list-line.HyperMD-list-line-2,
-.cm-s-obsidian pre.HyperMD-list-line.HyperMD-list-line-3,
-.cm-s-obsidian pre.HyperMD-list-line.HyperMD-list-line-4 {
-}
 
 /*---------------------------------------------------
 * Links Styling
@@ -1194,10 +1297,6 @@ em {
   background-image: linear-gradient(to bottom, var(--bg-accent-55) 0%, var(--bg-accent-55) 100%);
 }
 
-.cm-s-obsidian span.cm-formatting-link {
-  color: var(--text-faint) !important;
-  opacity: 0.25;
-}
 
 /** preview mode **/
 .external-link {
@@ -1364,12 +1463,7 @@ a.tag:hover {
 }
 
 .cm-s-obsidian span.cm-inline-code {
-  color: #378190 !important;
- //  background-color: #232323 !important;
-}
-
-.markdown-preview-view p code {
-  color:#378190 !important;
+  color: var(--inline-code-color) !important;
 }
 
 /*---------------------------------------------------
@@ -1383,7 +1477,6 @@ a.tag:hover {
 
 .cm-s-obsidian div.HyperMD-codeblock-bg {
        border-radius: 0px!important;
- //background-color: #282828 !important;
 }
 .markdown-preview-view code,
 .markdown-preview-view pre {
@@ -1511,25 +1604,15 @@ blockquote {
   margin-inline-start: 0;
 }
 
-/* blockquote style overwrite */
-
-.markdown-preview-view blockquote p:first-of-type::before {
-  content: '❝';
-  font-size: 55px;
-  color: var(--text-accent);
-  position: absolute;
-  top: 0.1rem;
-  left: -2.5rem;
-opacity:.5px;
-
+.markdown-preview-view blockquote > :first-child{
+  z-index: 1;
+    margin-left: -0.5em;
 }
 
 .markdown-preview-view blockquote {
   position: relative;
-  padding: 1rem 2rem 1rem 3rem;
+  padding: 2rem 2rem 1rem 3rem;
   color: #ffffff;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   margin-bottom: 2em;
   margin-right: 0 !important;
   border-left: 3px rgba(14, 210, 247, 0.5) solid;
@@ -1542,13 +1625,32 @@ opacity:.5px;
 }
 
 .markdown-preview-view blockquote::before {
-  content: '';
+  content: ' ';
   position: absolute;
   top: 0;
   left: 0px;
   height: 2px;
   width: 60%;
   background: linear-gradient(90deg, rgba(13, 185, 215, 0.5),transparent );
+}
+
+.markdown-preview-view blockquote p:first-of-type::before {
+ content:'❝';
+// content:'QUOTATIONS';
+  //font-weight: bold;
+  font-family: Unispace;
+  //align-content:space-around;
+  opacity:.45;
+  font-size: 100px;
+  color: var(--text-accent);
+  position: absolute;
+  top:  .5rem;
+  left: -0.3rem;
+  margin-left: -0.3em;
+  z-index: -1;
+//  overflow-wrap: break-word;
+ // white-space: nowrap;
+
 }
 
 .markdown-preview-view blockquote::after {
@@ -1574,6 +1676,17 @@ opacity:.5px;
   box-shadow: 0 0 0.25em var(--accent-2),
     inset 0 0 0.75em var(--accent-2);
 }
+
+/* signature inside the blockquote*/
+.signature {
+  font-family: "Edwardian Script ITC"; /**Choose a cursive font */
+  font-size: 2.75em;
+  text-align: right;
+}
+/*
+Then, in the note, at the end of the blockquote put this:
+`<div class="signature">- Name </div>`
+*/
 
 /*---------------------------------------------------
 * Front=Meta Style
@@ -1607,13 +1720,7 @@ opacity:.5px;
   background-color: #282828!important;
 }
 
-.markdown-preview-view img {
-  display: block;
-  border-radius: 8px;
-  margin-left: auto;
-  margin-right: auto;  
-  
-}
+
 
 /** code syntax theme **/
 
@@ -2092,6 +2199,32 @@ pre.line-numbers > code {
   text-align: right;
 }
 
+/*---------------------------------------------------
+* Picture sidings
+*------------------------------------------------------*/
+
+div[src$="#left"] {
+  position: relative;
+  float: left;
+  //text-align: left
+  width: 35%;
+  margin-top: 5px;
+  margin-left: -20px;
+  margin-right: 32px;
+  }
+
+div[src$="#right"] {
+  position: relative;
+  //text-align: right
+  float: right;
+  width: 35%;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: -12px;
+  margin-bottom:5px;
+}
+
+
 /*=======================
 * Highlighter
 *==========================*/
@@ -2327,10 +2460,4 @@ mark.violet{ --text-highlight-rgb: var(--fluro-violet-rgb); }
 .app-container .markdown-preview-view pre.language-note-white code.language-note-white,
 .red {
   color: var(--text-white);
-}
-
-
-
-
-
-
+}    
