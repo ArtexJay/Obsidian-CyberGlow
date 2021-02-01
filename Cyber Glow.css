@@ -1,5 +1,5 @@
-/* Cyber Glow for Obsidian - v4.8 by TheOppaianEmperor
-/* Please leave credits if you modify*/
+/* Cyber Glow for Obsidian - v5.2 by TheOppaianEmperor
+/* Please leave credits if you modify for your own theme*/
 
 .theme-light {
   --background-primary: #ffffff;
@@ -170,17 +170,20 @@
 *==========================*/
 
   /** Font Customization **/
-  --default-font: 'Rubik', 'Glow Sans SC', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  --default-font: 'Quantico','Rubik', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
 
   /** Main text font weight **/
   --body-font-weight: 450;
 
   /** Font family for hash-tags **/
-  --tag-font-family: 'OperatorMonoSSmLig-Book', 'Glow Sans SC', '华文细黑', 'STXihei', 'PingFang TC',
-    '微软雅黑体', 'Microsoft YaHei New', '微软雅黑', 'Microsoft Yahei', '宋体', 'SimSun',
-    'Helvetica Neue', 'Helvetica', Arial, sans-serif !important;
+  --tag-font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif !important;
+    
+  --major-heading: 'Orbitron', 'Inter';
+  --minor-heading: 'Oxanium', 'Inter' ;
+  --title-heading: 'Space Wham', 'Inter';
 }
+
 
 /*=======================
 * Customized Tag Colors
@@ -373,15 +376,6 @@ background: var(--background-primary)!important;
   color: var(--text-accent);
 }
 
-    button.mod-warning{
-    background: #881616;
-    }
-        button.mod-warning:hover{
-     background: #af2b2b;}
-    
-    
-
-
 /*---------------------------------------------------
 * Title Bar
 *------------------------------------------------------*/
@@ -486,6 +480,7 @@ color: var(--text-accent);
   background-color: var(--background-primary-alt);
    border-color: var(--background-primary-alt);
   color: var(--text-faint);
+  margin: 0px 0px 0px 30px !important;
 }
 
 /*---------------------------------------------------
@@ -515,53 +510,6 @@ color:var(--color-fix);
 }
 .tooltip .tooltip-arrow {
 border-color: transparent !important;
-}
-
-.popover.hover-popover img {
-    max-width: 600px;
-    }
-    
-    .suggestion-container{
-     border-radius: 0px!important;
-     background: var(--background-secondary);
-     border-color: transparent;
-    }
-    
-    .markdown-preview-view img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;  
- border-radius: 0px !important;  
-}
-
-
-
-.markdown-preview-view .internal-embed img {
-	cursor:zoom-in;}
-
-.markdown-preview-view .internal-embed img:active {
-	cursor:zoom-out;
-	display:block;
-	z-index:100;
-	position:fixed;
-    max-height:100%;
-    max-width:100%;
-    height:100%;
-    width:100%;
-    object-fit: contain;
-    margin:0 auto;
-    text-align:center;
-    top: 50%;
-  	transform: translateY(-50%);
-    padding:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background:var(--background-primary);}
-
-
-.markdown-embed .markdown-preview-view{
-    height: 500px;
 }
 
 /*---------------------------------------------------
@@ -764,10 +712,16 @@ color:#B05FFF;
 
 .workspace-ribbon.mod-left.is-collapsed,
 .workspace-ribbon.mod-right.is-collapsed {
-  border-color: var(--background-primary-alt);
-  
+  border-color: var(--background-primary-alt);  
 }
 
+.workspace-ribbon.mod-left{
+left:0;
+height:1060px;
+}
+.workspace-ribbon.mod-right{
+height:996px;
+}
 /*---------------------------------------------------
 * Workspace
 *------------------------------------------------------*/
@@ -783,7 +737,7 @@ opacity:1;
 color: var(--text-faint);
 }
 .workspace-leaf.mod-active{
-  box-shadow: 0px -10px 0px   var(--text-accent);
+  box-shadow: 0px -1px 0px   var(--text-accent);
 }
 
 .workspace-leaf.mod-active .view-header {
@@ -803,7 +757,7 @@ border-top: 1px solid  var(--interactive-accent-hover);
 background: var(--background-primary);
 }
 
-.is-translucent .workspace-leaf-resize-handle:hover{
+.workspace-leaf-resize-handle:hover{
 background:var(--text-accent) !important;
   box-shadow: 0 0 0.4em var(--text-accent);
 }
@@ -891,6 +845,10 @@ ul .task-list-item ul::before {
   left: 0.15em !important;
 }
 
+.workspace-leaf-resize-handle{
+    opacity: var(--opacity-translucency);
+    background-color: transparent;
+}
 /*---------------------------------------------------
 * Bullet list
 *------------------------------------------------------*/
@@ -1056,18 +1014,6 @@ ul .task-list-item ul::before {left: 0.15em !important}
 .cm-hmd-list-indent .cm-tab::before { left: 0.5em; top: -5px; bottom: -4px; }
 ul ul::before { left: -1em; top: 0; bottom: 0; }
 
-.cm-hmd-list-indent .cm-tab, ul ul { position: relative; }
-.cm-hmd-list-indent .cm-tab::before, ul ul::before {
- content:'';
- border-left: 1px solid var(--text-accent);
- position: absolute;
-}
-.cm-hmd-list-indent .cm-tab::before { left: 0; top: -5px; bottom: -4px; 
-}
-ul ul::before { left: -18px; top: 0; bottom: 0; 
-} 
-
-
 /*---------------------------------------------------
 * Headings
 *------------------------------------------------------*/
@@ -1098,36 +1044,43 @@ pre.HyperMD-header.HyperMD-header-6 {
 .cm-header-1 {
   font-size: 34px;
   color: var(--text-title-h1);
+      font-family: var(--title-heading);
 }
 
 .markdown-preview-section h2,
 .cm-header-2 {
   font-size: 26px;
   color: var(--text-title-h2);
+    font-family: var(--major-heading);
+  
 }
 
 .markdown-preview-section h3,
 .cm-header-3 {
   font-size: 22px;
   color: var(--text-title-h3);
+    font-family: var(--minor-heading);
 }
 
 .markdown-preview-section h4,
 .cm-header-4 {
   font-size: 18px;
   color: var(--text-title-h4);
+  font-family: var(--minor-heading);
 }
 
 .markdown-preview-section h5,
 .cm-header-5 {
   font-size: 18px;
   color: var(--text-title-h5);
+    font-family: var(--minor-heading);
 }
 
 .markdown-preview-section h6,
 .cm-header-6 {
   font-size: 18px;
   color: var(--text-title-h5);
+    font-family: var(--minor-heading);
 }
 
 
@@ -2199,32 +2152,6 @@ pre.line-numbers > code {
   text-align: right;
 }
 
-/*---------------------------------------------------
-* Picture sidings
-*------------------------------------------------------*/
-
-div[src$="#left"] {
-  position: relative;
-  float: left;
-  //text-align: left
-  width: 35%;
-  margin-top: 5px;
-  margin-left: -20px;
-  margin-right: 32px;
-  }
-
-div[src$="#right"] {
-  position: relative;
-  //text-align: right
-  float: right;
-  width: 35%;
-  margin-top: 5px;
-  margin-left: 10px;
-  margin-right: -12px;
-  margin-bottom:5px;
-}
-
-
 /*=======================
 * Highlighter
 *==========================*/
@@ -2460,4 +2387,106 @@ mark.violet{ --text-highlight-rgb: var(--fluro-violet-rgb); }
 .app-container .markdown-preview-view pre.language-note-white code.language-note-white,
 .red {
   color: var(--text-white);
-}    
+}
+
+
+
+/*---------------------------------------------------
+* Picture Positions - Testing
+*------------------------------------------------------*/
+
+
+div[src$="#left"] {
+  position: relative;
+  float: left;
+  width: 35%;
+  margin-top: 5px;
+  margin-left: -20px;
+  margin-right: 32px;
+  }
+
+div[src$="#right"] {
+  position: relative;
+  float: right;
+  width: 35%;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: -20px;
+  margin-bottom:5px;
+}
+
+.markdown-preview-view img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+ border-radius: 0px !important;  
+}
+
+
+
+.markdown-preview-view .internal-embed img {
+	cursor:zoom-in;}
+
+.markdown-preview-view .internal-embed img:active {
+	cursor:zoom-out;
+	display:block;
+	z-index:100;
+	position:fixed;
+    max-height:100%;
+    max-width:100%;
+    height:100%;
+    width:100%;
+    object-fit: contain;
+    margin:0 auto;
+    text-align:center;
+    top: 50%;
+  	transform: translateY(-50%);
+    padding:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:var(--background-primary);}
+
+
+
+.cm-hmd-list-indent .cm-tab, ul ul { position: relative; }
+.cm-hmd-list-indent .cm-tab::before, ul ul::before {
+ content:'';
+ border-left: 1px solid var(--text-accent);
+ position: absolute;
+}
+.cm-hmd-list-indent .cm-tab::before { left: 0; top: -5px; bottom: -4px; 
+}
+ul ul::before { left: -18px; top: 0; bottom: 0; 
+} 
+
+.markdown-embed .markdown-preview-view{
+    height: 500px;
+}
+
+.MJX-TEX{
+    font-size: 18px;
+}
+
+.popover.hover-popover img {
+    max-width: 600px;
+    }
+    
+    .suggestion-container{
+     border-radius: 0px!important;
+     background: var(--background-secondary);
+     border-color: transparent;
+    }
+    
+    button.mod-warning{
+    background: #881616;
+    }
+        button.mod-warning:hover{
+     background: #af2b2b;}
+    
+    
+    
+.markdown-preview-view, .CodeMirror-wrap pre.CodeMirror-line, .CodeMirror-wrap pre.CodeMirror-line-like{
+  text-shadow: 0 0 15px var(--font-color-fix);
+  }
+    
