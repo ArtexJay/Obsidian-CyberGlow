@@ -1,4 +1,4 @@
-/* Cyber Glow for Obsidian - v5.2 by TheOppaianEmperor
+/* Cyber Glow for Obsidian - v5.3 by TheOppaianEmperor
 /* Please leave credits if you modify for your own theme*/
 
 .theme-light {
@@ -480,7 +480,7 @@ color: var(--text-accent);
   background-color: var(--background-primary-alt);
    border-color: var(--background-primary-alt);
   color: var(--text-faint);
-  margin: 0px 0px 0px 30px !important;
+  margin: 0px 0px 0px -30px !important;
 }
 
 /*---------------------------------------------------
@@ -717,7 +717,6 @@ color:#B05FFF;
 
 .workspace-ribbon.mod-left{
 left:0;
-height:1060px;
 }
 .workspace-ribbon.mod-right{
 height:996px;
@@ -1589,7 +1588,6 @@ blockquote {
 
 .markdown-preview-view blockquote p:first-of-type::before {
  content:'❝';
-// content:'QUOTATIONS';
   //font-weight: bold;
   font-family: Unispace;
   //align-content:space-around;
@@ -1597,14 +1595,21 @@ blockquote {
   font-size: 100px;
   color: var(--text-accent);
   position: absolute;
-  top:  .5rem;
+  top:  -3.75rem;
   left: -0.3rem;
   margin-left: -0.3em;
   z-index: -1;
 //  overflow-wrap: break-word;
  // white-space: nowrap;
-
 }
+blockquote cite{
+  font-family: "Edwardian Script ITC"; /**Choose a cursive font */
+  font-size: 2.75em;
+  display: block;
+text-align: right;
+ font-style: normal;
+}
+
 
 .markdown-preview-view blockquote::after {
   content: '';
@@ -2391,43 +2396,15 @@ mark.violet{ --text-highlight-rgb: var(--fluro-violet-rgb); }
 
 
 
-/*---------------------------------------------------
-* Picture Positions - Testing
-*------------------------------------------------------*/
-
-
-div[src$="#left"] {
-  position: relative;
-  float: left;
-  width: 35%;
-  margin-top: 5px;
-  margin-left: -20px;
-  margin-right: 32px;
+ .workspace-ribbon.is-hidden{
+  display: none
   }
-
-div[src$="#right"] {
-  position: relative;
-  float: right;
-  width: 35%;
-  margin-top: 5px;
-  margin-left: 10px;
-  margin-right: -20px;
-  margin-bottom:5px;
-}
-
-.markdown-preview-view img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;  
- border-radius: 0px !important;  
-}
-
-
-
-.markdown-preview-view .internal-embed img {
+  
+  
+  markdown-preview-view img {
 	cursor:zoom-in;}
 
-.markdown-preview-view .internal-embed img:active {
+.markdown-preview-view img:active {
 	cursor:zoom-out;
 	display:block;
 	z-index:100;
@@ -2446,47 +2423,4 @@ div[src$="#right"] {
     right:0;
     bottom:0;
     background:var(--background-primary);}
-
-
-
-.cm-hmd-list-indent .cm-tab, ul ul { position: relative; }
-.cm-hmd-list-indent .cm-tab::before, ul ul::before {
- content:'';
- border-left: 1px solid var(--text-accent);
- position: absolute;
-}
-.cm-hmd-list-indent .cm-tab::before { left: 0; top: -5px; bottom: -4px; 
-}
-ul ul::before { left: -18px; top: 0; bottom: 0; 
-} 
-
-.markdown-embed .markdown-preview-view{
-    height: 500px;
-}
-
-.MJX-TEX{
-    font-size: 18px;
-}
-
-.popover.hover-popover img {
-    max-width: 600px;
-    }
-    
-    .suggestion-container{
-     border-radius: 0px!important;
-     background: var(--background-secondary);
-     border-color: transparent;
-    }
-    
-    button.mod-warning{
-    background: #881616;
-    }
-        button.mod-warning:hover{
-     background: #af2b2b;}
-    
-    
-    
-.markdown-preview-view, .CodeMirror-wrap pre.CodeMirror-line, .CodeMirror-wrap pre.CodeMirror-line-like{
-  text-shadow: 0 0 15px var(--font-color-fix);
-  }
     
