@@ -1,6 +1,8 @@
 # Obsidian-CyberGlow
 Started off as a mix of TriDiamond's Obsidianite and Deatau's 80s Glow themes for Obsidian.md but now it has become it's own unique theme.
 
+This theme supports Deathau's highlights and Notation Color Blocks.
+
 Optional Fonts: [Fonts Install Optional.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/6705588/Fonts.Install.Optional.zip)
 
 
