@@ -7,10 +7,11 @@
   --background-secondary: #E5E5E5;
   --background-secondary-alt: #E5E5E5;
   
-  --background-settings: #E5E5E5;margin: 0px 0px 10px 0px !important;
+  --background-settings: #E5E5E5;
   --background-settings-2: rgba(78, 75, 75,.1);
-    --background-settings-3: rgba(255, 255,255 ,.5);
-    
+  --background-settings-3: rgba(255, 255,255 ,.5);
+      --background-highlight: rgba(78, 75, 75,.3);
+      
   --text-normal: #1e1e1e;
   --text-accent: #41317F;
   --text-sub-accent: #f4569d;
@@ -92,7 +93,7 @@
   --background-settings: rgba(229,229,229,.75);
   --background-settings-2: rgba(78, 75, 75,.1);
   --background-settings-3: rgba(255, 255,255 ,.5);
-  
+        --background-highlight: rgba(78, 75, 75,.3);
   --text-normal: #1e1e1e;
   --text-accent: #41317F;
   --text-sub-accent: #f4569d;
@@ -176,7 +177,7 @@
    --background-settings: #1e1e1e;
       --background-settings-2: rgba(78, 75, 75,.2);
     --background-settings-3: rgba(0, 0,0 ,.5);
-
+    --background-highlight: rgba(78, 75, 75,.3);
   --font-color-fix:#ffffff;
   --text-normal: #bebebe;
   --text-accent: #AC99F9;
@@ -268,7 +269,7 @@
   --background-settings: rgba(30,30,30,.88);
   --background-settings-2: rgba(78, 75, 75,.2);
     --background-settings-3: rgba(0, 0,0 ,.5);
-  
+        --background-highlight: rgba(78, 75, 75,.3);
   --inline-code-color:rgb(14 210 247);
 
   --text-title-h1: var(--text-accent);
@@ -440,7 +441,6 @@ a.tag[href*='#想法'] {
 *------------------------------------------------------*/
 
 .modal-close-button{
- //  padding: 5px !important;
     padding: 5px 20px;
     font-size: 1.5em;
     color:var(--font-color-fix)!important;
@@ -449,13 +449,13 @@ right: 0;
 top: 0;
 }
 .modal-close-button:hover{
-  background-color: var(--titlebar-hover)!important;
-      border-top-right-radius: 5px;
+    background-color: #FF0000 !important;
+          border-top-right-radius: 5px;
 }
 
 .modal-close-button:active{
-  background-color: var(--titlebar-active)!important;
-}
+  background-color: #E66472 !important;
+  }
 
 .modal{
 border: none;
@@ -571,16 +571,21 @@ body {
 
 .titlebar {
   background-color: var(--background-primary-alt);
-  height: 32px !important;
+  height: 44px !important;
 }
 
 html, body{
-  padding-top: 16px !important;
+  padding-top: 22px !important;
+
 }
+html, body:(is-mobile){
+  padding-top: 0px !important;
+}
+
 
 .titlebar-button {
   opacity: 1;
-    padding: 5px 20px;
+    padding: 11px 20px;
     color: var(--font-color-fix);
   }
   
@@ -590,12 +595,23 @@ color:inherit;
 .titlebar-button:hover {
   background-color: var(--titlebar-hover)!important;
 }
+
+.titlebar-button.mod-close:hover{
+  background-color: #FF0000 !important;
+}
+.titlebar-button.mod-close:active{
+  background-color: #E66472 !important;
+}
+
+
 .titlebar-button:active{
   background-color: var(--titlebar-active)!important;
 }
 
 .titlebar-text {
   color: var(--text-accent);
+  text-align: center !important;
+ padding: 11px 20px;
 }
 
 .theme-dark .notice {
@@ -606,13 +622,15 @@ color:inherit;
 .view-action{
 opacity:.65;
 color: var(--text-faint);
+padding: 5px;
 }
 .view-action:hover{
 opacity:1;
 color: var(--text-accent);
-
+ background-color: var(--background-highlight);
+padding: 5px;
+border-radius:2.5px;
 }
-
 
 /*---------------------------------------------------
 * Prompt
@@ -651,8 +669,16 @@ color: var(--text-accent);
          border-radius: 5px!important;
          }
          
+.graph-controls-button{
+        padding: 5px;
+border-radius:2.5px;
+
+        }
 .graph-controls-button:hover{
 color:var(--text-accent);
+ background-color: var(--background-highlight);
+padding: 5px 5px 0px 5px;
+border-radius:2.5px;
 }
 
 .graph-control-section:not(:last-child) .tree-item-children{
@@ -822,12 +848,24 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .workspace-ribbon-collapse-btn:hover{
   opacity: 1;
   color: var(--text-accent);
+  background-color: var(--background-settings-3);
+  border-radius:5px;
 
 }
+
+.side-dock-ribbon-tab:active,
+.side-dock-ribbon-action:active,
+.workspace-ribbon-collapse-btn:active{
+  opacity: 1;
+  color: var(--text-accent);
+  background-color: var(--background-primary);
+}
+
 .workspace-tab-header:hover {
   opacity: 1;
   color: var(--text-accent);
   box-shadow: 0px -1.5px 0px   var(--text-accent);
+
   
 }
 
@@ -879,6 +917,7 @@ opacity:1;
   color: var(--text-accent);
      border-radius: 0px!important;
     box-shadow: 0px -1.5px 0px   var(--text-accent);
+    background-color: var(--background-settings-3);
 }
 .tree-item-self.is-clickable, .collapse-icon{
 color:#B05FFF;
@@ -902,19 +941,30 @@ color:#B05FFF;
 .nav-folder-children .nav-folder-title-content::before { content: '📂 '; }
 .nav-file-title-content, .nav-folder-title-content::before { content: '🗄 '; }
 
+.workspace-leaf .view-header-icon:hover{
+ background-color: var(--background-highlight);
+ opacity: 1;
+ border-radius:2.5px;
+ padding: 7.5px 7.5px 7.5px 7.5px;
+}
+
+.workspace-leaf .view-header-icon{
+padding: 7.5px 7.5px 7.5px 7.5px;
+}
+
+
 /*---------------------------------------------------
 * Side Dock Collapse and Border
 *------------------------------------------------------*/
 
 .workspace-ribbon.is-collapsed {
   background-color: var(--background-primary-alt);
-  
 }
 
 .workspace-ribbon.mod-left.is-collapsed,
 .workspace-ribbon.mod-right.is-collapsed {
   border-color: var(--background-primary-alt);  
-}
+ }
 
 .workspace-ribbon.mod-left{
 left:0;
@@ -1042,7 +1092,7 @@ background:var(--text-accent) !important;
 
 /* rule line when there are checkboxes*/
 ul .task-list-item ul::before {
-  left: -1rem !important;
+  left: 0.15em !important;
 }
 
 .workspace-leaf-resize-handle{
@@ -1202,7 +1252,7 @@ ul ul::before {
 ul ul::before { left: -1em; top: 0; bottom: 0; }
 
 /* rule line when there are checkboxes*/
-ul .task-list-item ul::before {left: 0.15em !important}
+ul .task-list-item ul::before {left: -1rem !important}
 
  no good idea yet
 .cm-hmd-list-indent .cm-tab, ul ul { position: relative; }
@@ -1267,7 +1317,7 @@ pre.HyperMD-header.HyperMD-header-6 {
   border-bottom: 2px solid;
   border-width: 1px;
   border-image-slice: 1;
-//  margin: 0px 0px 15px 0px;
+//  margin: 0px 0px 10px 0px !important;
   }
 
 .markdown-preview-section h1,
@@ -2817,7 +2867,7 @@ padding-top: 18px;
     }
     
     .suggestion-container{
-     background-color: var(--background-settings);
+    // background-color: var(--background-settings);
      border-radius:5px;
   border: transparent;
     }
@@ -2829,9 +2879,4 @@ border-color: var(--interactive-accent);
 .copy-search-result-textarea{
 border: 1px solid var(--background-primary);
 }
-
-
-/*=======================
-* Tests
-*==========================*/
 
