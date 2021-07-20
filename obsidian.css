@@ -441,6 +441,7 @@ a.tag[href*='#想法'] {
 *------------------------------------------------------*/
 
 .modal-close-button{
+ //  padding: 5px !important;
     padding: 5px 20px;
     font-size: 1.5em;
     color:var(--font-color-fix)!important;
@@ -449,13 +450,13 @@ right: 0;
 top: 0;
 }
 .modal-close-button:hover{
-    background-color: #FF0000 !important;
-          border-top-right-radius: 5px;
+  background-color: var(--titlebar-hover)!important;
+      border-top-right-radius: 5px;
 }
 
 .modal-close-button:active{
-  background-color: #E66472 !important;
-  }
+  background-color: var(--titlebar-active)!important;
+}
 
 .modal{
 border: none;
@@ -574,14 +575,27 @@ body {
   height: 44px !important;
 }
 
-html, body:not(is.mobile){
-  padding-top: 22px !important;
+html, body:not(.is-mobile) {
+  padding-top: 20px !important;
 
 }
-html, .mobile-body{
-  padding-top: 0px !important;
+html,.mobile-body{
+padding-top: 0px !important;
+  
 }
 
+
+.mobile-toolbar {
+    display: flex;
+    width: unset;
+    max-width: 95%;
+    overflow: scroll;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+}
 
 .titlebar-button {
   opacity: 1;
@@ -610,8 +624,6 @@ color:inherit;
 
 .titlebar-text {
   color: var(--text-accent);
-  text-align: center !important;
- padding: 11px 20px;
 }
 
 .theme-dark .notice {
@@ -630,7 +642,10 @@ color: var(--text-accent);
  background-color: var(--background-highlight);
 padding: 5px;
 border-radius:2.5px;
+
 }
+
+
 
 /*---------------------------------------------------
 * Prompt
@@ -941,18 +956,6 @@ color:#B05FFF;
 .nav-folder-children .nav-folder-title-content::before { content: '📂 '; }
 .nav-file-title-content, .nav-folder-title-content::before { content: '🗄 '; }
 
-.workspace-leaf .view-header-icon:hover{
- background-color: var(--background-highlight);
- opacity: 1;
- border-radius:2.5px;
- padding: 7.5px 7.5px 7.5px 7.5px;
-}
-
-.workspace-leaf .view-header-icon{
-padding: 7.5px 7.5px 7.5px 7.5px;
-}
-
-
 /*---------------------------------------------------
 * Side Dock Collapse and Border
 *------------------------------------------------------*/
@@ -1040,6 +1043,24 @@ background:var(--text-accent) !important;
   display: inline !important;
   
 }
+
+.workspace-leaf .view-header-icon:hover{
+ background-color: var(--background-highlight);
+ opacity: 1;
+ border-radius:2.5px;
+ padding: 7.5px 7.5px 7.5px 7.5px;
+}
+
+.workspace-leaf .view-header-icon{
+padding: 7.5px 7.5px 7.5px 7.5px;
+}
+
+
+.workspace-split mod-horizontal mod-left-split{
+  Background:var(--background-secondary)!important;
+  
+}
+
 
 /*---------------------------------------------------
 * CheckBox
@@ -2879,4 +2900,9 @@ border-color: var(--interactive-accent);
 .copy-search-result-textarea{
 border: 1px solid var(--background-primary);
 }
+
+
+/*=======================
+* Tests
+*==========================*/
 
