@@ -574,11 +574,11 @@ body {
   height: 44px !important;
 }
 
-html, body{
+html, body:not(is.mobile){
   padding-top: 22px !important;
 
 }
-html, body:(is-mobile){
+html, .mobile-body{
   padding-top: 0px !important;
 }
 
