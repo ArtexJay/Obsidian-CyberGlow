@@ -449,14 +449,15 @@ a.tag[href*='#想法'] {
 right: 0;
 top: 0;
 }
+
 .modal-close-button:hover{
-  background-color: var(--titlebar-hover)!important;
-      border-top-right-radius: 5px;
+    background-color: #FF0000 !important;
+          border-top-right-radius: 5px;
 }
 
 .modal-close-button:active{
-  background-color: var(--titlebar-active)!important;
-}
+  background-color: #E66472 !important;
+  }
 
 .modal{
 border: none;
