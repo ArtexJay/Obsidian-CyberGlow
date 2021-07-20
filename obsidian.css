@@ -580,8 +580,8 @@ html, body:not(.is-mobile) {
   padding-top: 20px !important;
 
 }
-html,.mobile-body{
-padding-top: 0px !important;
+html,body(.is-mobile){
+padding-top: 0px;
   
 }
 
