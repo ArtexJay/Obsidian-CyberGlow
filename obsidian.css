@@ -576,6 +576,10 @@ body {
   height: 44px !important;
 }
 
+html, body:not(.is-mobile) {
+  padding-top: 22px !important;
+
+}
 
 
 .mobile-toolbar {
