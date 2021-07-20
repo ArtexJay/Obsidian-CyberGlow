@@ -576,7 +576,7 @@ body {
 }
 
 html, body:not(.is-mobile) {
-  padding-top: 20px !important;
+  padding-top: 22px !important;
 
 }
 html,.mobile-body{
