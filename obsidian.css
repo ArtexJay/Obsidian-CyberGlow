@@ -737,9 +737,6 @@ border-bottom: 1px solid transparent;
     border-bottom: none;
     border-radius: 5px !important;
   }
-  .markdown-embed .markdown-preview-view{
-    height: 500px;
-}
 
 .tooltip {
 background: var(--background-settings)!important;
