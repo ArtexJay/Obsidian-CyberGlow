@@ -1859,11 +1859,11 @@ pre {
   font-size: 0.82rem;
   color: var(--text-accent);
   position: absolute;
-  top: 0.3rem;
+  top: 0.25rem;
   right: 3.5rem;
   text-transform: uppercase;
   background: var(--background-primary-alt);
-  padding: 0.35em 0.8em;
+  padding: 0.34em 0.8em;
   z-index: 10;
   border-radius: 5px;
   
