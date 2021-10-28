@@ -1,4 +1,4 @@
-/* Cyber Glow for Obsidian - v6.1 by TheOppaianEmperor
+/* Cyber Glow for Obsidian - v6.2 by TheOppaianEmperor
 /* Please leave credits if you modify for your own theme*/
 
 .theme-light {
@@ -1857,17 +1857,16 @@ pre {
   font-style: normal;
   font-weight: 700;
   font-size: 0.82rem;
-  color: #fff;
+  color: var(--text-accent);
   position: absolute;
-  top: 0rem;
-  right: 3rem;
-  padding: 0;
-  color: var(--text-accent) !important;
-  content: '';
+  top: 0.25rem;
+  right: 3.5rem;
   text-transform: uppercase;
   background: var(--background-primary-alt);
-  padding: 0.1em 0.8em;
+  padding: 0.34em 0.8em;
   z-index: 10;
+  border-radius: 5px;
+  
 }
 
   
