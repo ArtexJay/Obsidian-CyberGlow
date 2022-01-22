@@ -1,4 +1,4 @@
-/* Cyber Glow for Obsidian - v6.2 by TheOppaianEmperor
+/* Cyber Glow for Obsidian - v6.4 by TheOppaianEmperor
 /* Please leave credits if you modify for your own theme*/
 
 .theme-light {
@@ -675,7 +675,8 @@ border-radius:2.5px;
 .graph-controls{
    border-radius: 5px!important;
       border-color: var(--background-primary-alt);
-        padding-top: 2rem;}
+      }
+      
 .tree-item-self:hover{
       background: var(--background-primary);
          border-radius: 5px!important;
@@ -948,7 +949,39 @@ color:#B05FFF;
 /* Folder and file icons */
 .nav-folder-children .nav-file-title-content:first-child::before { content: '📄 '; }
 .nav-folder-children .nav-folder-title-content::before { content: '📂 '; }
-.nav-file-title-content, .nav-folder-title-content::before { content: '🗄 '; }
+.nav-file-title-content, .nav-folder-title-content::before { content: '🗃️ '; }
+.nav-file-title.is-active .nav-file-title-content:first-child::before { content: '✏️ '; }
+.nav-folder.is-collapsed .nav-folder-title-content::before { content: '📁 '; }
+
+.workspace-ribbon.side-dock-ribbon{
+  width: 50px;
+  flex: 0 0 50px;
+}
+
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+     height: 2px;
+    }
+    
+    .workspace-ribbon-collapse-btn {
+    margin-top: 20px;
+    padding: 20px 15px;
+    cursor: pointer;
+    color: var(--text-faint);
+    transform: none;
+    transition: none;
+    }
+    
+    .titlebar-button-container.mod-left {
+    left: 0px !important;
+}
+
+.titlebar-text{
+padding: 10px;
+}
+
+.side-dock-settings {
+    margin-bottom: 0px;
+}
 
 /*---------------------------------------------------
 * Side Dock Collapse and Border
@@ -1153,7 +1186,7 @@ ul ul ul li:not(.task-list-item)::before {
   color: var(--interactive-accent) !important;
 }
 
-//↱↠↦↣↳►▶▻⇀
+
 /* Adding a rule line before ul list -- PREVIEW Mode */
 ul ul,
 .cm-s-obsidian pre.HyperMD-list-line {
@@ -1199,6 +1232,24 @@ ul ul li:not(.task-list-item)::before {
 ul ul ul li:not(.task-list-item)::before {
   content: '↳';
 }
+
+/*Live Preview*/
+.markdown-source-view.mod-cm6 .list-bullet:after{
+  content: '↳';
+  color: var(--text-accent);
+  display: inline-block;
+  width: 1.25em;
+  margin-left: -.5em;
+  padding: 0;
+  font-weight: bold;
+  text-shadow: 0 0 0.5em var(--accent-2);
+
+}
+
+.HyperMD-list-line.HyperMD-list-line-1 .list-bullet:after{
+  content: '▻';
+}
+
 
 /*---------------------------------------------------
 * Number list
@@ -1332,7 +1383,6 @@ pre.HyperMD-header.HyperMD-header-6 {
   border-bottom: 2px solid;
   border-width: 1px;
   border-image-slice: 1;
-//  margin: 0px 0px 10px 0px !important;
   }
 
 .markdown-preview-section h1,
@@ -1395,7 +1445,30 @@ pre.HyperMD-header.HyperMD-header-6{
 border-image-source: linear-gradient(to right, var(--accent-6),var(--background-settings));
 }
 
+/*Live Editing Headings*/
 
+.cm-s-obsidian .HyperMD-header-2.cm-line, .cm-s-obsidian .HyperMD-header-3, .cm-s-obsidian .HyperMD-header-4, .cm-s-obsidian .HyperMD-header-5,.cm-s-obsidian .HyperMD-header-6{      
+  padding: 15px 0px 0px 0px !important; 
+   position: relative;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+}
+.cm-s-obsidian .HyperMD-header-2{
+    border-image-source: linear-gradient(to right, var(--accent-7),var(--background-primary));
+}
+.cm-s-obsidian .HyperMD-header-3{
+border-image-source: linear-gradient(to right, var(--accent-3),var(--background-primary));
+}
+.cm-s-obsidian .HyperMD-header-4{
+border-image-source: linear-gradient(to right, var(--accent-4),var(--background-primary));
+}
+.cm-s-obsidian .HyperMD-header-5{
+border-image-source: linear-gradient(to right, var(--accent-5),var(--background-primary));
+} 
+.cm-s-obsidian .HyperMD-header-6{
+border-image-source: linear-gradient(to right, var(--accent-6),var(--background-primary));
+}
 
 
 /*---------------------------------------------------
@@ -1585,6 +1658,33 @@ h6 {
 }
 
 .markdown-preview-view hr::after {
+  content: '₪'; 
+  display: inline-block; 
+  font-size: 1.65rem;
+  position: absolute;
+ color: var(--text-sub-accent);
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+  transform-origin: 5% 50%;
+  padding: 0.5rem;
+  color: #E69900;
+  background-color: var(--background-primary);
+}
+
+/* hr styles -- PREVIEW MODE */
+.hr.cm-line hr {
+  margin-block-start: 3em;
+  margin-block-end: 2em;
+  border: none;
+  height: 0;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+}
+
+.hr.cm-line hr::after {
   content: '₪'; 
   display: inline-block; 
   font-size: 1.65rem;
@@ -1981,7 +2081,7 @@ blockquote {
   border-top: transparent;
   border-bottom: transparent;
   border-right: transparent;
-  background: linear-gradient(125deg, rgba(14, 210, 247, 0.5), #20517A);
+  background: linear-gradient(87deg, rgba(14, 210, 247, 0.5), #20517A);
   border-radius: 0px!important;
   
 }
@@ -1998,9 +2098,7 @@ blockquote {
 
 .markdown-preview-view blockquote p:first-of-type::before {
  content:'❝';
-  //font-weight: bold;
   font-family: Unispace;
-  //align-content:space-around;
   opacity:.45;
   font-size: 100px;
   color: var(--text-accent);
@@ -2049,10 +2147,82 @@ text-align: right;
   font-size: 2.75em;
   text-align: right;
 }
-/*
-Then, in the note, at the end of the blockquote put this:
-`<div class="signature">- Name </div>`
-*/
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote{
+  position: relative;
+  padding: 2rem 2rem 0rem 3rem;
+  color: #ffffff;
+  border-left: 3px rgba(14, 210, 247, 0.5) solid;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-right: transparent;
+  background: linear-gradient(87deg, rgba(14, 210, 247, 0.5), #20517A);
+    box-shadow: 0 0 0.25em var(--accent-2),
+    inset 0 0 0.75em var(--accent-2);
+
+  border-radius: 0px!important;
+  }
+
+.markdown-source-view.mod-cm6 cite{
+  font-family: "Edwardian Script ITC"; /**Choose a cursive font */
+  font-size: 2.75em;
+  display: block;
+text-align: right;
+ font-style: normal;
+
+}
+.cm-s-obsidian span.cm-quote{
+color: #ffffff;
+background:transparent !important;
+
+
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  height: 2px;
+  width: 60%;
+  background: linear-gradient(90deg, rgba(13, 185, 215, 0.5), transparent);
+  
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 3px;
+  width: 60%;
+  background: linear-gradient(90deg, rgba(13, 185, 215, 0.5),transparent );
+}
+
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote span.cm-quote:first-of-type::before {
+ content:'❝';
+  font-family: Unispace;
+  opacity:.45;
+  font-size: 100px;
+  color: var(--text-accent);
+  position: absolute;
+  top:  -3.45rem;
+  left: 1.9rem;
+  margin-left: -0.3em;
+  z-index: 0;
+}
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote span.cm-quote {
+  position: relative;
+}
+
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote span.cm-quote.cm-quote-1{
+   margin-inline-end: 20px;
+
+}
+
+
 
 /*---------------------------------------------------
 * Front=Meta Style
@@ -2887,9 +3057,4 @@ border-color: var(--interactive-accent);
 .copy-search-result-textarea{
 border: 1px solid var(--background-primary);
 }
-
-
-/*=======================
-* Tests
-*==========================*/
 
