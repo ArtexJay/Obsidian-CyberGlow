@@ -7,7 +7,9 @@ A mix of TriDiamond's Obsidianite and Deatau's 80s Glow themes for Obsidian.md b
 This theme currently supports Deathau's highlights and Notation Color Blocks.
 
 ## Warning
-This theme does not work correctly as of yet with mobile Obsidian.
+This theme does not work correctly as of yet with Mobile Obsidian.
+
 
 Optional Fonts: [Fonts Install Optional.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/6705588/Fonts.Install.Optional.zip)
+
 ![Test](Screenshot.png)
