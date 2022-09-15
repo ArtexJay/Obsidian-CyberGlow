@@ -9,7 +9,7 @@ This theme currently supports Deathau's highlights and Notation Color Blocks.
 ## Warning
 This theme does not work correctly as of yet with Mobile Obsidian.
 
-
+## Font & Preview
 Optional Fonts: [Fonts Install Optional.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/6705588/Fonts.Install.Optional.zip)
 
 ![Test](Screenshot.png)
