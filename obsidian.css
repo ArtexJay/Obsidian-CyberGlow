@@ -693,7 +693,6 @@ background: var(--background-primary);
 }
 
 .workspace-split.mod-left-split .view-content, .workspace-split.mod-right-split .view-content{
-background: var(--background-primary);
 border-radius: 5px;
 width: 95%;
 }
