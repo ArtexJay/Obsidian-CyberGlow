@@ -884,6 +884,10 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   background: var(--background-selected);
 
 }
+
+.workspace-tab-container-before.is-before-active .workspace-tab-header-inner, .workspace-tab-header.is-before-active .workspace-tab-header-inner {
+     background: transparent;
+}
 .workspace-tab-header, .workspace-tab-header-inner, .workspace-tab-container-before, .workspace-tab-container-after{ 
   transition: background-color 000ms ease-in-out;
 }
