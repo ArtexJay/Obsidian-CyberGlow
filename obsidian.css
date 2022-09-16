@@ -962,7 +962,8 @@ color:#B05FFF;
 }
 
 .workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title, .workspace-leaf.mod-active .nav-file.has-focus {
-border: 0px solid var(--interactive-accent);
+    border: 1px solid #00000000;
+    background: transparent;
 }
 
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
