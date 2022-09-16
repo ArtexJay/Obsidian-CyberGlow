@@ -877,7 +877,6 @@ body:not(.is-grabbing) .nav-folder-title:hover {
    color: var(--text-accent);
 }
 
-}
 
 .workspace-tab-header.is-active {
   opacity: 1;
