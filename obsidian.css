@@ -961,6 +961,10 @@ color:#B05FFF;
   flex: 0 0 50px;
 }
 
+.workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title:focus-within, .workspace-leaf.mod-active .nav-file.has-focus:focus-within {
+    border: 0px solid transparent;
+}
+
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
      height: 2px;
     }
