@@ -880,9 +880,10 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   background: var(--background-selected);
 
 }
-.workspace-tab-header-inner {
-    transition: background-color 000ms ease-in-out;
+.workspace-tab-header, .workspace-tab-header-inner, .workspace-tab-container-before, .workspace-tab-container-after{ 
+  transition: background-color 000ms ease-in-out;
 }
+
 .workspace-tab-header:hover{
 background: var(--background-highlight);
 }
@@ -930,7 +931,7 @@ opacity:1;
   color: var(--text-accent);
      border-radius: 0px!important;
     box-shadow: 0px -1.5px 0px   var(--text-accent);
-    background-color: var(--background-settings-3);
+    background-color: var(--background-highlight);
 }
 .tree-item-self.is-clickable, .collapse-icon{
 color:#B05FFF;
