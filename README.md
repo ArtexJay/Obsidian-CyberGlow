@@ -4,8 +4,6 @@ A pleasant Minimalist looking theme, with glow effects. Many minimalist or clean
 
 A mix of TriDiamond's Obsidianite and Deatau's 80s Glow themes for Obsidian.md but has gradually transformed into its own unique, minimalist and clean theme.
 
-This theme currently supports Deathau's highlights and Notation Color Blocks.
-
 ## Warning
 This theme does not work correctly as of yet with Mobile Obsidian.
 
