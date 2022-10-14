@@ -7,4 +7,4 @@ A mix of TriDiamond's Obsidianite and Deathau's 80s Glow themes for Obsidian.md 
 ## Font & Preview
 Optional Fonts: [Fonts Install Optional.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/6705588/Fonts.Install.Optional.zip)
 
-![Test](Screenshot.png)
+![Test](https://github.com/ArtexJay/Obsidian-CyberGlow/blob/main/Cyber%20Glow%20Preview.jpg?raw=true)
