@@ -17,7 +17,7 @@ Optional Fonts: [Fonts Install Optional.zip](https://github.com/ArtexJay/Obsidia
 Special Thanks to:
 - Deathau (creator of 80's Neon theme) - Basis for my themeand inspiration from this theme
 - Tridiamond (Creator of Obsidianite theme) - Basis for my theme
-- Sailkite on Discord - CSS expert helping me with my weird CSS issues that I have
+- Sailkite on Discord - CSS expert helping me with my weird CSS issues or idea that I have
 - Jdanielmourao (creator of Sanctum theme) - Liked and the line selector in the editor and improved on it to better fit my theme.
 - Tomzorz (Creator of Sodalite Theme) - Improved on his transparant headers.
 
