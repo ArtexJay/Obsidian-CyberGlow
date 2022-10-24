@@ -21,7 +21,7 @@ Special Thanks to:
 - Sailkite on Discord - CSS expert helping me with my weird CSS issues or idea that I have
 - Jdanielmourao (Creator of Sanctum theme) - Liked and the line selector in the editor and improved on it to better fit my theme.
 - Tomzorz (Creator of Sodalite Theme) - Improved on his transparant headers.
-- Chuck on Discord
+- ChuckHarmston - Adapted his Safari Tab expander snippet.
 
 ## Old Preview
 A formerly a mix of TriDiamond's Obsidianite and Deathau's 80s Glow themes for Obsidian.md but has gradually transformed into its own unique, minimalist and clean theme with glow effects and accent color support. Many minimalist or clean themes are very monotone and dull/depressing to look at in order to keep you focused. However my theme strikes a great balance of colorful, glowy with little to no distractions in the UI and useable with a cursor.
