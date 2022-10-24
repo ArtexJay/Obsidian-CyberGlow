@@ -16,8 +16,8 @@ Optional Fonts: [Fonts Install Optional.zip](https://github.com/ArtexJay/Obsidia
 ![gif](https://raw.githubusercontent.com/ArtexJay/Obsidian-CyberGlow/main/Accent%20Colors.gif)
 
 Special Thanks to:
-- Deathau (creator of 80's Neon theme) - Basis for my themeand inspiration from this theme
-- Tridiamond (Creator of Obsidianite theme) - Basis for my theme
+- Deathau (creator of 80's Neon theme) - Partial Basis for my themeand inspiration from this theme
+- Benny Guo, formerly Tridiamond (Creator of Obsidianite theme) - Partial Basis for my theme
 - Sailkite on Discord - CSS expert helping me with my weird CSS issues or idea that I have
 - Jdanielmourao (Creator of Sanctum theme) - Liked and the line selector in the editor and improved on it to better fit my theme.
 - Tomzorz (Creator of Sodalite Theme) - Improved on his transparant headers.
