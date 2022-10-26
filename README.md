@@ -5,23 +5,21 @@ The theme is now 100% consistent in design across devices Desktop, Phone and Tab
 
 The old interface of this theme was good but it didn't look nearly as good with the tabs, some selector choices were strange and looked quite dated. v7 of CyberGlow reworked those dated looking interfaces to be more modern. Custom accent colors should be more readable than in prior versions.
 
-![gif](https://raw.githubusercontent.com/ArtexJay/Obsidian-CyberGlow/main/Old%20to%20New.gif)
+## Desktop View
+![image](https://user-images.githubusercontent.com/32932497/198157316-585581bd-f49f-4913-af9c-421190d445c2.png)
 
-## Font & Preview
+## Mobile View
+![1666826931695](https://user-images.githubusercontent.com/32932497/198157599-624a448a-9f4b-4a6d-99b8-539ad4c1215b.jpg)
+
 Optional Fonts: [Fonts Install Optional.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/6705588/Fonts.Install.Optional.zip)
 
-> Advice: Use color slider when choosing accent colors for better visiblity when switching Light/Dark modes
-
-
-![gif](https://raw.githubusercontent.com/ArtexJay/Obsidian-CyberGlow/main/Accent%20Colors.gif)
+> Advice: If change accent color if you Use color slider when choosing accent colors for better visiblity when switching Light/Dark modes
 
 Special Thanks to:
-- Deathau (creator of 80's Neon theme) - Partial Basis for my themeand inspiration from this theme
+- Deathau (creator of 80's Neon theme) - Partial Basis for my theme and inspiration from this theme
 - Benny Guo, formerly Tridiamond (Creator of Obsidianite theme) - Partial Basis for my theme
 - Sailkite on Discord - CSS expert helping me with my weird CSS issues or idea that I have
 - Jdanielmourao (Creator of Sanctum theme) - Liked and the line selector in the editor and improved on it to better fit my theme.
 - Tomzorz (Creator of Sodalite Theme) - Improved on his transparant headers.
 - ChuckHarmston - Adapted his Safari Tab expander snippet.
 
-## Old Preview
-A formerly a mix of TriDiamond's Obsidianite and Deathau's 80s Glow themes for Obsidian.md but has gradually transformed into its own unique, minimalist and clean theme with glow effects and accent color support. Many minimalist or clean themes are very monotone and dull/depressing to look at in order to keep you focused. However my theme strikes a great balance of colorful, glowy with little to no distractions in the UI and useable with a cursor.
