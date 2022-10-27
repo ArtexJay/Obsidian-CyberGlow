@@ -19,7 +19,7 @@ Special Thanks to:
 - Deathau (creator of 80's Neon theme) - Partial Basis for my theme and inspiration from this theme
 - Benny Guo, formerly Tridiamond (Creator of Obsidianite theme) - Partial Basis for my theme
 - Sailkite on Discord - CSS expert helping me with my weird CSS issues or idea that I have
-- Jdanielmourao (Creator of Sanctum theme) - Liked and the line selector in the editor and improved on it to better fit my theme.
+- Jdanielmourao (Creator of Sanctum theme) - Line selector in the editor and adapted it to for my theme.
 - Tomzorz (Creator of Sodalite Theme) - Improved on his transparant headers.
 - ChuckHarmston - Adapted his Safari Tab expander snippet.
 
