@@ -3,6 +3,8 @@
 A colorful unique theme, giving Obsidian a fresh new look with glow effects and support for accent color. In keeping with the minimalism from previous versions the theme now tries to provide a unique new look to obsidian while keeping it usable and familiar to the users.
 The theme is now 100% consistent in design across devices Desktop, Phone and Tablet as of v7.4.
 
+Optional Fonts: [Fonts Install Optional.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/6705588/Fonts.Install.Optional.zip)
+
 The old interface of this theme was good but it didn't look nearly as good with the tabs, some selector choices were strange and looked quite dated. v7 of CyberGlow reworked those dated looking interfaces to be more modern. Custom accent colors should be more readable than in prior versions.
 
 ## Desktop View
@@ -10,8 +12,6 @@ The old interface of this theme was good but it didn't look nearly as good with 
 
 ## Mobile View
 ![1666826931695](https://user-images.githubusercontent.com/32932497/198157599-624a448a-9f4b-4a6d-99b8-539ad4c1215b.jpg)
-
-Optional Fonts: [Fonts Install Optional.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/6705588/Fonts.Install.Optional.zip)
 
 > Advice: If change accent color if you Use color slider when choosing accent colors for better visiblity when switching Light/Dark modes
 
