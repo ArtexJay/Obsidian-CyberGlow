@@ -1,13 +1,10 @@
-/* Cyber Glow for Obsidian - v7.4 - Mobile Update by TheEmperorArt
+/* Cyber Glow for Obsidian - v7.5 - Mobile Update by TheEmperorArt
 /* Please leave credits if you modify for your own theme*/
 /*
-* - Total Mobile (aka phone and tablet) Theme Support 🎉🎉
-* - Some minor graphical issues on desktop and mobile are fixed 
-* - Breadcrumbs in title is themed
-* - Clicked color is changed
-* - Animated Tabs from Chuck
-* - Workspace border outlines are themed
-* - Side Panel icons are centered
+* - Buttons are updated to fit better with the theme
+* - Text Finder updated with the theme design and is now transparent, background fixed
+* - Bold coloring fixed
+* - Code blocks copy button always visible again
 */
 
 /*=======================
@@ -538,6 +535,71 @@ border-bottom: 2px solid;
 background: var(--transparency-secondary);
 }
 
+/*---------------------
+* Text Finder ✅
+*------------------------*/
+
+ .document-search-container{
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+    position: absolute;
+    width: 100%;
+    background: var(--transparency-secondary);
+    --webkit-backdrop-filter: blur 120px;
+    backdrop-filter: blur(18px);
+    z-index: 90 !important;
+}
+
+ .document-search-container + .markdown-preview-view.markdown-rendered.node-insert-event.is-readable-line-width.allow-fold-headings.show-indentation-guide{
+margin-top:50px;
+}
+
+.document-search-close-button:hover{
+ background:var(--titlebar-hover);
+ border-radius:var(--input-radius);
+ color: var(--text-accent);
+  box-shadow: 0 0 0.8em var(--titlebar-hover); 
+  opacity:1;
+}
+
+.document-search-close-button:active{
+color: var(--text-accent);
+ background:var(--text-selection);
+ border-radius:var(--input-radius);
+  box-shadow: 0 0 0.8em var(--text-selection); 
+  opacity:1;
+}
+
+.document-search-close-button{
+color:var(--text-faint);
+opacity:0.8;
+}
+
+
+body:not(.is-mobile) .document-search-container {
+    margin-top: 40px;
+}
+
+body.is-mobile .document-search-container {
+    margin-top: 48px;
+}
+
+.document-search-container{
+margin-left:0px;
+}
+
+.is-mobile .document-search .document-search-button, .is-mobile .document-replace .document-search-button{
+background-color: var(--interactive-accent);
+color:var(--text-normal);
+}
+
+.is-mobile .document-search .document-search-button:active, .is-mobile .document-replace .document-search-button:active{
+    background-color: var(--button-background);
+color:var(--text-normal);
+}
+
+
 /*--------------------------
 * General UI: Editor ✅
 *----------------------------*/
@@ -566,11 +628,6 @@ background: var(--transparency-secondary);
 	  box-shadow: 0 0 0.5em var(--titlebar-hover); 
 }
 
-.mod-active .document-search-container {
-    margin-top: 40px;
-    background: var(--transparent-primary-alt);
-}
-
 
 
 /*=======================
@@ -595,7 +652,7 @@ color: var(--text-accent);
 border-top: 0px solid var(--background-modifier-border);
 }
 
-.vertical-tab-content h1, .markdown-rendered h1{
+.vertical-tab-content h1, .community-modal-info .markdown-rendered h1{
     text-align: center;
     border-bottom: 2px solid !important;
     border-image-slice: 1;
@@ -910,30 +967,23 @@ background-color: var(--text-accent);
 * Settings: Buttons ✅
 *----------------------------*/
 
-.modal.mod-settings button:not(.mod-cta),
-.modal button:not(.mod-cta):not(.mod-warning) .copy-code-button,
-button.mod-cta {
-	color: white;
- box-shadow: 0 0 0.6em var(--interactive-accent); 
-
-}
-
-
 .modal.mod-settings button:not(.mod-cta), .modal button:not(.mod-cta):not(.mod-warning) .copy-code-button, button.mod-cta{
-	background-color: var(--interactive-accent);
+	background-color: var(--titlebar-active);
+		color: var(--text-accent);
+ box-shadow: 0 0 0.6em var(--text-selection);
 }
 
 .modal.mod-settings button:not(.mod-cta):hover, .modal button:not(.mod-cta):not(.mod-warning):hover .copy-code-button, button.mod-cta:hover{
-	background-color: var(--interactive-accent-hover);
-	 box-shadow: 0 0 0.6em var(--interactive-accent-hover); 
-}
+	background-color: var(--text-selection);
+		 box-shadow: 0 0 0.8em var(--text-selection);
+	 }
 
 button.mod-cta:active,
 .modal.mod-settings button:not(.mod-cta):active,
 .modal button:not(.mod-cta):not(.mod-warning):active,
 .copy-code-button:active {
 	background-color: var(--button-background);
-	 box-shadow: 0 0 0.7em var(--button-background); 
+	 box-shadow: 0 0 0.9em var(--button-background); 
 }
 
 /*--------------------------
@@ -942,22 +992,20 @@ button.mod-cta:active,
 
 .dropdown {
 	border: 1px solid transparent;
-	background-color: var(--interactive-accent);
-   	color: white;
-    	display: inline;
-    	 box-shadow: 0 0 0.6em var(--interactive-accent); 
+	background-color: var(--titlebar-hover);
+		color: var(--text-accent);
+ box-shadow: 0 0 0.6em var(--titlebar-hover);
     }
 
 .dropdown:hover {
-	border: 1px solid var(--text-faint);
-	background-color: var(--interactive-accent-hover);
-box-shadow: 0 0 0.8em var(--interactive-accent-hover); 
+	border: 1px solid transparent;
+	background-color: var(--text-selection);
+		 box-shadow: 0 0 0.8em var(--text-selection);
 }
 
 .dropdown:focus{
 	background-color: var(--button-background);
-	  color: var(--text-normal);
-	  box-shadow: 0 0 0.8em var(--button-background); 
+	 box-shadow: 0 0 0.9em var(--button-background); 
 }
 
 /*--------------------------
@@ -1076,8 +1124,7 @@ padding:0px
 }
 
 .titlebar-button:active {
-	background-color: var(--titlebar-active) !important;
-	
+	background-color: var(--text-selection);
 }
 
 .titlebar-button, .mod-windows .titlebar-button{
@@ -1174,7 +1221,8 @@ color: var(--text-accent);
   max-width: var(--tab-max-width) !important;
   transition: max-width 100ms ease-in-out;
 }
-.mod-root .workspace-tab-header.is-active:not(.mod-stacked) {
+
+ .workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active:not(.mod-stacked) {
   flex-grow: 1.5 !important;
   max-width: var(--tab-max-width-active) !important;
   transition: max-width 300ms ease-in-out;
@@ -1840,19 +1888,22 @@ background-color: var(--titlebar-active);
 *------------------------------------------*/
 
 button:not(.clickable-icon){
-    background-color: var(--interactive-accent);
-     box-shadow: 0 0 0.5em var(--interactive-accent);
+	background-color: var(--titlebar-hover);
+		color: var(--text-accent);
+ box-shadow: 0 0 0.6em var(--titlebar-hover);
     }
     
     button:not(.clickable-icon):hover{
-    background-color: var(--interactive-accent-hover);
-    box-shadow: 0 0 0.7em var(--interactive-accent-hover);
+	background-color: var(--text-selection);
+		 box-shadow: 0 0 0.8em var(--text-selection);
     }
     
   button:not(.clickable-icon):active{  
         background-color: var(--button-background);
             box-shadow: 0 0 1em  var(--button-background);
 }
+
+
 
 .list-item-part.clickable-icon{
 color: var(--text-faint);
@@ -2005,8 +2056,7 @@ ul ul ul ol>li:not(.task-list-item)::before {
 /*======================
 * Headings ✅
 *=======================*/
-.markdown-preview-section h1,
-.cm-header-1 {
+.markdown-preview-section h1, .cm-header-1, .markdown-rendered h1 {
 	font-size: 34px;
 	color: var(--text-title-header);
 	font-family: var(--title-heading);
@@ -2223,25 +2273,6 @@ h6 {
 	text-shadow: 0 0 1em #ffaa00;
 }
 
-/*=========================
-* Bold and Italic Styling ✅
-*==========================*/
-
-.cm-strong,
-strong {
-	-webkit-background-clip: text;
-	padding: 0 0.1rem;
-	background-color: var(--text-accent) ;
-	background-image: linear-gradient(180deg, #87c2fd 10%, var(--text-accent) 100%);
-}
-
-.cm-em, em {
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: var(--text-accent);
-	background-image: linear-gradient(180deg, #87c2fd 10%, var(--text-accent) 100%)
-}
-
 /*==================================
 * Strikethrough and Escape Chars ✅
 *====================================*/
@@ -2361,10 +2392,7 @@ a.internal-link {
 	padding: 0;
 }
 
-.internal-link,
-.external-link {
-	text-shadow: -1px -1px 2px var(--background-primary), -1px 1px 2px var(--background-primary),
-		1px -1px 2px var(--background-primary), 1px 1px 2px var(--background-primary);
+.internal-link, .external-link {
 	background-position: 0 100%;
 	background-repeat: repeat-x;
 	background-size: 5px 5px;
@@ -2395,6 +2423,25 @@ a.internal-link {
 	box-shadow: 0 0 20px var(--outgoing-link-hover);	
 }
 
+/*=========================
+* Bold and Italic Styling ✅
+*==========================*/
+
+.cm-strong, strong {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding: 0 0.1rem;
+	background-color: var(--text-accent) ;
+	background-image: linear-gradient(180deg, #87c2fd 10%, var(--text-accent) 100%);
+}
+
+.cm-em, em {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: var(--text-accent);
+	background-image: linear-gradient(180deg, #87c2fd 10%, var(--text-accent) 100%)
+}
+
 /*======================
 * Code Fence Style ✅
 *=====================*/
@@ -2404,7 +2451,8 @@ a.internal-link {
 .theme-dark pre[class*="language-"],
 .theme-dark code[class*="language-"],
 .theme-light pre[class*="language-"],
-.theme-light code[class*="language-"] {
+.theme-light code[class*="language-"], .markdown-rendered pre
+ {
 	color: #94ffaf;
 	border-radius: 2.5px !important;
 	background: #4d4d4d;
@@ -2427,6 +2475,7 @@ pre[class*='language-']:before {
 	z-index: 10;
 	border-radius: 5px;
 }
+
 
 
 pre[class$='javascript']:before,
@@ -2518,6 +2567,33 @@ pre[class$='note-red']:before {
 	content: 'note';
 }
 
+/*---------------------
+* Code Blocks Copy Button
+*------------------------*/
+
+.markdown-rendered button.copy-code-button{
+background: var(--titlebar-active);
+    color: var(--text-accent);
+    box-shadow: 0 0 0.6em var(--text-selection);
+    display: inline!important;
+}
+
+.markdown-rendered button.copy-code-button:hover{
+background: var(--text-selection);
+    box-shadow: 0 0 0.8em var(--text-selection);
+    }
+    
+.markdown-rendered button.copy-code-button:active{
+    background: var(--button-background);
+    box-shadow: 0 0 1em var(--button-background);
+    }
+    
+   .markdown-rendered button.copy-code-button{
+       margin: 6px;
+    padding: 1.75px 7px;
+   }
+
+
 
 /*==================
 * Tables ✅
@@ -2561,7 +2637,7 @@ pre[class$='note-red']:before {
 
 .markdown-preview-view blockquote p:first-of-type::before {
 	content: '❝';
-	font-family: Unispace;
+	font-family: arial;
 	opacity: .45;
 	font-size: 100px;
 	color: var(--text-accent);
@@ -2577,11 +2653,7 @@ pre[class$='note-red']:before {
 }
 
 /* 3.5. blockquotes, embeds, tables */
-.markdown-preview-view blockquote, .markdown-source-view.mod-cm6.is-live-preview,
-.markdown-preview-view .markdown-embed,
-.markdown-preview-view .file-embed,
-.markdown-preview-view th,
-.markdown-preview-view td {
+.markdown-preview-view blockquote, .markdown-preview-view .markdown-embed, .markdown-preview-view .file-embed, .markdown-preview-view th, .markdown-preview-view td {
 	box-shadow: 0em 0em 1em 0.4em #464aa4, inset 0em 0em 4em var(--glowy);
 }
 
@@ -3200,7 +3272,7 @@ background: var(--text-selection);
 opacity:0.8;
 }
 
-.is-mobile .search-input-clear-button, .is-mobile .search-input-container:before{
+.is-mobile .workspace-drawer .search-input-clear-button, .is-mobile .workspace-drawer .search-input-container:before{
 margin-top:60px;
 }
 
@@ -3346,4 +3418,21 @@ padding-right:10px;
 .is-tablet .workspace-leaf .view-header{
 border-top: 3px solid transparent;
 }
+
+.is-tablet .modal.mod-settings .modal-content{
+	border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+}
+
+
+/*======================
+* Entity Box Color fix
+*========================*/
+
+.attributeBoxOdd, .attributeBoxEven {
+fill: var(--background-primary)!important;
+}
+
 
