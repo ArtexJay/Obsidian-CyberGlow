@@ -599,6 +599,10 @@ color:var(--text-normal);
 color:var(--text-normal);
 }
 
+.mod-active .document-search-container {
+    background-color: var(--transparency-secondary);
+}
+
 
 /*--------------------------
 * General UI: Editor ✅
