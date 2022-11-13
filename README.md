@@ -13,8 +13,6 @@ The old interface of this theme was good but it didn't look nearly as good with 
 ## Mobile View
 ![1666826931695](https://user-images.githubusercontent.com/32932497/198157599-624a448a-9f4b-4a6d-99b8-539ad4c1215b.jpg)
 
-> Advice: If change accent color if you Use color slider when choosing accent colors for better visiblity when switching Light/Dark modes
-
 Special Thanks to:
 - Deathau (creator of 80's Neon theme) - Partial Basis for my theme and inspiration from this theme
 - Benny Guo, formerly Tridiamond (Creator of Obsidianite theme) - Partial Basis for my theme
