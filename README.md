@@ -5,6 +5,8 @@ The theme is now 100% consistent in design across devices Desktop, Phone and Tab
 
 Optional Fonts: [Fonts Install Optional.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/6705588/Fonts.Install.Optional.zip)
 
+Would greatly appreciate any donation if you enjoy this theme and would help me work more often on this theme (I like pizza a lot)<a href="https://www.buymeacoffee.com/TheEmperorArt"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=TheEmperorArt&button_colour=690ed8&font_colour=ffffff&font_family=Inter&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+
 The old interface of this theme was good but it didn't look nearly as good with the tabs, some selector choices were strange and looked quite dated. v7 of CyberGlow reworked those dated looking interfaces to be more modern. Custom accent colors should be more readable than in prior versions.
 
 ## Desktop View
