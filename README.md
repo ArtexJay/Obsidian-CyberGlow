@@ -9,7 +9,7 @@ Would greatly appreciate any donation if you enjoy this theme and would help me 
 <a href="https://www.buymeacoffee.com/TheEmperorArt"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=TheEmperorArt&button_colour=690ed8&font_colour=ffffff&font_family=Inter&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
 
 
-The old interface of this theme was good but it didn't look nearly as good with the tabs, some selector choices were strange and looked quite dated. v7 of CyberGlow reworked those dated looking interfaces to be more modern. Custom accent colors should be more readable than in prior versions.
+The old design (CyberGlowUI v1.0) of this theme was good but it didn't look nearly as good with the tabs, some selector choices were strange and looked quite dated. v7 of CyberGlow reworked those dated looking interfaces to be more modern (CyberGlowUI v2.0). Custom accent colors should be more readable than in prior versions.
 
 ## Desktop View
 ![image](https://user-images.githubusercontent.com/32932497/198157316-585581bd-f49f-4913-af9c-421190d445c2.png)
