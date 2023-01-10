@@ -18,10 +18,10 @@ The old design (CyberGlowUI v1.0) of this theme was good but it didn't look near
 ![1666826931695](https://user-images.githubusercontent.com/32932497/198157599-624a448a-9f4b-4a6d-99b8-539ad4c1215b.jpg)
 
 Special Thanks to:
-- Deathau (creator of 80's Neon theme) - Partial Basis for my theme and inspiration from this theme
-- Benny Guo, formerly Tridiamond (Creator of Obsidianite theme) - Partial Basis for my theme
-- Sailkite on Discord - CSS expert helping me with my weird CSS issues or idea that I have
-- Jdanielmourao (Creator of Sanctum theme) - Line selector in the editor and adapted it to for my theme.
-- Tomzorz (Creator of Sodalite Theme) - Improved on his transparant headers.
-- ChuckHarmston - Adapted his Safari Tab expander snippet.
+- Deathau, his creator of 80's Neon theme inspired the widespread glow effects now present in my theme. 
+- Benny Guo, formerly Tridiamond, his Obsidianite theme was the basis, originally intended to tweak his theme.
+- Sailkite on Discord - Helped me with resolve my weird CSS issues and suggested ways to streamline some things
+- Jdanielmourao's Sanctum theme line selector in the editor and adapted it to for my theme.
+- Tomzorz, his transparent headers although a bit buggy looked great Sodalite Theme - Improved on/fixed his transparant headers.
+- ChuckHarmston, Adapted his Safari Tab expander snippet.
 
