@@ -1,23 +1,67 @@
-/* Cyber Glow for Obsidian - v7.5.3 - Canvas Update by TheEmperorArt
+@charset "UTF-8";
+/* Cyber Glow for Obsidian - v7.6.3 building by TheEmperorArt
 /* Please leave credits if you modify for your own theme*/
 /*
-* - Disabled Items are properly hidden from view, so no weird gaps or "shadow selections"
-* - Transparency in Settings Page and other elements are less distracting
-* - Windows Control Buttons follow accent color like all other icons
-* - Support for Canvas + Canvas controls/menu
-* - Minor Fixes
-* - Revamped the dividing line "===" to work properly with canvas
-* - Fixed Editor Page was not padded properly following a recent update
+* - Layed the groundwork for future work with Style Settings features in CyberGlow.
+* - Themed support for Surfing Plugin (enjoy searching the web with the CyberGlow Theme)
+* - Status bar support theme for language tool checker
+* - Fixed graphical issue on Mobile while swiping back in Settings
+* - Library Tree List tags are all aligned
+* - Fixed portions of PDF view being hidden accidentally
+*/
+
+/* @settings
+name: CyberGlow Tweaks [Coming Soon]
+id: cyberglow-theme-settings
+settings:
+    - 
+        id: cg-background-image-toggle
+        title: Enable custom background [Coming Soon]
+        description: Enable Custom Background pic either from Local or online sources
+        type: class-toggle
+    - 
+        id: cg-background-image
+        title: Custom Background Image URL [Coming Soon]
+        description: 'Format: web url("https://link-to-image.png") or local  url("app://local/path-to-image.png")'
+        type: variable-text
+        default: url("https://link-to-image.png")
+    - 
+        id: cg-custom-bg-brightness
+        title: Background brightness [Coming Soon]
+        type: variable-number-slider
+        min: 0
+        max: 2
+        step: 0.05
+        default: 0.7
+    - 
+        id: cg-custom-bg-blur
+        title: Background blur [Coming Soon]
+        type: variable-number-slider
+        min: 0
+        max: 20
+        step: 1
+        default: 5
+        format: px
+    - 
+        id: cg-custom-bg-card-fg-opacity
+        title: Container opacity [Coming Soon]
+        type: variable-number-slider
+        min: 0
+        max: 1
+        step: 0.05
+        default: 0.4
+    - 
+
 */
 
 /*=======================
-* Light Mode ✅
+* Light Mode 
 *==========================*/
 
 .theme-light {
 
 	/*------------------------------
-* Light Mode: Background Colors ✅
+* Light Mode: Background Colors 
 *------------------------------------------*/
 
 	--background-primary: whitesmoke;
@@ -32,8 +76,15 @@
 	--background-settings-alt: rgb(245, 245, 245, .75);
 	--background-settings-2: rgba(78, 75, 75, .1);
 
+	--anp-background-image: var(--anp-background-image);
+	--anp-custom-bg-brightness: var(--anp-custom-bg-brightness);
+	--anp-custom-bg-blur: var(--anp-custom-bg-blur);
+	--anp-custom-bg-card-fg-opacity: var(--anp-custom-bg-card-fg-opacity);
+
+
+
 	/*------------------------------
-* Light Mode: Accent Colors ✅
+* Light Mode: Accent Colors 
 *------------------------------------------*/
 
 	--accent-h: 252;
@@ -63,14 +114,14 @@
 	--glowy: #5943BF;
 
 	/*------------------------------
-* Light Mode: Link Colors ✅
+* Light Mode: Link Colors 
 *------------------------------------------*/
 
 	--outgoing-link-hover: rgba(244, 86, 157, 0.55);
 	--internal-link-hover: rgba(14, 210, 247, 0.55);
 
 	/*------------------------------
-* Light Mode: Headers Colors ✅
+* Light Mode: Headers Colors 
 *------------------------------------------*/
 
 	--text-title-header: #656D72;
@@ -82,14 +133,14 @@
 	--h-accent-6: #0000FF;
 
 	/*------------------------------
-* Light Mode: Close Button Colors ✅
+* Light Mode: Close Button Colors 
 *------------------------------------------*/
 
 	--close-button: #FF0000;
 	--close-button-pressed: #E66472;
 
 	/*------------------------------
-* Light Mode: Highlight Override ✅
+* Light Mode: Highlight Override 
 *------------------------------------------*/
 
 	/* override built-in */
@@ -103,19 +154,19 @@
 }
 
 /*=======================
-* Dark Mode ✅
+* Dark Mode 
 *==========================*/
 
 .theme-dark {
 
 	/*------------------------------
-* Dark Mode: Background Colors ✅
+* Dark Mode: Background Colors 
 *------------------------------------------*/
 
 	--background-primary: #1e1e1e;
 	--background-primary-alt: #000000;
 	--background-secondary: #1e1e1e;
-	--background-secondary-alt: #1e1e1e;
+	--background-secondary-alt: 30, 30, 30;
 
 	--transparency-primary-alt: rgba(0, 0, 0, 0.55);
 	--transparency-secondary: rgba(30, 30, 30, 0.65);
@@ -126,8 +177,17 @@
 
 	--background-settings-2: rgba(78, 75, 75, .2);
 
+	--anp-background-image: var(--anp-background-image);
+	--anp-custom-bg-brightness: var(--anp-custom-bg-brightness);
+	--anp-custom-bg-blur: var(--anp-custom-bg-blur);
+	--anp-custom-bg-card-fg-opacity: var(--anp-custom-bg-card-fg-opacity);
+
+	--ctp-mantle: 41, 44, 60;
+
+
+
 	/*------------------------------
-* Dark Mode: Accent Colors and Misc Colors ✅
+* Dark Mode: Accent Colors and Misc Colors 
 *------------------------------------------*/
 
 	--accent-h: 252;
@@ -160,7 +220,7 @@
 
 
 	/*------------------------------
-* Dark Mode: Headers Colors ✅
+* Dark Mode: Headers Colors 
 *------------------------------------------*/
 
 	--text-title-header: #cbdbe5;
@@ -172,21 +232,21 @@
 	--h-accent-6: #ff00ff;
 
 	/*------------------------------
-* Dark Mode: Link Colors ✅
+* Dark Mode: Link Colors 
 *------------------------------------------*/
 
 	--outgoing-link-hover: rgba(244, 86, 157, 0.55);
 	--internal-link-hover: rgba(14, 210, 247, 0.55);
 
 	/*------------------------------
-* Dark Mode: Highlight Override ✅
+* Dark Mode: Highlight Override 
 *------------------------------------------*/
 
 	--close-button: #FF0000;
 	--close-button-pressed: #E66472;
 
 	/*------------------------------
-* Dark Mode: Highlight Override ✅
+* Dark Mode: Highlight Override 
 *------------------------------------------*/
 
 	/* override built-in for Highlighter*/
@@ -201,7 +261,7 @@
 
 :root {
 	/*=======================
-* Fonts ✅
+* Fonts 
 *==========================*/
 
 	/** Font Customization **/
@@ -396,38 +456,39 @@ a.tag[href*='#ideas']:hover {
 }
 
 body:not(.is-mobile) .empty-state-action:active {
-	background: var(--text-selection) !important;
+	background: var(--button-background) !important;
 	border-radius: var(--input-radius);
 	padding: 0 5px 0 5px;
-	box-shadow: 0 0 2em var(--text-selection) !important;
+	box-shadow: 0 0 0.3em var(--text-accent) !important;
 }
 
 body:not(.is-mobile) .empty-state-action:hover {
 	background: var(--titlebar-hover);
 	border-radius: var(--input-radius);
 	padding: 0 5px 0 5px;
-	box-shadow: 0 0 0.8em var(--titlebar-hover);
+	box-shadow: 0 0 0.6em var(--text-accent);
 }
 
 .setting-editor-extra-setting-button:hover {
 	color: var(--text-accent);
 	opacity: 1;
-	box-shadow: 0 0 0.8em var(--titlebar-hover);
+	box-shadow: 0 0 0.5em var(--text-accent);
 }
 
 .nav-action-button.is-active:hover {
 	background: var(--titlebar-hover);
-	box-shadow: 0 0 0.8em var(--titlebar-hover);
+	box-shadow: 0 0 0.5em var(--text-accent);
 }
 
 .nav-action-button.is-active {
 	opacity: 1;
-	background: var(--titlebar-active);
-	box-shadow: 0 0 0.6em var(--titlebar-active);
+	background: var(--button-background);
+	box-shadow: 0 0 0.2em var(--text-accent);
 }
 
 .workspace-split.mod-root .view-content {
 	background-color: var(--background-primary-alt);
+	
 }
 
 .workspace-leaf-resize-handle:hover {
@@ -481,12 +542,36 @@ body:not(.is-mobile) .empty-state-action:hover {
 
 .workspace-leaf.mod-active .view-header-title,
 .workspace-leaf.mod-active .view-header-icon {
-	opacity: 1;
 	color: var(--text-accent);
-	background: var(--titlebar-active);
+	background: var(--titlebar-hover);
 	border-radius: 5px;
-	box-shadow: 0 0 0.5em var(--titlebar-active);
+	box-shadow: 0 0 0.5em var(--text-accent);
+	opacity:0.8;
 
+}
+.workspace-leaf.mod-active .view-header-title:hover,
+.workspace-leaf.mod-active .view-header-icon:hover {
+	color: var(--text-accent);
+	background: var(--titlebar-hover);
+	border-radius: 5px;
+	box-shadow: 0 0 0.8em var(--text-accent);
+	opacity:1;
+}
+
+.workspace-leaf.mod-active .view-header-title:active,
+.workspace-leaf.mod-active .view-header-icon:active {
+	color: var(--text-accent);
+	background: var(--button-background);
+	border-radius: 5px;
+	box-shadow: 0 0 0.3em var(--text-accent);
+	opacity:1;
+}
+
+/*--------------------------
+* General UI: PDF ✅
+*----------------------------*/
+.view-content iframe{
+	margin-top: 35px;
 }
 
 /*--------------------------
@@ -581,15 +666,15 @@ body:not(.is-mobile) .workspace-leaf-content>.nav-header+*::-webkit-scrollbar-tr
 	background: var(--titlebar-hover);
 	border-radius: var(--input-radius);
 	color: var(--text-accent);
-	box-shadow: 0 0 0.8em var(--titlebar-hover);
+	box-shadow: 0 0 0.3em var(--text-accent);
 	opacity: 1;
 }
 
 .document-search-close-button:active {
 	color: var(--text-accent);
-	background: var(--text-selection);
+	background: var(--button-background);
 	border-radius: var(--input-radius);
-	box-shadow: 0 0 0.8em var(--text-selection);
+	box-shadow: 0 0 0.1em var(--text-accent);
 	opacity: 1;
 }
 
@@ -598,6 +683,26 @@ body:not(.is-mobile) .workspace-leaf-content>.nav-header+*::-webkit-scrollbar-tr
 	opacity: 0.8;
 }
 
+.document-search-container button:not(.clickable-icon){
+	background: var(--titlebar-active);
+	color: var(--text-accent);
+	box-shadow: 0 0 0.5em var(--text-accent);
+	display: inline;
+	opacity:0.8;
+}
+.document-search-container button:not(.clickable-icon):hover{
+    background-color: var(--titlebar-hover);
+	box-shadow: 0 0 0.8em var(--text-accent);
+	opacity:1;
+
+}
+
+.document-search-container button:not(.clickable-icon):active{
+	background: var(--button-background);
+	box-shadow: 0 0 0.2em var(--text-accent);
+	opacity:1;
+
+}
 
 body:not(.is-mobile) .document-search-container {
 	margin-top: 40px;
@@ -640,18 +745,24 @@ body.is-mobile .document-search-container {
 	color: #BCA6FF !important;
 }
 
+
 .markdown-source-view.mod-cm6 .cm-gutters .cm-lineNumbers .cm-gutterElement:not(.cm-active) {
-	opacity: 0.5;
+	opacity: 0.6;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 0px;
+
 }
 
 .markdown-source-view.mod-cm6 .cm-gutters .cm-lineNumbers .cm-gutterElement.cm-active {
 	color: var(--text-accent);
 	background: var(--titlebar-hover);
 	border-radius: 5px;
+	box-shadow: 0 0 0.5em var(--text-accent);
 	margin-left: 10px;
-	box-shadow: 0 0 0.5em var(--titlebar-hover);
-}
+	margin-right: 10px;
 
+}
 
 
 /*=======================
@@ -670,7 +781,6 @@ body.is-mobile .document-search-container {
 .clickable-icon[aria-disabled='true']:hover {
 	background-color: unset;
 	display: none;
-
 }
 
 
@@ -776,11 +886,13 @@ h6 {
 	color: var(--text-faint);
 }
 
-.setting-item {
+.modal .setting-item {
 	background: var(--background-settings-2);
 	border-radius: 5px;
 	margin: 0px 0px 5px 0px;
 	border-color: transparent;
+	padding: 18px;
+
 }
 
 .modal.mod-settings {
@@ -798,11 +910,7 @@ h6 {
 	background-color: transparent;
 }
 
-.setting-item {
-	padding: 18px;
-}
-
-.setting-item:first-child {
+.community-modal-sidebar .setting-item:first-child {
 	padding-top: 18px;
 }
 
@@ -830,7 +938,7 @@ input[type='email']:hover,
 input[type='password']:hover,
 input[type='number']:hover {
 	border-color: var(--text-faint);
-	box-shadow: 0 0 0.3em var(--text-faint);
+	box-shadow: 0 0 0.8em var(--text-accent);
 }
 
 textarea:active,
@@ -853,7 +961,7 @@ input[type='password']:focus-visible,
 input[type='number']:focus-visible,
 select:focus,
 .dropdown:focus {
-	box-shadow: 0 0 0 1px var(--text-accent);
+	box-shadow: 0 0 0.3em var(--text-accent);
 }
 
 .community-modal-search-results-wrapper {
@@ -871,20 +979,19 @@ textarea {
 .vertical-tab-nav-item.is-active {
 	opacity: 1;
 	color: var(--text-accent);
-	background: var(--titlebar-active);
+	background: var(--titlebar-active)!important;
 	border-left-color: 0px -1.75px 0px var(--text-accent);
-	z-index: 1;
-	box-shadow: 0 0 1.5em var(--titlebar-active);
+	box-shadow: 0 0 0.8em var(--text-accent);
 }
 
 .vertical-tab-nav-item:active,
 .horizontal-tab-nav-item.is-active:active,
 .vertical-tab-nav-item.is-active:active {
 	opacity: 1;
-	color: var(--text-accent);
-	background: var(--text-selection) !important;
+	color: var(--text-accent);	background: var(--button-background);
+	background: var(--button-background) !important;
 	border-left-color: 0px -1.75px 0px var(--text-accent);
-	box-shadow: 0 0 1.5em var(--text-selection) !important;
+	box-shadow: 0 0 0.3em var(--text-accent) !important;
 }
 
 .vertical-tab-nav-item:hover,
@@ -893,7 +1000,7 @@ textarea {
 	opacity: 1;
 	color: var(--text-accent);
 	background: var(--titlebar-hover);
-	box-shadow: 0 0 0.8em var(--titlebar-hover);
+	box-shadow: 0 0 0.5em var(--text-accent);
 }
 
 .vertical-tab-nav-item {
@@ -939,13 +1046,13 @@ textarea {
 	color: var(--text-accent);
 	background: var(--titlebar-hover);
 	border-radius: 5px;
-	box-shadow: 0 0 0.8em var(--titlebar-hover);
+	box-shadow: 0 0 0.7em var(--text-accent);
 }
 
 .menu-item:active {
 	color: var(--text-accent);
 	background-color: var(--titlebar-active);
-	box-shadow: 0 0 2em var(--titlebar-active);
+	box-shadow: 0 0 0.3em var(--text-accent);
 }
 
 .menu-item.is-disabled {
@@ -973,13 +1080,13 @@ textarea {
 .menu-item.selected:not(.is-disabled):not(.is-label) {
 	color: var(--text-accent);
 	background-color: var(--titlebar-hover);
-	box-shadow: 0 0 0.8em var(--titlebar-hover);
+	box-shadow: 0 0 0.7em var(--text-accent);
 }
 
 .menu-item:active:not(.is-disabled):not(.is-label) {
 	color: var(--text-accent);
 	background-color: var(--text-selection);
-	box-shadow: 0 0 2em var(--text-selection);
+	box-shadow: 0 0 0.3em var(--text-accent);
 }
 
 .menu-item.is-warning.selected {
@@ -1002,6 +1109,11 @@ textarea {
 
 .checkbox-container.is-enabled {
 	background-color: var(--text-accent);
+	box-shadow: 0 0 0.7em var(--text-accent);
+
+}
+.checkbox-container.is-enabled:after{
+	background: var(--titlebar-hover);
 }
 
 .checkbox-container {
@@ -1021,7 +1133,7 @@ textarea {
 
 .modal-close-button:active {
 	background-color: var(--close-button-pressed);
-	box-shadow: 0 0 0.5em var(--close-button-pressed);
+	box-shadow: 0 0 0.7em var(--close-button-pressed);
 }
 
 /*--------------------------
@@ -1031,24 +1143,26 @@ textarea {
 .modal.mod-settings button:not(.mod-cta),
 .modal button:not(.mod-cta):not(.mod-warning) .copy-code-button,
 button.mod-cta {
-	background-color: var(--titlebar-active);
+	background-color: var(--titlebar-hover);
 	color: var(--text-accent);
-	box-shadow: 0 0 0.6em var(--text-selection);
+	box-shadow: 0 0 0.5em var(--text-accent);
+	opacity: 0.7;
 }
 
 .modal.mod-settings button:not(.mod-cta):hover,
 .modal button:not(.mod-cta):not(.mod-warning):hover .copy-code-button,
 button.mod-cta:hover {
-	background-color: var(--text-selection);
-	box-shadow: 0 0 0.8em var(--text-selection);
+	background-color: var(--titlebar-hover);
+	box-shadow: 0 0 0.8em var(--text-accent);
+	opacity: 1;
 }
 
 button.mod-cta:active,
 .modal.mod-settings button:not(.mod-cta):active,
-.modal button:not(.mod-cta):not(.mod-warning):active,
 .copy-code-button:active {
 	background-color: var(--button-background);
-	box-shadow: 0 0 0.9em var(--button-background);
+	box-shadow: 0 0 0.3em var(--text-accent);
+	opacity: 1;
 }
 
 /*--------------------------
@@ -1059,18 +1173,21 @@ button.mod-cta:active,
 	border: 1px solid transparent;
 	background-color: var(--titlebar-hover);
 	color: var(--text-accent);
-	box-shadow: 0 0 0.6em var(--titlebar-hover);
+	box-shadow: 0 0 0.5em var(--text-accent);
+	opacity: 0.7;
 }
 
 .dropdown:hover {
 	border: 1px solid transparent;
-	background-color: var(--text-selection);
-	box-shadow: 0 0 0.8em var(--text-selection);
+	background-color: var(--titlebar-hover);
+	box-shadow: 0 0 0.8em var(--text-accent);
+	opacity: 1;
 }
 
 .dropdown:focus {
 	background-color: var(--button-background);
-	box-shadow: 0 0 0.9em var(--button-background);
+	box-shadow: 0 0 0.3em var(--text-accent);
+	opacity: 1;
 }
 
 /*--------------------------
@@ -1094,21 +1211,21 @@ ul>li::marker,
 
 .community-item:hover {
 	background-color: var(--titlebar-hover);
-	box-shadow: 0 0 0.5em var(--titlebar-active);
+	box-shadow: 0 0 0.7em var(--text-accent);
 	opacity: 1;
 }
 
 .community-item:active {
-	background-color: var(--text-selection);
-	box-shadow: 0 0 0.8em var(--text-selection);
+	background: var(--button-background);
+	box-shadow: 0 0 0.4em var(--text-accent);
 	opacity: 1;
 }
 
 .community-item {
-	border: 1px solid var(--text-faint);
+	border: none;
 	color: var(--text-accent);
 	opacity: 0.75;
-	box-shadow: 0 0 0.3em var(--text-faint)
+	box-shadow: 0 0 0.1em var(--text-accent);
 }
 
 .community-item-downloads,
@@ -1147,13 +1264,24 @@ ul>li::marker,
 .status-bar-item.mod-clickable:hover {
 	color: var(--text-accent);
 	background: var(--titlebar-hover);
-	box-shadow: 0 0 0.8em var(--titlebar-hover);
+	box-shadow: 0 0 0.8em var(--text-accent);
 }
 
 .status-bar-item.mod-clickable:active {
 	color: var(--text-accent);
 	background: var(--text-selection);
-	box-shadow: 0 0 1em var(--text-selection)
+	box-shadow: 0 0 0.3em var(--text-accent);
+}
+
+.status-bar-item.plugin-obsidian-languagetool-plugin:hover{
+	color: var(--text-accent);
+	background: var(--titlebar-hover);
+	box-shadow: 0 0 0.8em var(--text-accent);
+}
+.status-bar-item.plugin-obsidian-languagetool-plugin:active{
+	color: var(--text-accent);
+	background: var(--text-selection);
+	box-shadow: 0 0 0.3em var(--text-accent);
 }
 
 /*=====================
@@ -1173,27 +1301,27 @@ ul>li::marker,
 }
 
 /*-----------------------
-* Title bar: MRC Buttons ✅
+* Title bar: Window Control Buttons ✅
 *------------------------*/
 
 .titlebar-button:hover {
 	background-color: var(--titlebar-hover);
-	box-shadow: 0 0 0.8em var(--titlebar-hover);
+	box-shadow: 0 0 0.6em var(--text-accent);
 }
 
 .titlebar-button:active {
 	background-color: var(--text-selection);
 	color: var(--font-normal);
-	box-shadow: 0 0 1.5em var(--text-selection);
+	box-shadow: 0 0 0.3em var(--text-accent);
 }
 
 .titlebar-button.mod-close:hover {
-	box-shadow: 0 0 0.6em var(--close-button);
+	box-shadow: 0 0 0.5em var(--close-button);
 }
 
 .titlebar-button.mod-close:active {
 	background-color: #E66472 !important;
-	box-shadow: 0 0 1.5em #E66472;
+	box-shadow: 0 0 1em #E66472;
 }
 
 .titlebar-button:active {
@@ -1215,6 +1343,10 @@ ul>li::marker,
 .mod-windows .titlebar-button {
 	padding: 0 14px;
 	color: var(--text-accent);
+}
+
+.is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
+	background-color: transparent;
 }
 
 /*-----------------------
@@ -1250,20 +1382,18 @@ ul>li::marker,
 .workspace-tab-header.is-active {
 	color: var(--text-accent) !important;
 	opacity: 1;
-	box-shadow: 0 0 0 transparent;
 	background: var(--titlebar-active);
 	border-radius: var(--clickable-icon-radius);
-	box-shadow: 0 0 0.6em var(--titlebar-active) !important;
+	box-shadow: 0 0 0.6em var(--text-accent);
 }
 
 .workspace-tab-header:hover {
 	opacity: 1;
-	box-shadow: none;
 	color: var(--text-accent);
 	opacity: 1;
 	background: var(--titlebar-hover) !important;
 	border-radius: var(--clickable-icon-radius);
-	box-shadow: 0 0 0.5em var(--titlebar-hover);
+	box-shadow: 0 0 0.2em var(--text-accent);
 }
 
 .workspace-tab-header:active {
@@ -1271,9 +1401,9 @@ ul>li::marker,
 	box-shadow: none;
 	color: var(--text-accent);
 	opacity: 1;
-	background: var(--text-selection) !important;
+	background: var(--button-background) !important;
 	border-radius: var(--clickable-icon-radius);
-	box-shadow: 0 0 0.6em var(--text-selection) !important;
+	box-shadow: 0 0 0.1em var(--text-accent) !important;
 }
 
 .workspace-tab-header-container-inner {
@@ -1327,7 +1457,7 @@ ul>li::marker,
 	color: var(--text-accent);
 	background: var(--titlebar-hover);
 	opacity: 1;
-	box-shadow: 0 0 0.5em var(--titlebar-hover);
+	box-shadow: 0 0 0.5em var(--text-accent);
 }
 
 .workspace .mod-root .workspace-tab-header:hover .workspace-tab-header-inner-close-button {
@@ -1339,24 +1469,40 @@ ul>li::marker,
 }
 
 .clickable-icon.has-active-menu {
-	background: var(--text-selection);
-	box-shadow: 0 0 0.8em var(--text-selection);
+	background: var(--button-background);
+	box-shadow: 0 0 0.3em var(--text-accent);
 	color: var(--text-accent);
+	opacity: 1;
 }
 
 .workspace-tab-header-tab-list .clickable-icon:active,
 .workspace-tab-header-new-tab .clickable-icon:active,
 .clickable-icon:active {
-	background: var(--text-selection);
+	background: var(--button-background);
 	color: var(--text-accent);
 	opacity: 1;
-	box-shadow: 0 0 0.6em var(--titlebar-hover);
+	box-shadow: 0 0 0.3em var(--text-accent);
 
 }
 
 .is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon:active {
 	background-color: transparent;
 	box-shadow: none;
+}
+
+/*__________________________
+* Title bar: Tabs Stacked ✅
+*________________________*/
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.is-active{
+
+	background-color:var(--titlebar-active);
+	box-shadow: 0 0 0.6em var(--text-accent);
+	border-radius: var(--clickable-icon-radius);
+}
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button{
+color: var(--text-accent)
 }
 
 /*================
@@ -1448,6 +1594,11 @@ iframe {
 	background: var(--background-settings-alt);
 	backdrop-filter: blur(5px) saturate(120%);
 	padding: 2px;
+	margin-top: 40px;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
+	border-right: 1px solid;
+	border-left: 1px solid;
 }
 
 .graph-controls-button {
@@ -1463,12 +1614,12 @@ iframe {
 .tree-item-self:hover {
 	background: var(--titlebar-hover);
 	border-radius: 5px !important;
-	box-shadow: 0 0 0.7em var(--titlebar-hover);
+	box-shadow: 0 0 0.5em var(--text-accent);
 }
 
 .tree-item-self:active {
-	background: var(--titlebar-active);
-	box-shadow: 0 0 1em var(--titlebar-active);
+	background: var(--button-background);
+	box-shadow: 0 0 0.3em var(--text-accent);
 }
 
 .graph-control-section>.tree-item-self {
@@ -1478,11 +1629,10 @@ iframe {
 .graph-controls {
 	border-radius: 5px 5px 5px 5px;
 	border-color: transparent;
-
 }
 
 /*================
-* SidePanel ✅
+* SidePanel 
 *=================*/
 
 .mod-left-split .workspace-tab-header-inner-icon {
@@ -1507,7 +1657,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 	background-color: var(--titlebar-hover);
 	color: var(--text-accent);
 	opacity: 1;
-	box-shadow: 0 0 0.6em var(--titlebar-hover);
+	box-shadow: 0 0 0.5em var(--text-accent);
 }
 
 .nav-folder.mod-root .nav-folder>.nav-folder-children {
@@ -1527,12 +1677,11 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 
 
 .workspace-tab-header.is-active.mod-active {
-	box-shadow: none;
 	color: var(--text-accent);
 	opacity: 1;
 	background: var(--titlebar-active);
 	border-radius: var(--clickable-icon-radius) !important;
-	box-shadow: 0 0 0.6em var(--titlebar-active);
+	box-shadow: 0 0 0.3em var(--text-accent);
 }
 
 .mod-left-split .workspace-tab-header.has-active-menu,
@@ -1544,7 +1693,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 	opacity: 1;
 	background: var(--titlebar-active);
 	border-radius: var(--clickable-icon-radius) !important;
-	box-shadow: 0 0 0.6em var(--titlebar-active);
+	box-shadow: 0 0 0.33em var(--text-accent);
 
 }
 
@@ -1589,6 +1738,11 @@ body.is-focused .workspace-tab-header .workspace-tab-header-inner-title,
 	border-top: 1px solid;
 }
 
+/*SidePanel Tree Tags to the right*/
+.nav-file-title-content, .nav-folder-title-content{
+	flex: 1 1 auto;
+}
+
 
 /*------------
 * SidePanel: Drag ✅
@@ -1622,21 +1776,21 @@ body.is-focused .workspace-tab-header .workspace-tab-header-inner-title,
 	opacity: 1;
 	color: var(--text-accent);
 	background: var(--titlebar-hover);
-	box-shadow: 0 0 1.5em var(--titlebar-hover);
+	box-shadow: 0 0 0.4em var(--text-accent);
 }
 
 .nav-file-title.is-active {
 	opacity: 1;
 	color: var(--text-accent);
 	background: var(--titlebar-active);
-	box-shadow: 0 0 1.5em var(--titlebar-active);
+	box-shadow: 0 0 0.7em var(--text-accent)!important;
 }
 
 .nav-file-title.is-active:hover {
 	opacity: 1;
 	color: var(--text-accent) !important;
 	background: var(--titlebar-hover) !important;
-	box-shadow: 0 0 0.8em var(--titlebar-hover) !important;
+	box-shadow: 0 0 0.5em var(--text-accent) !important;
 
 }
 
@@ -1677,6 +1831,7 @@ body:not(.is-mobile) .workspace-leaf-content>.nav-files-container {
 	background-color: var(--background-primary-alt);
 	margin-right: 7px;
 	border-radius: 5px;
+	padding-right: 3px;
 }
 
 /*------------
@@ -1691,17 +1846,23 @@ body:not(.is-mobile) .workspace-leaf-content>.nav-files-container {
 .tree-item-self.is-clickable:hover,
 .tree-item-self:hover .tree-item-flair {
 	opacity: 1;
-	background: var(--titlebar-hover);
 	color: var(--text-accent);
-	box-shadow: 0 0 0.8em var(--titlebar-hover);
+}
+
+.tree-item-self.is-clickable:hover{
+box-shadow: 0 0 0.6em var(--text-accent);
+background: var(--titlebar-hover);
 }
 
 .tree-item-self.is-clickable:active,
 .tree-item-self:active .tree-item-flair {
 	opacity: 1;
-	background: var(--titlebar-active);
 	color: var(--text-accent);
-	box-shadow: 0 0 1em var(--titlebar-active) !important;
+}
+
+.tree-item-self.is-clickable:active{
+	box-shadow: 0 0 0.3em var(--text-accent) !important;
+	background: var(--button-background);
 }
 
 .search-empty-state {
@@ -1769,7 +1930,7 @@ body:not(.is-mobile) .search-result-container.mod-global-search {
 	opacity: 1;
 	background: var(--titlebar-hover);
 	border-radius: 5px;
-	box-shadow: 0 0 0.4em var(--titlebar-hover);
+	box-shadow: 0 0 0.4em var(--text-accent);
 
 }
 
@@ -1778,7 +1939,7 @@ body:not(.is-mobile) .search-result-container.mod-global-search {
 	opacity: 1;
 	background: var(--titlebar-active);
 	border-radius: 5px;
-	box-shadow: 0 0 0.4em var(--titlebar-active);
+	box-shadow: 0 0 0.4em var(--text-accent);
 
 }
 
@@ -1923,13 +2084,13 @@ body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
 .sidebar-toggle-button.mod-left:hover {
 	background: var(--titlebar-hover);
 	border-radius: 5px;
-	box-shadow: 0 0 0.8em var(--titlebar-hover);
+	box-shadow: 0 0 0.6em var(--text-accent);
 }
 
 .sidebar-toggle-button.mod-left:active {
 	background: var(--text-selection);
 	border-radius: 5px;
-	box-shadow: 0 0 1.5em var(--text-selection);
+	box-shadow: 0 0 0.3em var(--text-accent);
 }
 
 .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
@@ -1997,25 +2158,26 @@ body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
 
 }
 
-
 /*------------------------------
 * Side dock: Window Prompt ✅
 *------------------------------------------*/
 
 .modal button:not(.clickable-icon) {
+	opacity:0.8;
 	background-color: var(--titlebar-hover);
 	color: var(--text-accent);
-	box-shadow: 0 0 0.6em var(--titlebar-hover);
+	box-shadow: 0 0 0.5em var(--text-accent);
 }
 
 .modal button:not(.clickable-icon):hover {
-	background-color: var(--text-selection);
-	box-shadow: 0 0 0.8em var(--text-selection);
+	opacity:1;
+	background-color: var(--titlebar-hover);
+	box-shadow: 0 0 0.8em var(--text-accent);
 }
 
 .modal button:not(.clickable-icon):active {
 	background-color: var(--button-background);
-	box-shadow: 0 0 1em var(--button-background);
+	box-shadow: 0 0 0.3em var(--text-accent);
 }
 
 .list-item-part.clickable-icon {
@@ -2026,14 +2188,14 @@ body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
 	background: var(--titlebar-hover);
 	color: var(--text-accent);
 	opacity: 1;
-	box-shadow: 0 0 0.5em var(--titlebar-hover);
+	box-shadow: 0 0 0.6em var(--text-accent);
 }
 
 .list-item-part.clickable-icon:active {
-	background: var(--titlebar-hover);
+	background-color: var(--button-background);
 	color: var(--text-accent);
 	opacity: 1;
-	box-shadow: 0 0 1em var(--button-background);
+	box-shadow: 0 0 0.3em var(--text-accent);
 
 }
 
@@ -2052,12 +2214,12 @@ body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
 	text-align: center;
-	text-shadow: 0 0 0.5em var(--glowy);
+	text-shadow: 0 0 0.5em var(--text-accent);
 }
 
 .markdown-preview-view .task-list-item-checkbox {
-	border: 1px solid var(--glowy);
-	box-shadow: 0 0 0.5em var(--glowy);
+	border: 1px solid var(--text-accent);
+	box-shadow: 0 0 0.5em var(--text-accent);
 }
 
 .markdown-source-view.mod-cm6 .cm-indent::before {
@@ -2689,24 +2851,27 @@ pre[class$='note-red']:before {
 }
 
 /*---------------------
-* Code Blocks Copy Button
+* Code Blocks Copy Button ✅
 *------------------------*/
 
 .markdown-rendered button.copy-code-button {
 	background: var(--titlebar-active);
 	color: var(--text-accent);
-	box-shadow: 0 0 0.6em var(--text-selection);
+	box-shadow: 0 0 0.5em var(--text-accent);
 	display: inline !important;
+	opacity:0.7;
 }
 
 .markdown-rendered button.copy-code-button:hover {
 	background: var(--text-selection);
-	box-shadow: 0 0 0.8em var(--text-selection);
+	box-shadow: 0 0 0.7em var(--text-accent);
+	opacity:1;
 }
 
 .markdown-rendered button.copy-code-button:active {
 	background: var(--button-background);
-	box-shadow: 0 0 1em var(--button-background);
+	box-shadow: 0 0 0.3em var(--text-accent);
+	opacity:1;
 }
 
 .markdown-rendered button.copy-code-button {
@@ -2721,7 +2886,7 @@ pre[class$='note-red']:before {
 *==================*/
 
 .markdown-rendered table {
-	box-shadow: 0em 0em 1em 0.4em var(--text-accent), inset 0em 0em 4em var(--text-accent);
+	box-shadow: 0em 0em 1em 0.4em var(--text-accent), inset 0em 0em 2em var(--text-accent);
 }
 
 .markdown-rendered th {
@@ -2781,7 +2946,7 @@ pre[class$='note-red']:before {
 .markdown-preview-view .file-embed,
 .markdown-preview-view th,
 .markdown-preview-view td {
-	box-shadow: 0em 0em 1em 0.4em var(--text-accent), inset 0em 0em 4em var(--text-accent);
+	box-shadow: 0em 0em 1em 0.1em var(--text-accent), inset 0em 0em 2em var(--text-accent);
 }
 
 /*--------------------------
@@ -3076,7 +3241,7 @@ mark.blue:hover {
 }
 
 /*=======================
-* Callouts ✅
+* Callouts  ✅
 *==========================*/
 
 .markdown-rendered cite {
@@ -3153,21 +3318,21 @@ mark.blue:hover {
 * Quick Switcher ✅
 *================*/
 
-.suggestion-item.mod-complex:hover {
+.suggestion-item.mod-complex:hover, .suggestion-item.is-selected {
 	color: var(--text-accent);
 	background: var(--titlebar-hover);
-	box-shadow: 0 0 0.5em var(--titlebar-hover);
+	box-shadow: 0 0 0.6em var(--text-accent);
 }
 
 .suggestion-item.mod-complex:active {
 	color: var(--text-accent);
-	background: var(--text-selection);
-	box-shadow: 0 0 1em var(--text-selection);
+	background: var(--button-background);
+	box-shadow: 0 0 0.3em var(--text-accent);
 	opacity: 1;
 }
 
 /*===============
-* Mobile UI ✅
+* Mobile UI 
 *================*/
 
 body.is-phone .markdown-rendered::-webkit-scrollbar-track {
@@ -3204,7 +3369,7 @@ body.is-phone .markdown-rendered::-webkit-scrollbar-track {
 
 .mobile-toolbar-option:active {
 	background: var(--text-selection);
-	box-shadow: 0 0 1.5em var(--titlebar-hover);
+	box-shadow: 0 0 1.5em var(--text-accent);
 	border-radius: 5px;
 }
 
@@ -3237,7 +3402,7 @@ body.is-phone .markdown-rendered::-webkit-scrollbar-track {
 }
 
 /*---------------------
-* Mobile UI: Sidepanel ✅
+* Mobile UI: Sidepanel 
 *------------------------*/
 
 .is-phone .workspace-drawer.mod-left,
@@ -3377,14 +3542,14 @@ body.is-mobile .nav-files-container::-webkit-scrollbar-track {
 .is-mobile .workspace-drawer-tab-option-item:active {
 	color: var(--text-accent);
 	background: var(--text-selection);
-	box-shadow: 0 0 1.5em var(--titlebar-hover);
+	box-shadow: 0 0 1.5em var(--text-accent);
 	border-radius: 5px;
 	opacity: 1;
 }
 
 .is-mobile .workspace-drawer-header-switcher:active {
 	background: var(--text-selection);
-	box-shadow: 0 0 0.5em var(--titlebar-hover);
+	box-shadow: 0 0 0.5em var(--text-accent);
 	border-radius: 5px;
 	padding-bottom: 0px;
 }
@@ -3401,7 +3566,7 @@ body.is-mobile .nav-files-container::-webkit-scrollbar-track {
 .is-mobile .workspace-drawer-header-icon:active {
 	color: var(--text-accent);
 	background: var(--text-selection);
-	box-shadow: 0 0 1.5em var(--titlebar-hover);
+	box-shadow: 0 0 1.5em var(--text-accent);
 	border-radius: 5px;
 	opacity: 1;
 	padding-right: 5px;
@@ -3414,7 +3579,7 @@ body.is-mobile .nav-files-container::-webkit-scrollbar-track {
 .is-mobile .workspace-drawer-active-tab-title:active {
 	color: var(--text-accent);
 	background: var(--text-selection);
-	box-shadow: 0 0 1.5em var(--titlebar-hover);
+	box-shadow: 0 0 1.5em var(--text-accent);
 	border-radius: 5px;
 	opacity: 1;
 }
@@ -3430,7 +3595,7 @@ body.is-mobile .nav-files-container::-webkit-scrollbar-track {
 }
 
 /*---------------------
-* Mobile: Settings ✅
+* Mobile: Settings 
 *------------------------*/
 
 .is-phone .vertical-tab-header-group-title,
@@ -3455,7 +3620,7 @@ body.is-mobile .nav-files-container::-webkit-scrollbar-track {
 
 .is-phone .modal-setting-back-button:active {
 	background: var(--text-selection);
-	box-shadow: 0 0 1.5em var(--titlebar-hover);
+	box-shadow: 0 0 1.5em var(--text-accent);
 	border-radius: 5px;
 
 }
@@ -3472,7 +3637,7 @@ body.is-mobile .nav-files-container::-webkit-scrollbar-track {
 .workspace-drawer-header-switcher:active {
 	color: var(--text-accent);
 	background: var(--text-selection);
-	box-shadow: 0 0 1.5em var(--titlebar-hover);
+	box-shadow: 0 0 1.5em var(--text-accent);
 	border-radius: 5px;
 	opacity: 1 !important;
 }
@@ -3496,7 +3661,7 @@ body.is-mobile .nav-files-container::-webkit-scrollbar-track {
 	opacity: 1;
 	color: var(--text-accent);
 	background: var(--text-selection);
-	box-shadow: 0 0 1.5em var(--titlebar-hover);
+	box-shadow: 0 0 1.5em var(--text-accent);
 	border-radius: 5px;
 }
 
@@ -3516,7 +3681,7 @@ is.mobile .modal.mod-settings {
 .is-mobile .empty-state-action:active {
 	background: var(--text-selection) !important;
 	border-radius: var(--input-radius);
-	box-shadow: 0 0 2em var(--text-selection) !important;
+	box-shadow: 0 0 2em var(--text-accent) !important;
 }
 
 .is-phone .modal.mod-settings .vertical-tab-header,
@@ -3525,7 +3690,7 @@ is.mobile .modal.mod-settings {
 }
 
 /*---------------------
-* Tablet ✅
+* Tablet 
 *------------------------*/
 
 .is-tablet .modal.mod-settings .vertical-tab-header,
@@ -3590,9 +3755,8 @@ body.is-tablet .sidebar-toggle-button {
 	border-top: 3px solid;
 }
 
-
 /*======================
-* Entity Box Color fix
+* Entity Box Color fix ✅
 *========================*/
 
 .attributeBoxOdd,
@@ -3600,26 +3764,12 @@ body.is-tablet .sidebar-toggle-button {
 	fill: var(--background-primary) !important;
 }
 
-
-/*Add*/
-
-.is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
-	background-color: transparent;
-}
-
-.graph-controls,
-.graph-controls.is-close,
-.graph-controls:not(.is-close),
-.workspace-split:not(.mod-root) .graph-controls.is-close {
-	margin-top: 40px;
-	border-image-slice: 1;
-	border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
-	border-right: 1px solid;
-	border-left: 1px solid;
-}
-
-/* New Canvas*/
-/*Canvas right hand controls*/
+/*======================
+* Canvas* ✅
+*========================*/
+/*---------------------
+* Canvas right hand controls ✅
+*------------------------*/
 .canvas-controls {
 	margin-top: 35px;
 	gap: none;
@@ -3650,9 +3800,8 @@ body.is-tablet .sidebar-toggle-button {
 .canvas-controls button:hover {
 	background: var(--titlebar-hover);
 	border-radius: var(--clickable-icon-radius) !important;
-	box-shadow: 0 0 0.5em var(--titlebar-hover);
-
 }
+
 
 .canvas-controls button:disabled {
 	display: none;
@@ -3665,18 +3814,18 @@ body.is-tablet .sidebar-toggle-button {
 
 }
 
-.canvas-controls-group button.is-active {
-	background: var(--titlebar-active);
-	box-shadow: 0 0 1.5em var(--titlebar-active);
-
+.canvas-controls-group button:active {
+	background: var(--button-background);
+	
 }
 
-/*Canvas*/
+/*---------------------
+* Internal Canvas ✅
+*------------------------*/
 
 .canvas-background {
 	background-color: var(--background-primary-alt);
 }
-
 
 .canvas-menu {
 	background-color: var(--background-settings-alt);
@@ -3701,11 +3850,11 @@ body.is-tablet .sidebar-toggle-button {
 
 .canvas-node.is-selected.is-themed .canvas-node-container, .canvas-node.is-focused.is-themed .canvas-node-container{
 	box-shadow: 0 0 10px 5px rgba(var(--canvas-color), 0.9), inset 0 0 10px 1px rgba(var(--canvas-color), 0.7), var(--shadow-stationary);
-
-
 }
 
-/*Canvas Menu Card*/
+/*---------------------
+* Canvas Menu Card ✅
+*------------------------*/
 .canvas-card-menu {
 	box-shadow: none;
 	background: var(--background-settings);
@@ -3737,7 +3886,7 @@ body.is-tablet .sidebar-toggle-button {
 	color: var(--text-accent);
 	background: var(--titlebar-hover);
 	opacity: 1;
-	box-shadow: 0 0 0.5em var(--titlebar-hover);
+	box-shadow: 0 0 0.5em var(--text-accent);
 	border-radius: var(--clickable-icon-radius) !important;
 }
 
@@ -3748,10 +3897,75 @@ body.is-tablet .sidebar-toggle-button {
 
 .canvas-card-menu .canvas-card-menu-button.mod-draggable:active {
 
-	background: var(--text-selection);
-	box-shadow: 0 0 0.8em var(--text-selection);
+	background: var(--button-background);
+	box-shadow: 0 0 0.3em var(--text-accent);
 	color: var(--text-accent);
 	border-radius: var(--clickable-icon-radius) !important;
 
 }
 
+/*======================
+* Surfing Plugin ✅
+*========================*/
+.wb-frame{
+	padding-top: 40px;
+}
+
+.wb-icon-list-container button:not(.clickable-icon){
+	border: 1px solid transparent;
+    background-color: var(--titlebar-hover);
+    box-shadow: 0 0 0.6em var(--text-accent);  
+	  color: var(--text-accent);
+}
+
+.wb-icon-list-container button:not(.clickable-icon):hover{
+	border: 1px solid transparent;
+    background-color: var(--titlebar-hover);
+    color: var(--text-accent);
+    box-shadow: 0 0 0.8em var(--text-accent);
+
+}
+
+.wb-icon-list-container button:not(.clickable-icon):active{
+	border: 1px solid transparent;
+    background-color: var(--button-background);
+    color: var(--text-accent);
+    box-shadow: 0 0 0.4em var(--text-accent);
+
+}
+.wb-create-btn, .wb-search-btn, .wb-close-btn{
+opacity:0.8;
+}
+
+
+/*WIP Style Settings*/
+
+.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right{
+	background-color: transparent;
+}
+
+/*Style Settings - More Coming Soon*/
+
+.setting-item:first-child{
+	margin-top:40px!important;
+	}
+.workspace-split.mod-right-split .view-content{
+	padding-top:0px;
+}
+
+body:not(.is-mobile) .workspace-leaf-content .view-content .setting-item{
+	background: var(--background-settings);
+	margin-top:10px;
+	border-radius: 5px;
+	padding: 10px;
+	border-bottom: none;
+	border-top: none;
+}
+
+body:not(.is-mobile) .workspace-leaf-content .view-content .setting-item[data-level="3"]{
+padding-left:30px;
+}
+
+.setting-item .setting-item-heading .style-settings-heading#3{
+	padding-left:20px
+}
