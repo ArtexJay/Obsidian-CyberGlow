@@ -12,7 +12,9 @@ Would greatly appreciate any donation if you enjoy this theme and would help me 
 The old design (CyberGlowUI v1.0) of this theme was good but it didn't look nearly as good with the tabs, some selector choices were strange and looked quite dated. v7 of CyberGlow reworked those dated looking interfaces to be more modern (CyberGlowUI v2.0). Custom accent colors should be more readable than in prior versions.
 
 ## Desktop View
-![image](https://user-images.githubusercontent.com/32932497/198157316-585581bd-f49f-4913-af9c-421190d445c2.png)
+![image](https://user-images.githubusercontent.com/32932497/212500883-7c1c3c9c-9094-41ce-8996-a52cbe64f3bb.png)
+
+![image](https://user-images.githubusercontent.com/32932497/212500888-ac96edeb-e1c9-4ec8-b848-2cd41c1ae161.png)
 
 ## Mobile View
 ![1666826931695](https://user-images.githubusercontent.com/32932497/198157599-624a448a-9f4b-4a6d-99b8-539ad4c1215b.jpg)
