@@ -1074,10 +1074,9 @@ body:not(.is-phone) .vertical-tab-header-group:nth-last-of-type(1) .vertical-tab
 	background-color: var(--background-settings);
 }
 
-.horizontal-tab-content,
-.vertical-tab-content,
+.horizontal-tab-content, .vertical-tab-content,
 .vertical-tab-header {
-	background-color: transparent;
+	background: transparent;
 }
 
 .community-modal-sidebar .setting-item:first-child {
@@ -3704,7 +3703,7 @@ background-color: var(--background-settings);
 
 .is-phone .theme-dark .workspace-drawer-inner,
 .is-phone .workspace-drawer-inner {
-	background-color: black;
+	background: var(--background-primary-alt);
 }
 
 .workspace-drawer-header-info,
@@ -3981,9 +3980,8 @@ is.mobile .modal.mod-settings {
 	box-shadow: 0 0 2em var(--text-accent) !important;
 }
 
-.is-phone .modal.mod-settings .vertical-tab-header,
-.is-phone .modal.mod-settings .vertical-tab-content {
-	background: var(--background-primary-alt) !important;
+.is-phone .modal.mod-settings .vertical-tab-header {
+	background: var(--background-primary-alt);
 }
 
 
@@ -4011,17 +4009,13 @@ margin-top: 9px;
 	padding-top:50px;
 }
 
-.is-phone.theme-dark .modal.mod-settings .vertical-tab-nav-item{
-background-color: var(--background-settings);
-
-}
-.is-phone .modal.mod-settings .vertical-tab-content {
-	background-color: var(--background-primary-alt) !important;
+.is-phone .modal.mod-settings .vertical-tab-nav-item{
+background-color: var(--background-settings-2);
 
 }
 
 .is-phone .modal .setting-item{
-	background-color: var(--background-settings);
+	background-color: var(--background-settings-2);
 }
 
 .is-phone .modal.mod-settings .vertical-tab-content{
@@ -4053,6 +4047,9 @@ padding:0;
 
 }
 
+.is-phone .community-modal-controls{
+margin-top: 35px;
+}
 
 /*---------------------
 * Tablet 
@@ -4871,20 +4868,6 @@ url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" widt
     margin-left: 2.5px;
     margin-top:2.5px;
 }
-
-
-
-
-/*WIP*/
-
-
-
-
-
-
-
-
-
 
 
 
