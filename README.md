@@ -46,8 +46,8 @@ The theme contains lots of improvements over the base theme as well as unique, a
   -  <mark class = "blue">test</mark>
   -  <mark class = "green">test</mark>
 - Add custom cursive signatures (If you have the optional fonts pack installed)
-  - <cite>Enter Name Here</cite>
-  - <div class= 'signature'>The Name<\div>
+  - `<cite>Enter Name Here</cite>`
+  - `<div class= 'signature'>The Name<\div>`
 - Easily identifiable codeblocks with properly code coloring
   
 * are features/designs that this theme was the first in achieving.
