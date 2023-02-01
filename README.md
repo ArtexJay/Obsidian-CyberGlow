@@ -41,10 +41,10 @@ The theme contains lots of improvements over the base theme as well as unique, a
 - Improved stacked tabs compatibility with Custom background support *
   - Many stacked tabs become transparent and virtually unusuable when custom tabs are enabled
 - Custom highlighting 
-  -  <mark class = "yellow">test</mark>
-  -  <mark class = "red">test</mark>
-  -  <mark class = "blue">test</mark>
-  -  <mark class = "green">test</mark>
+  -  `mark class = "yellow">test</mark>`
+  -  `<mark class = "red">test</mark>`
+  -  `<mark class = "blue">test</mark>`
+  -  `<mark class = "green">test</mark>`
 - Add custom cursive signatures (If you have the optional fonts pack installed)
   - `<cite>Enter Name Here</cite>`
   - `<div class= 'signature'>The Name<\div>`
@@ -53,7 +53,7 @@ The theme contains lots of improvements over the base theme as well as unique, a
 * are features/designs that this theme was the first in achieving.
 
 ## Mobile View
-![1666826931695](https://user-images.githubusercontent.com/32932497/198157599-624a448a-9f4b-4a6d-99b8-539ad4c1215b.jpg|200)
+![1666826931695](https://user-images.githubusercontent.com/32932497/198157599-624a448a-9f4b-4a6d-99b8-539ad4c1215b.jpg)
 
 Would greatly appreciate any donation if you enjoy this theme and would help me work more often on this theme (I like pizza 😋)
 <a href="https://www.buymeacoffee.com/TheEmperorArt"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=TheEmperorArt&button_colour=690ed8&font_colour=ffffff&font_family=Inter&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
