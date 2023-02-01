@@ -53,7 +53,8 @@ The theme contains lots of improvements over the base theme as well as unique, a
 * are features/designs that this theme was the first in achieving.
 
 ## Mobile View
-![1666826931695](https://user-images.githubusercontent.com/32932497/198157599-624a448a-9f4b-4a6d-99b8-539ad4c1215b.jpg)
+
+<img src="https://user-images.githubusercontent.com/32932497/198157599-624a448a-9f4b-4a6d-99b8-539ad4c1215b.jpg" height="700">
 
 Would greatly appreciate any donation if you enjoy this theme and would help me work more often on this theme (I like pizza 😋)
 <a href="https://www.buymeacoffee.com/TheEmperorArt"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=TheEmperorArt&button_colour=690ed8&font_colour=ffffff&font_family=Inter&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
