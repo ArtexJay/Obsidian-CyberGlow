@@ -1,12 +1,18 @@
-# Obsidian-CyberGlow
-
+# Obsidian: Cyber Glow
 ![p1go4lr535100ui91mlnimt1dej4-0](https://user-images.githubusercontent.com/32932497/215888370-e3572049-4ad1-4115-a4d7-7337d5cdaf88.png)
 
 A colorful unique theme, giving Obsidian a fresh new look with glow effects and support for accent color. The theme now tries to provide a unique futuristic eye-candy  look to obsidian while keeping it usable and familiar to the users. Made to be yours to tweak.
 
-Optional Fonts Pack: [Fonts.Install.Optional.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/10552682/Fonts.Install.Optional.zip)
+Would appreciate any donation if you enjoy this theme, doing this theme in my free time during studies.
+<a href="https://www.buymeacoffee.com/TheEmperorArt"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=TheEmperorArt&button_colour=690ed8&font_colour=ffffff&font_family=Inter&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
 
-Although optional it is now recommended to install "Style Settings" plugin so that you may have custom checkboxes, custom background and its controls and custom stacked tab width.
+### Optional
+
+Fonts Pack: [CyberGlow-Font-Pack.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/10613963/CyberGlow-Font-Pack.zip)
+
+Recommended to install "Style Settings" plugin so that you may have custom checkboxes, custom background and its controls and custom stacked tab width. 
+
+### Features
 
 The theme contains lots of improvements over the base theme as well as unique, accessible or pleasing features:
 - Completely consistent and unique design style and in dark/light mode compared to majority of themes *
@@ -50,15 +56,11 @@ The theme contains lots of improvements over the base theme as well as unique, a
   - `<div class= 'signature'>The Name<\div>`
 - Easily identifiable codeblocks with properly code coloring
   
-* are features/designs that this theme was the first in achieving.
+\*  changes that this theme was managed first.
 
 ## Mobile View
 
 <img src="https://user-images.githubusercontent.com/32932497/198157599-624a448a-9f4b-4a6d-99b8-539ad4c1215b.jpg" height="700">
-
-Would greatly appreciate any donation if you enjoy this theme and would help me work more often on this theme (I like pizza 😋)
-<a href="https://www.buymeacoffee.com/TheEmperorArt"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=TheEmperorArt&button_colour=690ed8&font_colour=ffffff&font_family=Inter&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
-
 
 
 
