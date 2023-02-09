@@ -21,23 +21,34 @@ The theme contains lots of improvements over the base theme as well as unique, a
   - Custom Stacked tabs width control
   - Custom checkboxes for superior tracking of lists
 ```
-- [x]   checkmark
-- [?] ?  for question
-- [-] `-` for removed
+- [x] checkmark
+- [?] ? for question
+- [-] - for removed
 - [!] ! for important
-- [>] `>` for delayed
+- [>] > for delayed
 - [/] / for half-done/WIP
 - [R] R for review
-- [+] `+` for archived
+- [+] + for archived
 - [b] b for bookmark
 - [B] B for brainstorm
 - [D] D for planned
 - [i] i for idea
 - [I] I for info
 - [N] N for note
-- [Q] Q for quote
-- [P] P for positive
-- [C] C for negative
+
+Newly Added/updated:
+- [<] < for scheduling
+- [P] P or p for positive
+- [C] C or c for negative
+- [Q] Q or " for quote
+- [S] S for savings
+- [f] f for fire
+- [k] k for key
+- [w] w for win
+- [u] u for up
+- [d] d for down
+- [l] l for location
+- [*] * for star
 ```
 - Bigger checkboxes for easier viewing
 - Upright Stacked tabs titles for easier reading (no need to crane your neck) *
@@ -68,12 +79,14 @@ Special Thanks to:
 - Deathau, his creator of 80's Neon theme inspired the widespread glow effects now present in my theme. 
 - Benny Guo, formerly Tridiamond, his Obsidianite theme was the basis, originally intended to tweak his theme.
 - Sailkite on Discord - Helped me with resolve my weird CSS issues and suggested ways to streamline some things
-- Jdanielmourao's Sanctum theme line selector in the editor and adapted it to for my theme.
+- Jdanielmourao's Sanctum theme line selector in the editor and adapted it to for my theme and custom readable line width
 - Tomzorz, his transparent headers although a bit buggy looked great Sodalite Theme - Improved on/fixed his transparant headers.
 - ChuckHarmston, Adapted his Safari Tab expander snippet.
 - Akifyss creator of Border Theme, loved their implementation of custom file explorer icons and settings icons, readapted it for my theme
 - Braweria's Spectrum theme which had lovely bigger checkboxes than the vanilla
 - lnbgc Jotter theme, has very useful wrapping of file names in the file explorer, readapted for this theme
+- Colin Eckert's Things 2 Theme having working minimal headers in live preview and imo useful codeblock gutter line
+- Nader on Discord for his amazing Obsidian Community wallpaper
 
 
 The old design (CyberGlowUI v1.0) of this theme was good but it didn't look nearly as good with the tabs, some selector choices were strange and looked quite bland. v7 of CyberGlow reworked those dated looking interfaces to be more modern (CyberGlowUI v2.0). Custom accent colors should be more readable than in prior versions.
