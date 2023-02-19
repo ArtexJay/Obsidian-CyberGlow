@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Cyber Glow for Obsidian - build v7.8.0 build by TheEmperorArt
+/* Cyber Glow for Obsidian - build v7.8.2 build by TheEmperorArt
 /* Please leave credits if you modify for your own theme*/
 
 /*=====================
@@ -72,7 +72,7 @@ settings:
       min: 0
       max: 3
       step: 0.01
-      default: 1.3
+      default: 1.15
    - 
       id: CG-workspace-background-saturation
       title: Background Saturation
@@ -636,14 +636,15 @@ a.tag[href*='#ideas']:hover {
 * Scrollbar ✅
 *========================*/
 
-body:not(.native-scrollbars) ::-webkit-scrollbar {
+body:not(.native-scrollbars) ::-webkit-scrollbar,
+body:not(.native-scrollbars) .kanban-plugin ::-webkit-scrollbar  {
 	background: transparent;
 	border-radius: 6px;
-	width: 0.6rem;
-
+	width: 0.5rem;
 }
 
-body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb,
+body:not(.native-scrollbars) .kanban-plugin ::-webkit-scrollbar-thumb {
 	background: var(--text-selection);
 	border-radius: 6px;
 }
@@ -1014,7 +1015,6 @@ body.is-mobile .document-search-container {
 
 .markdown-source-view.mod-cm6 .cm-gutters .cm-lineNumbers .cm-gutterElement:not(.cm-active) {
 	opacity: 0.6;
-
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-left: 3px;
@@ -1603,14 +1603,14 @@ body:not(.is-mobile) .community-item.is-selected .community-item-author,
 .status-bar {
 	border-color: transparent;
 	color: var(--text-faint);
-	margin: 0px 20px 0px 0px;
-	background: var(--background-settings);
+	margin: 0px 20px 12px 0px;
+	background: var(--background-settings-alt);
 	backdrop-filter: blur(5px) saturate(120%) !important;
 	border-image-slice: 1;
 	border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
 	border-bottom: 2px solid;
 	border-top: 1px solid;
-	border-radius: 8px 8px 0 0;
+	border-radius: 5px;
 	height: 2.8%;
 }
 
@@ -1918,7 +1918,6 @@ body:not(.is-mobile) .community-item.is-selected .community-item-author,
 	background: var(--transparency-primary);
 	--webkit-backdrop-filter: blur 120px;
 	backdrop-filter: blur(18px);
-
 }
 
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
@@ -1926,8 +1925,8 @@ body:not(.is-mobile) .community-item.is-selected .community-item-author,
 	opacity: 1;
 	--webkit-backdrop-filter: blur 120px;
 	backdrop-filter: blur(18px);
-	border-radius: 5px 0 0 5px;
-
+	border-radius: 5px;
+/*stacked radius*/
 }
 
 
@@ -2599,12 +2598,11 @@ body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
 .style-settings-import {
 	padding: 1.2px;
 	border-radius: 5px;
-	background: var(--titlebar-active);
 	color: var(--text-accent);
-	box-shadow: 0 0 0.5em var(--text-accent);
-	display: inline !important;
 	opacity: 0.8;
 	font-size: small;
+	padding:2px;
+
 }
 
 .style-settings-export:hover,
@@ -2629,8 +2627,6 @@ body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
 button:not(.clickable-icon) {
 	background: var(--titlebar-active);
 	color: var(--text-accent);
-	box-shadow: 0 0 0.5em var(--text-accent);
-	display: inline !important;
 	opacity: 0.8;
 	font-size: small;
 }
@@ -3928,8 +3924,40 @@ mark.blue:hover {
 
 .callout[data-callout="quote"],
 .callout[data-callout="cite"] {
-	--callout-color: 172, 154, 245;
-	--callout-icon: quote-glyph;
+	--callout-color: 210,102,234;
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] {
+	--callout-color: 255, 166, 11;
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"]
+{
+	--callout-color: 255, 70, 0;
+}
+
+.callout[data-callout="bug"]
+ {
+	--callout-color: 200,172,100;
+}
+
+.callout[data-callout="note"]
+ {
+	--callout-color: 139, 127, 137;
+}
+
+.callout[data-callout="info"]
+ {
+	--callout-color: 0, 141, 142;
+}
+
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] {
+	--callout-color: 0, 151, 188;
 }
 
 .callout {
@@ -4436,8 +4464,10 @@ is.mobile .modal.mod-settings {
 .theme-dark.is-mobile .prompt input.prompt-input,
 .prompt input.prompt-input {
 	background-color: var(--background-settings-2);
-
+	padding:0%;
+	border: 1px solid var(--background-settings-2);
 }
+
 
 .is-phone .prompt-input-cta {
 	padding: 0;
@@ -4559,11 +4589,13 @@ body.is-tablet .sidebar-toggle-button {
 	border-right: 1px solid;
 	border-image-slice: 1;
 	border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
+	border-radius: 5px;
 }
 
 .canvas-controls button {
 	border-bottom: none;
 	background-color: transparent;
+
 }
 
 .canvas-controls button svg {
@@ -4580,6 +4612,10 @@ body.is-tablet .sidebar-toggle-button {
 .canvas-controls button:hover {
 	background: var(--titlebar-hover);
 	border-radius: var(--clickable-icon-radius) !important;
+}
+
+.canvas-controls button:not(.clickable-icon):hover{
+box-shadow: none;
 }
 
 
@@ -4845,10 +4881,10 @@ body:not(.is-mobile) .workspace-leaf-content .view-content .setting-item[data-le
 
 .CG-workspace-background {
 	--background-primary: rgba(var(--bg-primary),
-			var(--CG-workspace-background-workspace-slider));
+			var(--CG-workspace-background-workspace-slider, 0.40));
 
 	--background-secondary: rgba(var(--bg-secondary),
-			var(--CG-workspace-background-workspace-slider));
+			var(--CG-workspace-background-workspace-slider, 0.40));
 }
 
 /*_______________________________________
@@ -4874,7 +4910,7 @@ body:not(.is-mobile) .workspace-leaf-content .view-content .setting-item[data-le
 .CG-workspace-background .workspace {
 
 	background-color: var(--background-secondary);
-	backdrop-filter: brightness(var(--CG-workspace-background-brightness, 0.5)) saturate(var(--CG-workspace-background-saturation)) blur(var(--CG-workspace-background-blur, 5px));
+	backdrop-filter: brightness(var(--CG-workspace-background-brightness, 1.15)) blur(var(--CG-workspace-background-blur, 15px)) saturate(var(--CG-workspace-background-saturation, 2));
 }
 
 
@@ -5850,4 +5886,148 @@ body:not(.no-codeblock-line-numbers) .HyperMD-codeblock.cm-line:not(.HyperMD-cod
 	border-radius: 5px;
 	padding-left: 5px;
 	padding-right: 5px;
+}
+
+
+
+/*Kanban Update*/
+
+.kanban-plugin{
+margin-top: 35px;
+margin-bottom: 0px;
+}
+
+.kanban-plugin__grow-wrap>textarea, .kanban-plugin__grow-wrap:after{
+border-radius: 5px;
+}
+.kanban-plugin__grow-wrap>textarea{
+	padding: 5px;
+
+}
+.kanban-plugin__grow-wrap>textarea:focus{
+	box-shadow: 0 0 0.3em var(--text-accent);
+}
+
+.kanban-plugin__lane-form-wrapper{
+border-color: transparent;
+border-top: 2px solid;
+border-bottom: 2px solid;
+border-image-slice: 1;
+border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+background-color: var(--background-secondary-alt);
+}
+
+.kanban-plugin__item-input-actions, .kanban-plugin__lane-input-actions{
+justify-content: space-evenly;
+}
+
+.kanban-plugin__checkbox-wrapper{
+border:transparent;
+}
+
+.kanban-plugin__lane{
+	border-left: 2px solid;
+	border-right: 2px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
+background-color: var(--background-secondary);
+}
+
+.kanban-plugin__lane-items {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.kanban-plugin__lane-header-wrapper, .kanban-plugin__item-button-wrapper{
+border: transparent;
+}
+
+.kanban-plugin__item-title-wrapper{
+border:transparent;
+background-color: transparent;
+}
+
+.kanban-plugin__item{
+	border:transparent;
+	background: var(--background-settings-2);
+}
+
+.kanban-plugin__item:hover{
+	background-color: var(--titlebar-hover);
+    color: var(--text-accent);
+    opacity: 1;
+    box-shadow: 0 0 0.5em var(--text-accent);
+}
+
+.kanban-plugin__item:active{
+	border:transparent;
+    background: var(--text-selection);
+}
+
+.kanban-plugin__item-content-wrapper{
+	background-color: transparent;
+}
+
+.kanban-plugin__item-postfix-button:hover{
+    box-shadow: none;
+}
+.kanban-plugin__item-postfix-button:active{
+    box-shadow: none;
+}
+
+.kanban-plugin__item-form .kanban-plugin__item-input-wrapper{
+	padding: 0px;
+    border: none;
+    min-height:0px;
+}
+
+.kanban-plugin__item-form{
+	border: none;
+
+}
+
+.kanban-plugin__search-wrapper{
+	border-bottom: 2px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+	position: absolute;
+	width: 40%;
+	--webkit-backdrop-filter: blur 120px;
+	backdrop-filter: blur(18px);
+	z-index: 90 !important;
+	position:static;
+align-self:end;
+
+}
+
+.kanban-plugin ::-webkit-scrollbar:horizontal{
+	height: 0.5rem!important;
+}
+
+.kanban-plugin ::-webkit-scrollbar-thumb:horizontal {
+	background: var(--text-selection);
+	border-radius: 6px;
+}
+
+body:not(.is-mobile) .kanban-plugin{
+	height: 95.3%;
+}
+
+.is-mobile .kanban-plugin{
+	height: 86.7%;
+}
+
+.kanban-plugin__item-prefix-button-wrapper input[type=checkbox]{
+	filter: hue-rotate(0deg);
+}
+
+
+
+
+.theme-dark.is-mobile .prompt input.prompt-input:hover, .prompt input.prompt-input:hover{
+ border: 1px solid var(--text-accent);
+}
+
+.theme-dark.is-mobile .prompt input.prompt-input:focus, .prompt input.prompt-input:focus{
+	border: 1px solid var(--text-accent);
 }
