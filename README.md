@@ -78,17 +78,18 @@ Newly Added/updated:
 
 
 Special Thanks to:
-- Deathau, his creator of 80's Neon theme inspired the widespread glow effects now present in my theme. 
-- Benny Guo, formerly Tridiamond, his Obsidianite theme was the basis, originally intended to tweak his theme.
+- [Deathau](https://github.com/deathau), his creator of 80's Neon theme inspired the widespread glow effects now present in my theme. 
+- [Benny Guo](https://github.com/bennyxguo/Obsidian-Obsidianite), formerly Tridiamond, his Obsidianite theme was the basis, originally intended to tweak his theme.
 - Sailkite on Discord - Helped me with resolve my weird CSS issues and suggested ways to streamline some things
-- Jdanielmourao's Sanctum theme line selector in the editor and adapted it to for my theme and custom readable line width
-- Tomzorz, his transparent headers although a bit buggy looked great Sodalite Theme - Improved on/fixed his transparant headers.
-- ChuckHarmston, Adapted his Safari Tab expander snippet.
-- Akifyss creator of Border Theme, loved their implementation of custom file explorer icons and settings icons, readapted it for my theme
-- Braweria's Spectrum theme which had lovely bigger checkboxes than the vanilla
-- lnbgc Jotter theme, has very useful wrapping of file names in the file explorer, readapted for this theme
-- Colin Eckert's Things 2 Theme having working minimal headers in live preview and imo useful codeblock gutter line
+- [Jdanielmourao's](https://github.com/jdanielmourao/) Sanctum theme line selector in the editor and adapted it to for my theme and custom readable line width
+- [Tomzorz](https://github.com/tomzorz), his transparent headers although a bit buggy looked great Sodalite Theme - Improved on/fixed his transparant headers.
+- [ChuckHarmston](https://github.com/chuckharmston), Adapted his Safari Tab expander snippet.
+- [Akifyss](https://github.com/Akifyss) creator of Border Theme, loved their implementation of custom file explorer icons and settings icons, readapted it for my theme
+- [Braweria's](https://github.com/Braweria) Spectrum theme which had lovely bigger checkboxes than the vanilla
+- [lnbgc](https://github.com/lnbgc) Jotter theme, has very useful wrapping of file names in the file explorer, readapted for this theme
+- [Colin Eckert's](https://github.com/colineckert) Things 2 Theme having working minimal headers in live preview and imo useful codeblock gutter line
 - Nader on Discord for his amazing Obsidian Community wallpaper
+- [AlexD (DrIcon14)](https://dricon.gumroad.com/)  for his brilliantly done Obsidian Logo.
 
 
 The old design (CyberGlowUI v1.0) of this theme was good but it didn't look nearly as good with the tabs, some selector choices were strange and looked quite bland. v7 of CyberGlow reworked those dated looking interfaces to be more modern (CyberGlowUI v2.0). Custom accent colors should be more readable than in prior versions.
