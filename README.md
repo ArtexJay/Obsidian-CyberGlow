@@ -1,4 +1,7 @@
 # Obsidian: Cyber Glow
+
+GITHUB IS CURRENTLY CAUSING ME PROBLEMS, PLEASE UPDATE MANUALLY INSTEAD OF CHECKING FOR UPDATES IN OBSIDIAN.
+
 ![p1go4lr535100ui91mlnimt1dej4-0](https://user-images.githubusercontent.com/32932497/215888370-e3572049-4ad1-4115-a4d7-7337d5cdaf88.png)
 
 A colorful unique theme, giving Obsidian a fresh new look with glow effects and support for accent color. The theme now tries to provide a unique futuristic eye-candy  look to obsidian while keeping it usable and familiar to the users. 
