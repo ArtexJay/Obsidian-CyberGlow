@@ -80,7 +80,7 @@ Newly Added/updated:
 Special Thanks to:
 - [Deathau](https://github.com/deathau), his creator of 80's Neon theme inspired the widespread glow effects now present in my theme. 
 - [Benny Guo](https://github.com/bennyxguo/Obsidian-Obsidianite), formerly Tridiamond, his Obsidianite theme was the basis, originally intended to tweak his theme.
-- Sailkite on Discord - Helped me with resolve my weird CSS issues and suggested ways to streamline some things
+- [Sailkite](https://github.com/sailKitev) on Discord - Helped me with resolve my weird CSS issues and suggested ways to streamline some things
 - [Jdanielmourao's](https://github.com/jdanielmourao/) Sanctum theme line selector in the editor and adapted it to for my theme and custom readable line width
 - [Tomzorz](https://github.com/tomzorz), his transparent headers although a bit buggy looked great Sodalite Theme - Improved on/fixed his transparant headers.
 - [ChuckHarmston](https://github.com/chuckharmston), Adapted his Safari Tab expander snippet.
