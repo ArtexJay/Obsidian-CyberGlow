@@ -20,7 +20,7 @@ No additional plugins are required to have the theme working unlike many other t
 - Language Tool Integration 
 - and more
 
-### Features
+### What to Expect
 
 The theme contains lots of improvements over the base theme as well as unique, accessible or pleasing features:
 - Completely consistent and unique design style and in dark/light mode compared to majority of themes
