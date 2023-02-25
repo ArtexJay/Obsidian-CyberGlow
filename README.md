@@ -1,7 +1,6 @@
 # Obsidian: Cyber Glow
 
-GITHUB IS CURRENTLY CAUSING ME PROBLEMS, AS A RESULT OBSIDIAN MAY NOT NOTICE/DETECT THE UPDATED FILES, 
-PLEASE UPDATE MANUALLY INSTEAD OF CHECKING FOR UPDATES IN OBSIDIAN.
+If Obsidian is having trouble finding an update for theme, consider manually updated it by downloading the theme and manifest file, replacing the existing one in your directory
 
 ![p1go4lr535100ui91mlnimt1dej4-0](https://user-images.githubusercontent.com/32932497/215888370-e3572049-4ad1-4115-a4d7-7337d5cdaf88.png)
 
