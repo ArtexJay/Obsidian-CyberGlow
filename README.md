@@ -22,17 +22,20 @@ No additional plugins are required to have the theme working unlike many other t
 - File Exporer Note Count
 - Language Tool Integration 
 - and more
+- If a pluging doesn't look right with this theme let me know.
 
 ### What to Expect
 
 The theme contains lots of improvements over the base theme as well as unique, accessible or pleasing features:
 - Completely consistent and unique design style and in dark/light mode compared to majority of themes
- - First theme with theme wide Accent color support for majority of the theme 
-- Superior stacked tabs compatibility with Custom background support 
+- first to adopt theme wide Accent color support for majority of the theme 
+- first with improved stacked tabs compatibility for Custom background support 
 - Support with Style Settings
   - Custom Background with opacity, brightness, bluryness controls
+    - Improved opacity controls compared to other themes no weird gaps not being properly filled in.
   - Custom Stacked tabs width control
   - Bigger and custom checkboxes for easier viewing
+  - First with Custom Left Sidebar toggle in Hidden Window Frame
 ```
 - [x] checkmark
 - [?] ? for question
@@ -63,7 +66,7 @@ Newly Added/updated:
 - [l] l for location
 - [*] * for star
 ```
-- Upright Stacked tabs titles for easier reading (no need to crane your neck) 
+- first theme with upright Stacked tabs titles for easier reading (no need to crane your neck) 
 - Smooth tab switching animation
 - Custom file explorer icons plus unique icon depicting which file you are viewing/editing 
 - Custom highlighting 
