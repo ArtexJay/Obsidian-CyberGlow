@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Cyber Glow for Obsidian - build v7.8.5 built by TheEmperorArt
+/* Cyber Glow for Obsidian - build v7.8.8 built by TheEmperorArt
 /* Please leave credits if you modify for your own theme*/
 
 /*=====================
@@ -2033,6 +2033,7 @@ input.prompt-input {
 	border-radius: 5px;
 	margin: 5px;
 	background: var(--background-settings-2);
+	padding:10px;
 
 }
 
@@ -2152,7 +2153,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 
 .nav-folder.mod-root .nav-folder>.nav-folder-children {
 	padding-left: 0;
-	border-left: 2px inset var(--text-faint);
+	border-left: 2px outset var(--text-faint);
 }
 
 .nav-folder.mod-root>.nav-folder-title:hover {
@@ -2511,7 +2512,6 @@ body:not(.is-mobile) .nav-header~.search-input-container {
 body:not(.is-tablet) .is-mobile .view-header-nav-buttons,
 .is-mobile .mod-left-split-toggle,
 body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
-	padding: 0px 0px 18px 18px;
 	color: transparent;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -2520,46 +2520,51 @@ body.is-tablet .sidebar-toggle-button.mod-left>.clickable-icon {
 	background-color: var(--text-accent);
 background-blend-mode: luminosity;
 border-radius: 8px;
+padding: 0px 0px 18px 18px;
+
+
 }
 
 
-body:not(.CG-Custom-sbt, .CG-Obsidian-sbt).theme-light .CG-MObsidian-sbt.is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon,
-body:not(.CG-Custom-sbt, .CG-Obsidian-sbt).theme-light.is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon,
-body:not(.is-tablet, .CG-Custom-sbt, .CG-Obsidian-sbt).theme-light .CG-MObsidian-sbt.is-mobile .view-header-nav-buttons,
-body:not(.is-tablet, .CG-Custom-sbt, .CG-Obsidian-sbt).theme-light .is-mobile .view-header-nav-buttons,
-body:not(.is-tablet, .CG-Custom-sbt, .CG-Obsidian-sbt).theme-light.CG-MObsidian-sbt.is-mobile .mod-left-split-toggle,
-body:not(.is-tablet, .CG-Custom-sbt, .CG-Obsidian-sbt).theme-light.is-mobile .mod-left-split-toggle,
-body.is-tablet:not(.CG-Custom-sbt, .CG-Obsidian-sbt) .theme-light .CG-MObsidian-sbt.sidebar-toggle-button.mod-left>.clickable-icon,
- body.is-tablet:not(.CG-Custom-sbt, .CG-Obsidian-sbt) .theme-light .sidebar-toggle-button.mod-left>.clickable-icon   {
+body:not(.CG-Custom-sbt, .CG-Obsidian-sbt,.CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light .CG-MObsidian-sbt.is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon,
+body:not(.CG-Custom-sbt, .CG-Obsidian-sbt,.CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light.is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon,
+body:not(.is-tablet, .CG-Custom-sbt, .CG-Obsidian-sbt, .CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light .CG-MObsidian-sbt.is-mobile .view-header-nav-buttons,
+body:not(.is-tablet, .CG-Custom-sbt, .CG-Obsidian-sbt, .CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light .is-mobile .view-header-nav-buttons,
+body:not(.is-tablet, .CG-Custom-sbt, .CG-Obsidian-sbt, .CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light.CG-MObsidian-sbt.is-mobile .mod-left-split-toggle,
+body:not(.is-tablet, .CG-Custom-sbt, .CG-Obsidian-sbt, .CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light.is-mobile .mod-left-split-toggle,
+body.is-tablet:not(.CG-Custom-sbt, .CG-Obsidian-sbt, .CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light .CG-MObsidian-sbt.sidebar-toggle-button.mod-left>.clickable-icon,
+ body.is-tablet:not(.CG-Custom-sbt, .CG-Obsidian-sbt, .CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light .sidebar-toggle-button.mod-left>.clickable-icon   {
     isolation: isolate;
     background-color: var(--text-accent);
     border-radius: 8px;
     backdrop-filter: invert(1);
-    padding: 9px;
-	border-radius: 10px;
+
 
 }
 
-body:not(.CG-Custom-sbt, .CG-Obsidian-sbt).theme-light.CG-MObsidian-sbt.is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon::after,
-body:not(.CG-Custom-sbt, .CG-Obsidian-sbt).theme-light.is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon::after,
-body:not(.is-tablet, .CG-Custom-sbt, .CG-Obsidian-sbt).theme-light .CG-MObsidian-sbt.is-mobile .view-header-nav-buttons::after,
-body:not(.is-tablet, .CG-Custom-sbt, .CG-Obsidian-sbt).theme-light .is-mobile .view-header-nav-buttons::after,
-body:not(.CG-Custom-sbt, .CG-Obsidian-sbt).theme-light.CG-MObsidian-sbt.is-mobile .mod-left-split-toggle::after,
-body:not(.CG-Custom-sbt, .CG-Obsidian-sbt).theme-light.is-mobile .mod-left-split-toggle::after,
- body.is-tablet:not(.CG-Custom-sbt, .CG-Obsidian-sbt).theme-light .CG-MObsidian-sbt.sidebar-toggle-button.mod-left>.clickable-icon::after,
- body.is-tablet:not(.CG-Custom-sbt, .CG-Obsidian-sbt) .theme-light .sidebar-toggle-button.mod-left>.clickable-icon::after   {
+body:not(.CG-Custom-sbt, .CG-Obsidian-sbt, .CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light.CG-MObsidian-sbt.is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon::after,
+body:not(.CG-Custom-sbt, .CG-Obsidian-sbt, .CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light.is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon::after,
+body:not(.is-tablet, .CG-Custom-sbt, .CG-Obsidian-sbt, .CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light .CG-MObsidian-sbt.is-mobile .view-header-nav-buttons::after,
+body:not(.is-tablet, .CG-Custom-sbt, .CG-Obsidian-sbt, .CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light .is-mobile .view-header-nav-buttons::after,
+body:not(.CG-Custom-sbt, .CG-Obsidian-sbt,.CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light.CG-MObsidian-sbt.is-mobile .mod-left-split-toggle::after,
+body:not(.CG-Custom-sbt, .CG-Obsidian-sbt,.CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light.is-mobile .mod-left-split-toggle::after,
+ body.is-tablet:not(.CG-Custom-sbt, .CG-Obsidian-sbt,.CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light .CG-MObsidian-sbt.sidebar-toggle-button.mod-left>.clickable-icon::after,
+ body.is-tablet:not(.CG-Custom-sbt, .CG-Obsidian-sbt,.CG-Sandy-sbt, .CG-Blaze-sbt, .CG-Triforce-sbt).theme-light .sidebar-toggle-button.mod-left>.clickable-icon::after   {
     content: "";
-	padding: 2.5px;
-    position: absolute;
+    position:absolute;
     background-image: var(--obsidiantoggle);
-    background-size: contain;
+    background-size:contain;
     background-position: 50%;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    width: 105%;
+    height:105%;
     z-index: -1;
     filter: invert(1);
     mix-blend-mode: luminosity;
+	background-size: 120%;
+	transform: translate(-0.57em, 0.61em);
+	border-radius: 10px;
+
 }
 
 .CG-MObsidian-sbt.is-hidden-frameless .sidebar-toggle-button.mod-left>.clickable-icon,
@@ -2848,6 +2853,8 @@ button:not(.clickable-icon):active {
 	transform: translateX(-0.55em);
 }
 
+
+
 /*=======================
 * Lists ✅
 *==========================*/
@@ -2870,6 +2877,7 @@ li.is-collapsed .list-bullet:after,
 
 .list-bullet {
 	align-items: baseline;
+	justify-content:center;
 }
 
 li>p {
@@ -2885,6 +2893,9 @@ li>p {
 	border-right: var(--indentation-guide-width) solid var(--text-accent);
 }
 
+ol > li::marker, ul > li::marker{
+color:transparent;
+}
 
 /*---------------------------------------------------
 * Bullet list: Editor ✅
@@ -2895,7 +2906,7 @@ li>p {
 	color: var(--text-accent);
 	display: inline-block;
 	width: 1.25em;
-	margin-left: -.5em;
+	margin-left: 0em;
 	padding: 0;
 	font-weight: bold;
 	text-shadow: 0 0 0.7em var(--text-accent);
@@ -2909,14 +2920,24 @@ li>p {
 	vertical-align: baseline;
 }
 
-
-ol>li::marker,
-ul>li::marker,
-.cm-s-obsidian .cm-formatting-list {
-	color: transparent;
+.markdown-source-view.mod-cm6 .cm-line:not(.cm-active):not(.HyperMD-header):not(.HyperMD-task-line) .cm-fold-indicator .collapse-indicator{
+	padding-right: 1em;
+	right: 0.1em;
+}
+.markdown-rendered .list-collapse-indicator{
+	padding-right: 0em;
+}
+.markdown-rendered .list-collapse-indicator .collapse-icon svg.svg-icon{
+	height:25px;
 }
 
+.markdown-preview-view .list-collapse-indicator{
+	margin-left: -2.75em;
+}
 
+ .markdown-source-view.mod-cm6 .cm-formatting-list-ul{
+	margin-left: -9px;
+}
 /*---------------------------------------------------
 * Bullet list: Preview ✅
 *------------------------------------------------------*/
@@ -4201,6 +4222,10 @@ mark.blue:hover {
 * Mobile UI 
 *================*/
 
+.is-mobile .view-header-title-container{
+	padding-left: 0px;
+}
+
 body.is-phone .markdown-rendered::-webkit-scrollbar-track {
 	margin-top: 50px;
 	margin-bottom: 34px;
@@ -4628,13 +4653,18 @@ is.mobile .modal.mod-settings {
 	z-index: 100;
 }
 
-.theme-dark.is-mobile .prompt input.prompt-input,
+.theme-dark.is-phone .prompt input.prompt-input,
 .prompt input.prompt-input {
 	background-color: var(--background-settings-2);
 	padding: 0%;
 	border: 1px solid var(--background-settings-2);
 }
-
+.theme-dark.is-tablet .prompt input.prompt-input,
+.prompt input.prompt-input {
+	background-color: var(--background-settings-2);
+	padding: 1%;
+	border: 1px solid var(--background-settings-2);
+}
 
 .is-phone .prompt-input-cta {
 	padding: 0;
@@ -4750,7 +4780,7 @@ body.is-tablet .sidebar-toggle-button {
 *------------------------*/
 .canvas-controls {
 	margin-top: 35px;
-	gap: none;
+	gap: 0px;
 	background: var(--background-settings-alt);
 	backdrop-filter: blur(5px) saturate(120%) !important;
 	border-left: 1px solid;
@@ -4759,47 +4789,37 @@ body.is-tablet .sidebar-toggle-button {
 	border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
 	border-radius: 5px;
 }
-
-.canvas-controls button {
+.canvas-control-item{
 	border-bottom: none;
+	border-radius: 3px;
 	background-color: transparent;
-
-}
-
-.canvas-controls button svg {
-	color: var(--text-accent);
+	color:var(--text-accent);
 	opacity: 0.8;
+
 }
 
-.canvas-controls button:hover svg,
-.canvas-controls button.is-active svg {
+.canvas-control-item:hover {
+	background: var(--titlebar-hover);
 	color: var(--text-accent);
 	opacity: 1;
+	border-radius:5px;
+
 }
 
-.canvas-controls button:hover {
-	background: var(--titlebar-hover);
-	border-radius: var(--clickable-icon-radius) !important;
+.canvas-control-item:active {
+	background: var(--button-background);
+
 }
 
-.canvas-controls button:not(.clickable-icon):hover {
-	box-shadow: none;
-}
-
-
-.canvas-controls button:disabled {
+.canvas-control-item.is-disabled {
 	display: none;
 }
 
-.canvas-controls-group {
+.canvas-control-group {
 	border: none;
 	background: transparent;
 	box-shadow: none;
-
-}
-
-.canvas-controls-group button:active {
-	background: var(--button-background);
+	border-radius: 0px;
 
 }
 
@@ -4896,7 +4916,7 @@ body.is-tablet .sidebar-toggle-button {
 	padding-top: 40px;
 }
 
-.wb-icon-list-container button:not(.clickable-icon) {
+.wb-icon-list-container button:not(.clickable-icon){
 	border: 1px solid transparent;
 	background-color: var(--titlebar-hover);
 	box-shadow: 0 0 0.6em var(--text-accent);
@@ -4929,6 +4949,19 @@ body.is-tablet .sidebar-toggle-button {
 	margin-top: 40px;
 	color: var(--text-accent);
 	cursor: help;
+}
+
+.wb-refresh-button .lucide-refresh-cw{
+	color: var(--text-faint);
+    opacity: 0.8;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wb-refresh-button .lucide-refresh-cw:hover{
+color: var(--text-accent);
+    opacity: 1;
 }
 
 /*======================
@@ -5995,6 +6028,10 @@ body:not(.no-codeblock-line-numbers) .HyperMD-codeblock.cm-line:not(.HyperMD-cod
 	padding-left: 2.8em;
 }
 
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock .cm-indent::before{
+	display:none;
+}
+
 
 /*Return of heading numbers*/
 :not(.cm-active).cm-line span:not(.cm-formatting-header):not(.cm-hashtag):not(.cm-inline-code):not(.cm-highlight).cm-header::before {
@@ -6218,3 +6255,4 @@ body.is-frameless:not(.mod-macos) .modal {
 	height: 90%;
 	width: 90%;
 }
+
