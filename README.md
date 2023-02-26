@@ -1,6 +1,6 @@
 # Obsidian: Cyber Glow
 
-If Obsidian is having trouble finding an update for theme, consider manually updated it by downloading the theme and manifest file, replacing the existing one in your directory
+If Obsidian is having trouble finding an update for theme, consider manually updating it by downloading the theme and manifest file Replacing the existing one in the Cyber Glow folder directory
 
 ![p1go4lr535100ui91mlnimt1dej4-0](https://user-images.githubusercontent.com/32932497/215888370-e3572049-4ad1-4115-a4d7-7337d5cdaf88.png)
 
