@@ -2,7 +2,7 @@
 
 If Obsidian is having trouble finding an update for theme, consider manually updating it by downloading the theme and manifest file Replacing the existing one in the Cyber Glow folder directory
 
-![p1go4lr535100ui91mlnimt1dej4-0](https://user-images.githubusercontent.com/32932497/215888370-e3572049-4ad1-4115-a4d7-7337d5cdaf88.png)
+![Screenshot](https://user-images.githubusercontent.com/32932497/221440386-0dd9712d-e6d4-4321-bc3a-30faa1d9be65.png)
 
 A colorful unique theme, giving Obsidian a fresh new look with glow effects and support for accent color. The theme now tries to provide a unique futuristic eye-candy  look to obsidian while keeping it usable and familiar to the users. 
 
