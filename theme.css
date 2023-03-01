@@ -5104,7 +5104,7 @@ body:not(.is-mobile) .workspace-leaf-content .view-content .setting-item[data-le
 .CG-workspace-background .workspace {
 
 	background-color: var(--background-secondary);
-	backdrop-filter: brightness(var(--CG-workspace-background-brightness, 1.15)) blur(var(--CG-workspace-background-blur, 15px)) saturate(var(--CG-workspace-background-saturation, 2)) contrast(var(--CG-workspace-background-contrast, 100));
+	backdrop-filter: brightness(var(--CG-workspace-background-brightness, 1.15)) blur(var(--CG-workspace-background-blur, 15px)) saturate(var(--CG-workspace-background-saturation, 2)) contrast(var(--CG-workspace-background-contrast, 100%));
 
 
 
