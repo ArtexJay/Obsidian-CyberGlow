@@ -22,7 +22,7 @@ No additional plugins are required to have the theme working unlike many other t
 - File Exporer Note Count
 - Language Tool Integration 
 - and more
-- If a pluging doesn't look right with this theme let me know.
+- If a plugin doesn't look right with this theme let me know.
 
 ### What to Expect
 
