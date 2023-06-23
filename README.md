@@ -1,3 +1,4 @@
+# ==== Version 8 Update 'The Rewrite' Coming Soon ====
 # Obsidian: Cyber Glow
 
 If Obsidian is having trouble finding an update for theme, consider manually updating it by downloading the theme and manifest file Replacing the existing one in the Cyber Glow folder directory
@@ -51,8 +52,6 @@ The theme contains lots of improvements over the base theme as well as unique, a
 - [i] i for idea
 - [I] I for info
 - [N] N for note
-
-Newly Added/updated:
 - [<] < for scheduling
 - [P] P or p for positive
 - [C] C or c for negative
@@ -69,11 +68,6 @@ Newly Added/updated:
 - first theme with upright Stacked tabs titles for easier reading (no need to crane your neck) 
 - Smooth tab and pane switching animation
 - Custom file explorer icons plus unique icon depicting which file you are viewing/editing 
-- Custom highlighting 
-  -  `mark class = "yellow">test</mark>`
-  -  `<mark class = "red">test</mark>`
-  -  `<mark class = "blue">test</mark>`
-  -  `<mark class = "green">test</mark>`
 - Add custom cursive signatures (If you have the optional fonts pack installed)
   - `<cite>Enter Name Here</cite>`
   - `<div class= 'signature'>The Name<\div>`
@@ -85,7 +79,7 @@ Newly Added/updated:
 
 #### Special Thanks
 - [Deathau](https://github.com/deathau), his creator of 80's Neon theme inspired the widespread glow effects now present in my theme. 
-- [Benny Guo](https://github.com/bennyxguo/Obsidian-Obsidianite), formerly Tridiamond, his Obsidianite theme was the basis, originally intended to tweak his theme.
+- [Benny Guo](https://github.com/bennyxguo/Obsidian-Obsidianite), formerly Tridiamond, his Obsidianite theme was the basis, originally intended to just a minor tweak of his theme.
 - [Sailkite](https://github.com/sailKitev) on Discord - Helped me with resolve my weird CSS issues and suggested ways to streamline some things
 - [Jdanielmourao's](https://github.com/jdanielmourao/) Sanctum theme line selector in the editor and adapted it to for my theme and custom readable line width
 - [ChuckHarmston](https://github.com/chuckharmston), Adapted his Safari Tab expander snippet.
@@ -94,7 +88,7 @@ Newly Added/updated:
 - [lnbgc](https://github.com/lnbgc) Jotter theme, has very useful wrapping of file names in the file explorer, readapted for this theme
 - [Colin Eckert's](https://github.com/colineckert) Things 2 Theme having working minimal headers in live preview and imo useful codeblock gutter line
 - Nader on Discord for his amazing Obsidian Community wallpaper
-- [AlexD (DrIcon14)](https://dricon.gumroad.com/)  for his brilliantly done Obsidian Logo and letting me use it in my them. This icon will not be available in v8 of Cyber Glow however.
 
 
-The old design (CyberGlowUI v1.0) of this theme was good but it didn't look nearly as good with the tabs, some selector choices were strange and looked quite bland. v7 of CyberGlow revised those dated looking interfaces to be more modern (CyberGlowUI v1.5) and further improvement have led to nicer and more coherant interface in v8 of Cyber Glow (CyberGlowUI 2.0).
+- [AlexD (DrIcon14)](https://dricon.gumroad.com/)  for his brilliantly done Obsidian Logo and letting me use it in my them. This icon will not be available in v8 of Cyber Glow however. (Icon was dropped as of theme's version 8)
+
