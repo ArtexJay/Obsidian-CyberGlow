@@ -1,7 +1,6 @@
 # Obsidian: Cyber Glow
 
-Current Version is v7.9.0<br>
-Version 8.0.0 releasing today!
+Current Version is v8.0.0
 
 A colorful unique theme, giving Obsidian a fresh new look with glow effects and theme wide support for accent color. Enjoy a unique futuristic eye-candy  look to obsidian while keeping it as usable and familiar to the vanilla theme. 
 
