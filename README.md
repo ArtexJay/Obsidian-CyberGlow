@@ -1,13 +1,17 @@
-# Version 8 Update 'The Rewrite' Coming Soon
 # Obsidian: Cyber Glow
 
-If Obsidian is having trouble finding an update for theme, consider manually updating it by downloading the theme and manifest file Replacing the existing one in the Cyber Glow folder directory
-
-NOTE: For best experience please disable "Translucent Window" in Obsidian's Settings. If you want a background image, use Style Settings.
-
-![Screenshot](https://user-images.githubusercontent.com/32932497/221440386-0dd9712d-e6d4-4321-bc3a-30faa1d9be65.png)
+Current Version is v7.9.0<br>
+Version 8.0.0 releasing today!
 
 A colorful unique theme, giving Obsidian a fresh new look with glow effects and theme wide support for accent color. Enjoy a unique futuristic eye-candy  look to obsidian while keeping it as usable and familiar to the vanilla theme. 
+
+![newpreview](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/0575aeaf-d706-417e-ba53-c332250ca0ae)
+
+> **Note**
+> If Obsidian is having trouble finding an update for theme, consider manually updating it by downloading the theme and manifest file Replacing the existing one in the Cyber Glow folder directory.
+
+> **Warning**
+> For best experience please disable "Translucent Window" in Obsidian's Settings. If you want a background image, use Style Settings.
 
 Would appreciate any donation if you enjoy this theme, doing this theme in my free time during studies.
 <a href="https://www.buymeacoffee.com/TheEmperorArt"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=TheEmperorArt&button_colour=690ed8&font_colour=ffffff&font_family=Inter&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
@@ -19,11 +23,11 @@ Recommended to install "Style Settings" plugin so that you may have custom check
 ### Plugin Support
 No additional plugins are required to have the theme working unlike many other themes.
 - Kanban
-- Style Settings 
+- Style Settings (more customizations)
 - Surfing
 - File Exporer Note Count
 - Language Tool Integration 
-- and more
+- and much more
 - If a plugin doesn't look right with this theme let me know.
 
 ### What to Expect
@@ -37,8 +41,7 @@ The theme contains lots of improvements over the base theme as well as unique, a
     - Improved opacity controls compared to other themes no weird Opacity gaps not being filled in properly.
   - Custom Stacked tabs width control
   - Bigger and custom checkboxes for easier viewing
-  - First with Custom Left Sidebar toggle in Hidden Window Frame
-  -  
+  - First with Custom Left Sidebar toggle in Hidden Window Frame and Obsidian Frame
 ```
 - [x] checkmark
 - [?] ? for question
