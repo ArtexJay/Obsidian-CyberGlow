@@ -1,7 +1,9 @@
-# ==== Version 8 Update 'The Rewrite' Coming Soon ====
+# Version 8 Update 'The Rewrite' Coming Soon
 # Obsidian: Cyber Glow
 
 If Obsidian is having trouble finding an update for theme, consider manually updating it by downloading the theme and manifest file Replacing the existing one in the Cyber Glow folder directory
+
+NOTE: For best experience please disable "Translucent Window" in Obsidian's Settings. If you want a background image, use Style Settings.
 
 ![Screenshot](https://user-images.githubusercontent.com/32932497/221440386-0dd9712d-e6d4-4321-bc3a-30faa1d9be65.png)
 
