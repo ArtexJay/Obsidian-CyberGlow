@@ -403,8 +403,6 @@ body {
     --toggle-s-thumb-height: 8px;
     --toggle-s-thumb-width: 16px;
 
-
-
     /*Radius*/
     --radius-s: 3px;
     --radius-m: 3px;
@@ -2087,6 +2085,7 @@ h2 {
 h3 {
     border-image-source: linear-gradient(to right, var(--h3-glow), transparent);
     text-shadow: 0 0 5px var(--h3-glow), 0 0 10px var(--h3-glow), 0 0 20px var(--h3-glow), 0 0 35px var(--h3-glow);
+    color: var(--text-normal);
 }
 
 /*Glow and Colors for Heading 4*/
@@ -2095,6 +2094,7 @@ h3 {
 h4 {
     border-image-source: linear-gradient(to right, var(--h4-glow), transparent);
     text-shadow: 0 0 5px var(--h4-glow), 0 0 10px var(--h4-glow), 0 0 20px var(--h4-glow), 0 0 35px var(--h4-glow);
+    color: var(--text-normal);
 }
 
 /*Glow and Colors for Heading 5*/
@@ -2103,6 +2103,8 @@ h4 {
 h5 {
     border-image-source: linear-gradient(to right, var(--h5-glow), transparent);
     text-shadow: 0 0 5px var(--h5-glow), 0 0 10px var(--h5-glow), 0 0 20px var(--h5-glow), 0 0 35px var(--h5-glow);
+    color: var(--text-normal);
+
 }
 
 /*Glow and Colors for Heading 6*/
@@ -2111,6 +2113,8 @@ h5 {
 h6 {
     border-image-source: linear-gradient(to right, var(--h6-glow), transparent);
     text-shadow: 0 0 5px var(--h6-glow), 0 0 10px var(--h6-glow), 0 0 20px var(--h6-glow), 0 0 35px var(--h6-glow);
+    color: var(--text-normal);
+
 }
 
 /*Return of Heading numbers Styled*/
@@ -4747,6 +4751,16 @@ body:not(.is-grabbing).is-tablet .tree-item-self.is-clickable:active{
 }
 
 
+
+
+
+
+
+
+
+.year.svelte-1vwr9dd.svelte-1vwr9dd{
+  --interactive-accent: var(--text-normal);
+}
 
 /*There may be redundant code for right side panel desktop*/
 .workspace-split.mod-right-split .workspace-tabs .node-insert-event{
