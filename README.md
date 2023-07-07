@@ -4,7 +4,11 @@ Current Version is v8.0.01
 
 A colorful unique theme, giving Obsidian a fresh new look with glow effects and theme wide support for accent color. Enjoy a unique futuristic eye-candy  look to obsidian while keeping it as usable and familiar to the vanilla theme. 
 
+### Desktop View
 ![newpreview](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/0575aeaf-d706-417e-ba53-c332250ca0ae)
+
+### Mobile View
+<img src= "https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/6f61e669-3c4b-495e-ba6e-4d9b4de22a78" height="300">
 
 > **Note**
 > If Obsidian is having trouble finding an update for theme, consider manually updating it by downloading the theme and manifest file Replacing the existing one in the Cyber Glow folder directory.
@@ -76,10 +80,6 @@ The theme contains lots of improvements over the base theme as well as unique, a
   - `<cite>Enter Name Here</cite>`
   - `<div class= 'signature'>The Name<\div>`
 - Easily identifiable codeblocks with proper code coloring
-
-## Mobile View
-
-<img src="https://user-images.githubusercontent.com/32932497/198157599-624a448a-9f4b-4a6d-99b8-539ad4c1215b.jpg" height="600">
 
 #### Special Thanks
 - [Deathau](https://github.com/deathau), his creator of 80's Neon theme inspired the widespread glow effects now present in my theme. 
