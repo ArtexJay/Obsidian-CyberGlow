@@ -1,6 +1,6 @@
 # Obsidian: Cyber Glow
 
-Current Version is v8.0.0
+Current Version is v8.0.01
 
 A colorful unique theme, giving Obsidian a fresh new look with glow effects and theme wide support for accent color. Enjoy a unique futuristic eye-candy  look to obsidian while keeping it as usable and familiar to the vanilla theme. 
 
@@ -16,8 +16,8 @@ Would appreciate any donation if you enjoy this theme, doing this theme in my fr
 <a href="https://www.buymeacoffee.com/TheEmperorArt"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=TheEmperorArt&button_colour=690ed8&font_colour=ffffff&font_family=Inter&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
 
 ### Optional
-Fonts Pack: [CyberGlow-Font-Pack.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/10613963/CyberGlow-Font-Pack.zip)
-Recommended to install "Style Settings" plugin so that you may have custom checkboxes, custom background and its controls and custom stacked tab width. 
+- Fonts Pack: [CyberGlow-Font-Pack.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/10613963/CyberGlow-Font-Pack.zip)
+- Recommended to install "Style Settings" plugin so that you may have custom checkboxes, custom background and its controls and custom stacked tab width. 
 
 ### Plugin Support
 No additional plugins are required to have the theme working unlike many other themes.
