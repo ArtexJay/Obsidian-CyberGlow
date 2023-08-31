@@ -1,8 +1,8 @@
 # Obsidian: Cyber Glow
 
-Current Version is v8.0.02
+Current Version is v8.1.0
 
-A colorful unique theme, giving Obsidian a fresh new look with glow effects and theme wide support for accent color. Enjoy a unique futuristic eye-candy  look to obsidian while keeping it as usable and familiar to the vanilla theme. 
+This theme transforms Obsidian into a colorful sci-fi/cyberpunk experience, with a original accented design featuring glow effects. Supports a wide range of accent colors, allowing you to customize the colors of Obsidian. This theme gives you a futuristic and eye-catching look that will captivate your attention, have you staring at your notes and even motivated to create more notes all while keeping the functionality and familiarity of the default theme.
 
 ### Desktop View
 ![newpreview](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/0575aeaf-d706-417e-ba53-c332250ca0ae)
