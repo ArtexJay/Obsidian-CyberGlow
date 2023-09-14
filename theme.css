@@ -390,6 +390,12 @@ settings:
         format: px	
 */
 body {
+
+    /*metadata*/
+    --metadata-label-width: 10em;
+    --metadata-gap: 5px;
+    --metadata-property-radius: 3px;
+
     /*Style Settings Custom Tabs Colors*/
     --activetab-color: var(--color-accent-hsl); --activetab-highlight: hsl(var(--activetab-color));
     --tab-background-active: hsla(var(--activetab-color), 0.15);
@@ -707,12 +713,15 @@ body {
 }
 /*Resolves jumping tab bug*/
 .workspace .mod-root .workspace-tab-header:not(.is-active, :hover) .workspace-tab-header-inner-close-button{
-    display: flex;
     visibility: hidden;
+}
+.workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button {
+    display: flex;
 }
 .workspace-tab-header-inner .workspace-tab-header-inner-icon{
     color: var(--activetab-faint);
 }
+
 /*Styles Hover Tab*/
 .workspace-tab-header:hover {
     background: var(--tab-background-active);
@@ -1435,7 +1444,7 @@ body.is-tablet .CG-Custom-sbt.sidebar-toggle-button.mod-left>.clickable-icon,
 }
 /*================ Popover ==============*/
 /*Style Tooltip and Notice*/
-.tooltip, .notice {
+.tooltip, .notice, .suggestion-container {
     color: var(--text-accent);
     backdrop-filter: blur(5px) saturate(120%);
     border-image-slice: 1;
@@ -1443,6 +1452,7 @@ body.is-tablet .CG-Custom-sbt.sidebar-toggle-button.mod-left>.clickable-icon,
     border-top: 2px solid;
     border-bottom: 2px solid;
 }
+
 /*Removes Tooltip Arrow*/
 .tooltip .tooltip-arrow {
     display: none;
@@ -1910,7 +1920,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:active {
 }
 /*Headers Styling Preview/Source*/
 .cm-s-obsidian .HyperMD-header-2, .cm-s-obsidian .HyperMD-header-3, .cm-s-obsidian .HyperMD-header-4, .cm-s-obsidian .HyperMD-header-5, 
-.cm-s-obsidian .HyperMD-header-6 {
+.cm-s-obsidian .HyperMD-header-6, .metadata-properties-heading {
     padding: 15px 0px 0px 0px !important;
     position: relative;
     border-bottom: 2px solid;
@@ -1923,7 +1933,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:active {
     border-image-slice: 1;
 }
 /*Glow for Heading 1*/
-.cm-header-1:not(.cm-formatting), h1 {
+.cm-header-1:not(.cm-formatting), h1, .metadata-properties-heading {
     text-shadow:
         0 0 5px var(--h1-glow), 0 0 10px var(--h1-glow),
         0 0 20px var(--h1-glow), 0 0 40px var(--h1-glow), 0 0 80px var(--h1-glow);
@@ -1995,7 +2005,8 @@ body:not(.mini-header-hide) :not(.cm-active).cm-line span:not(.cm-formatting-hea
 }
 /*------------------- Buttons and dropdowns ---------------------*/
 /*Button and Dropdown Styling*/
-button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button), .dropdown, .search-results-info .dropdown, .style-settings-export, .style-settings-import {
+button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button), .dropdown, .search-results-info .dropdown, .style-settings-export,
+.style-settings-import, .metadata-container .metadata-add-button {
     color: var(--text-accent);
     box-shadow: 0 0 0.2em var(--text-accent);
     background-color: var(--interactive-normal);
@@ -2005,12 +2016,14 @@ button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button), .dr
     border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
 }
 /*Button and Dropdown hover Styling*/
-button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button):hover, .dropdown:hover, .style-settings-export:hover, .style-settings-import:hover {
+button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button):hover, .dropdown:hover, .style-settings-export:hover,
+ .style-settings-import:hover, .metadata-container .metadata-add-button:hover {
     background-color: var(--text-selection);
     box-shadow: 0 0 0.5em var(--text-accent);
 }
 /*Button and Dropdown active Styling*/
-button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button):active, .dropdown:focus, .style-settings-export:active, .style-settings-import:active {
+button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button):active, .dropdown:focus, .style-settings-export:active,
+.style-settings-import:active, .metadata-container .metadata-add-button:active {
     background-color: var(--color-accent-active);
     box-shadow: 0 0 0.9em var(--text-accent);
 }
@@ -2036,13 +2049,13 @@ button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button):acti
 /*Close Button on Hover*/
 .modal-close-button:hover, .document-search-close-button:hover, a.kanban-plugin__search-cancel-button.clickable-icon:hover,
 a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:hover, .graph-controls:not(.is-close) .graph-controls-button.mod-close:hover,
-.workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:hover{
+.workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:hover, .multi-select-pill-remove-button:hover{
     color: var(--text-close-color);
     background-color: var(--background-close-hover);
 }
 /*Close Button on active*/
 .modal-close-button:active, .document-search-close-button:active, a.kanban-plugin__search-cancel-button.clickable-icon:active,
-a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:active,
+a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:active, .multi-select-pill-remove-button:active,
 .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:active,
 .graph-controls:not(.is-close) .graph-controls-button.mod-close:active {
     color: var(--text-close-color);
@@ -2160,8 +2173,10 @@ body.is-frameless:not(.mod-macos):not(.is-mobile) .modal {
 .horizontal-tab-content, .vertical-tab-content, .vertical-tab-header, .modal-sidebar {
     background: transparent;
 }
+
 /*Textbox Styling*/
-textarea, input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'] {
+textarea, input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'], input.metadata-property-key-input[type='text'],
+.metadata-property-value .multi-select-input, .metadata-property input[type='number'], .metadata-input-longtext{
     background: var(--background-settings-2);
     text-align: center;
     border-top: 0px solid transparent;
@@ -2170,15 +2185,25 @@ textarea, input[type='text'], input[type='search'], input[type='email'], input[t
     border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
 }
 /*Textbox hover Styling*/
-textarea:hover, input[type='text']:hover, input[type='search']:hover, input[type='email']:hover, input[type='password']:hover, input[type='number']:hover {
+textarea:hover, input[type='text']:hover, input[type='search']:hover, input[type='email']:hover, input[type='password']:hover,
+.metadata-property-value .multi-select-input:hover{
     background: var(--text-selection);
+}
+/*Stylizes meta prop input text*/
+.metadata-property input[type='text']:hover, .metadata-property input[type='number']:hover, .metadata-input-longtext:hover{
+    background: var(--text-selection);
+    border-top: 0px solid transparent;
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
 }
 /*Textbox active Styling*/
 textarea:active, textarea:focus, input[type='text']:active, input[type='search']:active, input[type='email']:active, input[type='password']:active, 
 input[type='number']:active, input[type='text']:focus, input[type='search']:focus, input[type='email']:focus, input[type='password']:focus,
 input[type='number']:focus, textarea:focus-visible, input[type='text']:focus-visible, input[type='search']:focus-visible, select:focus,
 input[type='email']:focus-visible, input[type='password']:focus-visible, input[type='number']:focus-visible, 
-.workspace-leaf.mod-active .view-header-title:focus  {
+.workspace-leaf.mod-active .view-header-title:focus,  .metadata-property input[type='text']:focus, .metadata-property-value .multi-select-input:focus,
+.metadata-property input[type='number']:focus, .metadata-input-longtext:focus  {
     border-top: 0px solid transparent;
     box-shadow: none;
     border-bottom: 2px solid;
@@ -2186,6 +2211,59 @@ input[type='email']:focus-visible, input[type='password']:focus-visible, input[t
     border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
     background-color: var(--color-accent-active);
 }
+/*Styles metadata prop icon*/
+.metadata-property-icon{
+    background-color: var(--color-accent-active); 
+    color: var(--text-accent);
+    opacity: 1;
+    padding:var(--size-2-2);
+}
+.metadata-property-icon:before{
+    width: 0;
+}
+/*Styles metadata prop icon on hover*/
+.metadata-property-icon:hover{
+  background: var(--text-selection);
+}
+/*Removes unnecessary padding*/
+.metadata-property .multi-select-container{
+    padding: 0;
+}
+/*Adds a small gap*/
+.metadata-property{
+    gap: 3px;
+}
+/*Styles textbox and remove scrollbar from longtextbox*/
+.metadata-input-longtext, .metadata-input-text{
+    height: var(--metadata-input-height);
+    -webkit-box-pack: center;
+    -webkit-box-orient: horizontal;
+}
+.metadata-input-longtext::-webkit-scrollbar{
+    display: none;
+}
+/*Styles metadata frame highlight*/
+.metadata-property:hover, .metadata-property:focus-within {
+box-shadow: 0 0 3px 0.2px var(--text-accent);
+}
+/*Remove Unnecessary highlighting*/
+.metadata-property-value:focus-within{
+    background-color: transparent;
+}
+/**/
+.metadata-property ::-webkit-calendar-picker-indicator{
+    padding:3px;
+    margin-left:-2px;
+}
+.metadata-property ::-webkit-calendar-picker-indicator:hover{
+background-color: var(--text-faint);
+border-radius: 3px;
+cursor: var(--cursor-link);
+}
+.metadata-property ::-webkit-calendar-picker-indicator:active{
+background-color: var(--text-accent);
+}
+
 /*-------------------- Settings: Sidebar -----------------------*/
 /*Adds spacing for style and colors text*/
 .vertical-tab-nav-item {
@@ -4033,3 +4111,28 @@ body:not(.is-grabbing).is-tablet .tree-item-self.is-clickable:active{
     background-color: var(--color-accent-active);
 }
 
+/*
+@keyframes hover {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  .clickable-icon:hover, .markdown-rendered button.copy-code-button:hover, .mod-left-split .workspace-tab-header:hover, .mod-right-split .workspace-tab-header:hover{
+    animation: hover 0.2s forwards;
+  }
+  @keyframes pressed {
+    0%{
+    transform: scale(1.1);}
+    50% {
+      transform: scale(0.9);}
+    100% {
+        transform: scale(1);
+    }
+  }
+
+  .clickable-icon:hover, .markdown-rendered button.copy-code-button:hover, .mod-left-split .workspace-tab-header:hover, .mod-right-split .workspace-tab-header:hover{
+    animation: hover 0.2s forwards;
+  }*/
