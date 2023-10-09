@@ -1,5 +1,9 @@
 /* Cyber Glow for Obsidian built by TheEmperorArt version 8.x.x
 /* Please give credits if you modify or take parts for your own theme*/
+/*Change log
+- Added Subtle active tab animation
+- Added fluid color transition for custom toggle
+*/
 /*===================== Style Settings ======================*/
 /* @settings
 name: Cyber Glow Tweakbox
@@ -763,6 +767,26 @@ body {
     max-width: var(--tab-max-width);
     transition: max-width 200ms ease-in-out;
 }
+
+  /*Active Tab Animation unstacked*/
+  @keyframes float {
+    0% {
+      transform: translateY(-5%);
+      transition: ease 0.5s;
+    }
+    50% {
+      transform: translateY(3%);
+      transition: ease 0.5s;
+    }
+    100% {
+      transform: translateY(-5%);
+      transition: ease 0.5s;
+    }
+  }
+  .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active{
+    animation: float 4.9s ease-in-out infinite;
+  }
+
 /*Height of Note Tabs*/
 .workspace-tab-header-container-inner {
     margin-bottom: 5px;
@@ -2109,13 +2133,28 @@ body:not(.is-phone) .vertical-tab-header-group:nth-last-of-type(1) .vertical-tab
     -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="16" height="16" viewBox="0 0 16 16"%3E%3Cpath fill="currentColor" d="M13.25 1.75a.75.75 0 0 0-1.5 0v1h-1a.75.75 0 0 0 0 1.5h1v1a.75.75 0 0 0 1.5 0v-1h1a.75.75 0 0 0 0-1.5h-1v-1ZM4 2a2 2 0 0 0-2 2v7.75a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2.5a2 2 0 0 0-2-2H8.75V4a2 2 0 0 0-2-2H4Zm3.25 6.75v3.5H4a.5.5 0 0 1-.5-.5v-3h3.75Zm0-4.75v3.25H3.5V4a.5.5 0 0 1 .5-.5h2.75a.5.5 0 0 1 .5.5ZM12 12.25H8.75v-3.5H12a.5.5 0 0 1 .5.5v2.5a.5.5 0 0 1-.5.5Z"%2F%3E%3C%2Fsvg%3E');
 }
 /*------------------ Settings: Toggles --------------------*/
-/*Add Glow to Toggle*/
+/*Add Glow to Toggle and adds fluid animations*/
+.checkbox-container, .checkbox-container:hover{
+    box-shadow: 0 0 0.1em transparent;
+    transition: background 0.3s ease-in, box-shadow 0.4s ease-in;
+}
 .checkbox-container.is-enabled {
     box-shadow: 0 0 0.7em var(--text-accent);
+    transition: background 0.3s ease-in, box-shadow 0.4s ease-in;
+}
+
+.checkbox-container:not(.is-enabled):after{
+    transition: background 0.6s ease-in, box-shadow 0.6s ease-in;
+}
+
+.checkbox-container:after{
+transition: background 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 /*Colors Toggle*/
 .checkbox-container.is-enabled:after {
     background: var(--color-glow);
+    transition: transform 0.15s ease-in-out, width 0.1s ease-in-out, left 0.1s ease-in-out, background 0.3s ease-in, box-shadow 0.3s ease-in;
+
 }
 /*Style Slider*/
 input[type='range'],
@@ -4110,29 +4149,3 @@ background-color: var(--text-selection);
 body:not(.is-grabbing).is-tablet .tree-item-self.is-clickable:active{
     background-color: var(--color-accent-active);
 }
-
-/*
-@keyframes hover {
-    from {
-      transform: scale(1);
-    }
-    to {
-      transform: scale(1.1);
-    }
-  }
-  .clickable-icon:hover, .markdown-rendered button.copy-code-button:hover, .mod-left-split .workspace-tab-header:hover, .mod-right-split .workspace-tab-header:hover{
-    animation: hover 0.2s forwards;
-  }
-  @keyframes pressed {
-    0%{
-    transform: scale(1.1);}
-    50% {
-      transform: scale(0.9);}
-    100% {
-        transform: scale(1);
-    }
-  }
-
-  .clickable-icon:hover, .markdown-rendered button.copy-code-button:hover, .mod-left-split .workspace-tab-header:hover, .mod-right-split .workspace-tab-header:hover{
-    animation: hover 0.2s forwards;
-  }*/
