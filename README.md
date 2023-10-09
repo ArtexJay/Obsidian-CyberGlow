@@ -1,6 +1,6 @@
 # Obsidian: Cyber Glow
 
-Current Version is v8.1.1
+Current Version is v8.1.3
 
 This theme transforms Obsidian into a colorful sci-fi/cyberpunk experience, with a original accented design featuring glow effects. Supports a wide range of accent colors, allowing you to customize the colors of Obsidian. This theme gives you a futuristic and eye-catching look that will captivate your attention, have you staring at your notes and even motivated to create more notes all while keeping the functionality and familiarity of the default theme.
 
@@ -37,8 +37,9 @@ No additional plugins are required to have the theme working unlike many other t
 
 The theme contains lots of improvements over the base theme as well as unique, accessible or pleasing features:
 - Completely consistent and unique design style and in dark/light mode compared to majority of themes
-- first to adopt theme wide Accent color support for majority of the theme 
-- first with improved stacked tabs compatibility for Custom background support 
+- First to adopt theme wide Accent color support for majority of the theme 
+- First with improved stacked tabs compatibility for Custom background support
+- First theme with subtle active tab idle animation.
 - Support with Style Settings
   - Custom Background with opacity, brightness, bluryness controls
     - Improved opacity controls compared to other themes no weird Opacity gaps not being filled in properly.
