@@ -2,6 +2,9 @@
 
 Current Version is v8.1.3
 
+> **Note**
+> Be sure to credit me by linking to this repo should you use portions or design elements of my theme.
+
 This theme transforms Obsidian into a colorful sci-fi/cyberpunk experience, with a original accented design featuring glow effects. Supports a wide range of accent colors, allowing you to customize the colors of Obsidian. This theme gives you a futuristic and eye-catching look that will captivate your attention, have you staring at your notes and even motivated to create more notes all while keeping the functionality and familiarity of the default theme.
 
 ### Desktop View
