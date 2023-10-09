@@ -39,7 +39,9 @@ The theme contains lots of improvements over the base theme as well as unique, a
 - Completely consistent and unique design style and in dark/light mode compared to majority of themes
 - First to adopt theme wide Accent color support for majority of the theme 
 - First with improved stacked tabs compatibility for Custom background support
-- First theme with subtle active tab idle animation.
+- First theme with subtle active tab idle animation.<br>
+  ![ezgif-4-79722d3804](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/31e41829-cc11-4677-a161-db81d3125040)
+
 - Support with Style Settings
   - Custom Background with opacity, brightness, bluryness controls
     - Improved opacity controls compared to other themes no weird Opacity gaps not being filled in properly.
