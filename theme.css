@@ -1,8 +1,8 @@
 /* Cyber Glow for Obsidian built by TheEmperorArt version 8.x.x
 /* Please give credits if you modify or take parts for your own theme*/
 /*Change log
-- Added Subtle active tab animation
-- Added fluid color transition for custom toggle
+- Minor color fix for Sidebar tabs
+- 
 */
 /*===================== Style Settings ======================*/
 /* @settings
@@ -705,7 +705,7 @@ body {
 /*Tab Spacing Between Each Other*/
 .mod-root .workspace-tab-header-container-inner {
     padding: 2.5px 15px 0px 10px;
-    gap: 3px;
+    gap: 4px;
 }
 /*Centers Tab Text*/
 .workspace .mod-root .workspace-tab-header-inner-title {
@@ -761,8 +761,9 @@ body {
 }
 .mod-left-split .workspace-tab-header.has-active-menu, .mod-right-split .workspace-tab-header.has-active-menu, 
 .mod-left-split .workspace-tab-header.is-active, .mod-right-split .workspace-tab-header.is-active{
-    background-color: var(--tab-background-active);
+    background-color: var(--tab-background-active-clicked);
 }
+
 .mod-root .workspace-tab-header:not(.mod-stacked) {
     max-width: var(--tab-max-width);
     transition: max-width 200ms ease-in-out;
@@ -1363,6 +1364,62 @@ body:not(.is-hidden-frameless) .sidebar-toggle-button {
     border-left: 2px solid;
     border-image-source: linear-gradient(to top, transparent,  var(--activetab-highlight), transparent);
 }
+
+/*Animation for clickables like buttons, tabs, files etc*/
+@keyframes hover {
+    from {
+      transform: scale(100%);
+    }
+    to {
+      transform: scale(105%);
+    }
+  }
+ .clickable-icon:not(.input-right-decorator):hover, .markdown-rendered button.copy-code-button:hover, .mod-left-split .workspace-tab-header:hover, 
+  .mod-right-split .workspace-tab-header:hover, .mod-windows .titlebar-button:hover, .modal-close-button {
+    animation: hover 0.2s forwards;
+  }
+  @keyframes pressed {
+    0%{
+    transform: scale(1.05);}
+    50% {
+      transform: scale(0.95);}
+    100% {
+        transform: scale(1);
+    }
+  }
+  .clickable-icon:not(.input-right-decorator):active, .markdown-rendered button.copy-code-button:active, .mod-left-split .workspace-tab-header:active, 
+  .mod-right-split .workspace-tab-header:active, .mod-windows .titlebar-button:active,.modal-close-button:active{
+    animation: pressed 0.3s forwards;
+  }
+
+  @keyframes bighover {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.025);
+    }
+  }
+  .setting-item.setting-item-heading.style-settings-heading:hover,.mod-root .workspace-tabs:not(.mod-stacked)  .workspace-tab-header:hover, 
+ .tree-item-self.is-clickable:hover, .menu-item:hover, .vertical-tab-nav-item:hover, .community-item:hover{
+    animation: bighover 0.2s forwards;
+  }
+
+  @keyframes bigpressed {
+    0%{
+    transform: scale(1.025);}
+    50% {
+      transform: scale(0.975);}
+    100% {
+        transform: scale(1);
+    }
+  }
+  .setting-item.setting-item-heading.style-settings-heading:active, .mod-root .workspace-tab-header:not(.mod-stacked):active,
+  .tree-item-self.is-clickable:active, .menu-item:active, .suggestion-item.mod-complex:not(.mod-group):active, .vertical-tab-nav-item:active,
+  .community-item:active{
+    animation: bigpressed 0.3s forwards;
+  }
+
 /*Top Panes Rounded*/
 .workspace-tabs.mod-top .workspace-leaf{
     border-radius: 5px 5px 0px 0px;
@@ -2311,7 +2368,7 @@ background-color: var(--text-accent);
     border-bottom: 1px solid transparent;
 }
 /*Items hover styling*/
-body:not(.is-mobile) .vertical-tab-nav-item:hover {
+body:not(.is-mobile) .vertical-tab-nav-item:not(.is-active):hover {
     color: var(--text-accent);
     border-image-slice: 1;
     border-top: 1px solid;
@@ -2369,7 +2426,7 @@ body:not(.is-mobile) .document-search-container {
     color: var(--text-faint);
 }
 /*Style on Hover*/
-.community-item:hover, .suggestion-item.is-selected {
+.community-item:hover, .suggestion-item.is-selected:not(.mod-group) {
     background-color: var(--text-selection);
     border-bottom: 1px solid;
     border-top: 1px solid;
