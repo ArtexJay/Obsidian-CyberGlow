@@ -99,10 +99,6 @@ The theme contains lots of improvements over the base theme as well as unique, a
 - [ChuckHarmston](https://github.com/chuckharmston), Adapted his Safari Tab expander snippet.
 - [Akifyss](https://github.com/Akifyss) creator of Border Theme, loved their implementation of custom file explorer icons and settings icons, readapted it for my theme
 - [Braweria's](https://github.com/Braweria) Spectrum theme which had lovely bigger checkboxes than the vanilla
-- [lnbgc](https://github.com/lnbgc) Jotter theme, has very useful wrapping of file names in the file explorer, readapted for this theme
+- [lnbgc](https://github.com/lnbgc) Jotter theme, has very useful word wrap of file names in the file explorer, readapted for this theme
 - [Colin Eckert's](https://github.com/colineckert) Things 2 Theme having working minimal headers in live preview and imo useful codeblock gutter line
-- Nader on Discord for his amazing Obsidian Community wallpaper
-
-
-- [AlexD (DrIcon14)](https://dricon.gumroad.com/)  for his brilliantly done Obsidian Logo and letting me use it in my them. This icon will not be available in v8 of Cyber Glow however. (Icon was dropped as of theme's version 8)
 
