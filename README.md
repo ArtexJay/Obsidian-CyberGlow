@@ -1,6 +1,6 @@
 # Obsidian: Cyber Glow
 
-Current Version is v8.1.9
+Current Version is v8.2.0
 
 > **Note**
 > Be sure to credit me by linking to this repo should you use portions or design elements of my theme.
