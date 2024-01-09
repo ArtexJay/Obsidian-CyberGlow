@@ -86,7 +86,7 @@ The theme contains lots of improvements over the base theme as well as unique, a
   - `<cite>Enter Name Here</cite>`
   - `<div class= 'signature'>The Name<\div>`
 - Easily identifiable codeblocks with proper code coloring
-- Unique Heading Line (CyberGlow Style)  
+- Unique Heading Line, plus custom logo options
   ![image](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/b5381ce7-8ba0-4dbe-80d0-ea2ac235bfd2)
 - First theme with custom headers that blend well with Canvas.
 
