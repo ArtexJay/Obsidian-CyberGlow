@@ -1,9 +1,10 @@
 # Obsidian: Cyber Glow
 
-Released v8.2.3
-
-> **Note**
-> Be sure to credit me by linking to this repo should you use portions or design elements of my theme.
+> **v8.2.5 Changelog**
+> - Fixed: Minor custom background error with statusbar
+> - Fixed: Extra Padding in table cell
+> - Added: Extra letter spacing in headers due to font
+> - Fixed: Strange behavior with PDF Thumbnail scrollbar
 
 This theme transforms Obsidian into a colorful sci-fi/cyberpunk experience, with a original accented design featuring glow effects. Supports a wide range of accent colors, allowing you to customize the colors of Obsidian. This theme gives you a futuristic and eye-catching look that will captivate your attention, have you staring at your notes and even motivated to create more notes all while keeping the functionality and familiarity of the default theme.
 
@@ -95,10 +96,11 @@ The theme contains lots of improvements over the base theme as well as unique, a
 - [Deathau](https://github.com/deathau), his creator of 80's Neon theme inspired the widespread glow effects now present in my theme. 
 - [Benny Guo](https://github.com/bennyxguo/Obsidian-Obsidianite), formerly Tridiamond, his Obsidianite theme was the basis, originally intended to just a minor tweak of his theme.
 - [Sailkite](https://github.com/sailKitev) on Discord - Helped me with resolve my weird CSS issues and suggested ways to streamline some things
-- [Jdanielmourao's](https://github.com/jdanielmourao/) Sanctum theme line selector in the editor and adapted it to for my theme and custom readable line width
 - [ChuckHarmston](https://github.com/chuckharmston), Adapted his Safari Tab expander snippet.
-- [Akifyss](https://github.com/Akifyss) creator of Border Theme, loved their implementation of custom file explorer icons and settings icons, readapted it for my theme
 - [Braweria's](https://github.com/Braweria) Spectrum theme which had lovely bigger checkboxes than the vanilla
 - [lnbgc](https://github.com/lnbgc) Jotter theme, has very useful word wrap of file names in the file explorer, readapted for this theme
 - [Colin Eckert's](https://github.com/colineckert) Things 2 Theme having working minimal headers in live preview and imo useful codeblock gutter line
+
+ > **Note**
+> Be sure to credit me by linking to this repo should you use portions or design elements of my theme.
 
