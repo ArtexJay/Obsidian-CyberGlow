@@ -1,6 +1,6 @@
 ---
 name: Font Issue Report
-about: Create a report to help me improve this theme
+about: Report any Issues with Theme Font
 title: "[Font]"
 labels: Font
 assignees: ''
