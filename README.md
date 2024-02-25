@@ -1,10 +1,10 @@
 # Obsidian: Cyber Glow
 
-> **v8.2.5 Changelog**
-> - Fixed: Minor custom background error with statusbar
-> - Fixed: Extra Padding in table cell
-> - Added: Extra letter spacing in headers due to font
-> - Fixed: Strange behavior with PDF Thumbnail scrollbar
+> **v8.2.7 Changelog**
+> - Fixed: letters with accents #73
+> - Added: Custom Tag style is back
+> - Fixes: weird spacing after and before semicolons when a number or sign comes after #70
+> - Fixes: unreadable tags in header #71
 
 This theme transforms Obsidian into a colorful sci-fi/cyberpunk experience, with a original accented design featuring glow effects. Supports a wide range of accent colors, allowing you to customize the colors of Obsidian. This theme gives you a futuristic and eye-catching look that will captivate your attention, have you staring at your notes and even motivated to create more notes all while keeping the functionality and familiarity of the default theme.
 
