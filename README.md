@@ -1,6 +1,6 @@
 # Obsidian: Cyber Glow
 
-> **v8.2.7 Changelog**
+> **v1.2.6 (v8.2.7) Changelog**
 > - Fixed: letters with accents #73
 > - Added: Custom Tag style is back
 > - Fixes: weird spacing after and before semicolons when a number or sign comes after #70
