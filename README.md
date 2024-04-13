@@ -1,5 +1,6 @@
 # Obsidian: Cyber Glow
 
+**If your installed version is v8.X.X you will need to**<br>
 **REINSTALL THIS THEME FOR THIS UPDATE**
 
 > **v1.3.0 Changelog** 
