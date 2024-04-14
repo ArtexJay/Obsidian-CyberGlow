@@ -1,7 +1,6 @@
 # Obsidian: Cyber Glow
 
-**If your installed version is v8.X.X you will need to**<br>
-**REINSTALL THIS THEME FOR THIS UPDATE**
+**If installed version is greater than v2.0.0 PLEASE REINSTALL THIS THEME**<br>
 
 > **v1.3.0 Changelog** 
 > - Changed Active Line Highlight design
@@ -28,7 +27,6 @@ Would appreciate any donation if you enjoy this theme, doing this theme in my fr
 <a href="https://www.buymeacoffee.com/TheEmperorArt"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=TheEmperorArt&button_colour=690ed8&font_colour=ffffff&font_family=Inter&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
 
 ### Optional
-- Fonts Pack: [CyberGlow-Font-Pack.zip](https://github.com/ArtexJay/Obsidian-CyberGlow/files/10613963/CyberGlow-Font-Pack.zip)
 - Recommended to install "Style Settings" plugin so that you may have custom checkboxes, custom background and its controls and custom stacked tab width. 
 
 ### Plugin Support
@@ -42,20 +40,27 @@ No additional plugins are required to have the theme working unlike many other t
 - If a plugin doesn't look right with this theme let me know.
 
 ### What to Expect
-
-The theme contains lots of improvements over the base theme as well as unique, accessible or pleasing features:
 - Completely consistent and unique design style and in dark/light mode compared to majority of themes
-- First to adopt theme wide Accent color support for majority of the theme 
-- First with improved stacked tabs compatibility for Custom background support
-- First theme with subtle active tab idle animation.<br>
+  
+Some styles that appeared in this CyberGlow First to my knowledge
+- Adopt theme wide Accent color support for majority of the theme 
+- Unique Line Separator featuring Obsidians Logo
+  ![image](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/b5381ce7-8ba0-4dbe-80d0-ea2ac235bfd2)
+- Custom headers that blend well with Canvas.
+- A single, unified active line hightlight in editor
+![image](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/87f74ff3-9c8d-4826-ad1a-5d218d0e933e)
+- Upright Stacked tabs titles for easier reading (no need to crane your neck)
+- Custom Left Sidebar toggle in Hidden Window Frame and Obsidian Frame
+- Subtle active tab idle animation.<br>
   ![ezgif-4-79722d3804](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/31e41829-cc11-4677-a161-db81d3125040)
+ - Improved stacked tabs compatibility for Custom background support
 
 - Support with Style Settings
   - Custom Background with opacity, brightness, bluryness controls
     - Improved opacity controls compared to other themes no weird Opacity gaps not being filled in properly.
   - Custom Stacked tabs width control
   - Bigger and custom checkboxes for easier viewing
-  - First with Custom Left Sidebar toggle in Hidden Window Frame and Obsidian Frame
+  
 ```
 - [x] checkmark
 - [?] ? for question
@@ -84,16 +89,12 @@ The theme contains lots of improvements over the base theme as well as unique, a
 - [l] l for location
 - [*] * for star
 ```
-- first theme with upright Stacked tabs titles for easier reading (no need to crane your neck) 
 - Smooth tab and pane switching animation
 - Custom file explorer icons plus unique icon depicting which file you are viewing/editing 
 - Add custom cursive signatures (If you have the optional fonts pack installed)
   - `<cite>Enter Name Here</cite>`
   - `<div class= 'signature'>The Name<\div>`
 - Easily identifiable codeblocks with proper code coloring
-- Unique and only Line Separator featuring Obsidians Logo plus custom logo options
-  ![image](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/b5381ce7-8ba0-4dbe-80d0-ea2ac235bfd2)
-- First theme with custom headers that blend well with Canvas.
 
 
 #### Special Thanks
