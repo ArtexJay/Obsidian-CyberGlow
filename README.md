@@ -24,9 +24,6 @@ This theme transforms Obsidian into a colorful sci-fi/cyberpunk experience, with
 > **Note**
 > If Obsidian is having trouble finding an update for theme, consider manually updating it by downloading the theme and manifest file Replacing the existing one in the Cyber Glow folder directory.
 
-> **Warning**
-> For best experience please disable "Translucent Window" in Obsidian's Settings. If you want a background image, use Style Settings.
-
 Would appreciate any donation if you enjoy this theme, doing this theme in my free time during studies.
 <a href="https://www.buymeacoffee.com/TheEmperorArt"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=TheEmperorArt&button_colour=690ed8&font_colour=ffffff&font_family=Inter&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
 
