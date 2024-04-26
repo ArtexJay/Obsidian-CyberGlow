@@ -1,4 +1,4 @@
-![image](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/d50ef2f7-b343-4561-8457-e61a093a1761)# Obsidian: Cyber Glow
+# Obsidian: Cyber Glow
 
 **If installed version is greater than v2.0.0 PLEASE REINSTALL THIS THEME**<br>
 
