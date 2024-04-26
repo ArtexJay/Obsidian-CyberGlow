@@ -1,5 +1,5 @@
-/* Cyber Glow for Obsidian built by TheEmperorArt version 8.x.x
-/* Please give credits if you modify or take parts for your own theme*/
+/* Cyber Glow for Obsidian built by TheEmperorArt version 1.3.X
+/* Please credit me if you modify or take parts for your own theme*/
 /*===================== Style Settings ======================*/
 /*
 */
@@ -855,6 +855,14 @@ body:not(.is-mobile).document-search-container.mod-replace-mode ~ .cm-editor{
     border-right: 1px solid;
     border-left: 1px solid;
 }
+
+.titlebar-button:not(.mod-logo):hover, .titlebar-button:active{
+    box-shadow: inset 0em 0em 0.5em var(--text-accent);
+}
+
+.mod-windows .titlebar-button.mod-close:hover, .mod-windows .titlebar-button.mod-close:active{
+    box-shadow: inset 0em 0em 0.5em var(--text-close-color);
+}
 .mod-windows .titlebar-button.mod-close:active, .titlebar-button:active {
     border-image-slice: 1;
     opacity: 1;
@@ -920,10 +928,7 @@ background:transparent;
 /*======================= Status-bar ==========================*/
 /*General*/
 .status-bar{
-border-image-slice: 1;
-border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
-border-bottom: 2px solid;
-height: 2.2%;
+height: 2.5%;
 border-top: 0px solid;
 }
 
@@ -940,12 +945,6 @@ body:not(.CG-Fullstatus-off)  .status-bar {
     background: var(--background-secondary);
 }
 
-/*Status Bar Clickable Icons Hover/Active*/
-.status-bar-item.mod-clickable:hover {
-    color: var(--text-accent);
-    box-shadow: 0 0 0.5em var(--text-accent);
-}
-
 .status-bar-item.mod-clickable:active, .status-bar-item.plugin-obsidian-languagetool-plugin:active {
     color: var(--text-accent);
     background-color: var(--color-accent-active);
@@ -959,6 +958,8 @@ body:not(.CG-Fullstatus-off)  .status-bar {
 }
 
 /*======================== Scrollbar ========================*/
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb{
+    box-shadow: inset 0em 0em 0.35em var(--text-accent);}
 /*Scrollbar Hover*/
 body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover {
     background: var(--text-selection);
@@ -968,6 +969,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover {
 body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
     background: var(--text-accent);
     background-clip: padding-box;
+
 }
 
 /*========================  Note Editor ========================*/
@@ -976,7 +978,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
     border-right: 2px solid transparent;
     border-left: 2px solid transparent;
     padding: 0px 4px 0px 4px !important;
-min-width: 23px!important;
+    min-width: 32px !important;
 }
 .markdown-source-view.mod-cm6 .cm-gutters .cm-lineNumbers .cm-gutterElement.cm-active {
     color: var(--text-accent);
@@ -1354,10 +1356,7 @@ body:not(.is-hidden-frameless) .sidebar-toggle-button {
 /*Clickable Menu Button Style*/
 .clickable-icon.has-active-menu{
     box-shadow: 0 0 0 transparent;
-    border-image-slice: 1;
-    border-right: 1px solid;
-    border-left: 1px solid;
-    border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
+    box-shadow: inset 0em 0em 0.5em var(--text-accent);
 }
 /*Clickable button when active*/
 .clickable-icon.nav-action-button:active{
@@ -1375,10 +1374,23 @@ body:not(.is-hidden-frameless) .sidebar-toggle-button {
     to {  transform: scale(105%); }
   }
 
- .clickable-icon:not(.input-right-decorator):hover, .markdown-rendered button.copy-code-button:hover, .mod-left-split .workspace-tab-header:hover, 
-  .mod-right-split .workspace-tab-header:hover, .mod-windows .titlebar-button:hover, .modal-close-button {
+
+.mod-left-split .workspace-tab-header:hover, 
+  .mod-right-split .workspace-tab-header:hover{
     animation: hover 0.2s forwards;
+}
+ .clickable-icon:not(.input-right-decorator):hover, .markdown-rendered button.copy-code-button:hover, .mod-windows .titlebar-button:hover, .status-bar-item.mod-clickable:hover {
+    animation: hover 0.2s forwards;
+    box-shadow: inset 0em 0em 0.5em var(--text-accent);
   }
+
+.status-bar-item.mod-clickable{
+padding: 5ox;
+}
+
+ .modal-close-button{
+    animation: hover 0.2s forwards;
+}
 
   @keyframes pressed {
     0%{ transform: scale(1.05);}
@@ -1991,10 +2003,14 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:active {
     border-image-width: 0 0 2px 0;
 }
 /*Return of Heading numbers Styled*/
-.markdown-source-view.mod-cm6 .cm-line:not(.cm-table-widget .table-wrapper .cm-line)::before {
+.markdown-source-view.mod-cm6 .cm-line:not(.cm-table-widget .table-wrapper .cm-line, .cm-active.cm-line)::before {
     font-size: 0.7rem;
-    margin-right: 5px;
     font-weight: bold;
+    margin-left: -45px;
+    margin-right: 25px;
+    bottom: -2px;
+    position: absolute;
+    text-shadow: none;
 }
 /*Removes redundant heading number for links and tags*/
 .mod-cm6.is-live-preview div:not(.cm-active).cm-line .cm-header~span.cm-header::before,
@@ -2005,40 +2021,55 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:active {
 .markdown-source-view.mod-cm6 :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(.cm-header-1)::before {
     content: 'H1';
     margin-top: calc(var(--h1-size) - 0.1em);
+    color: var(--text-accent);
 }
 .markdown-source-view.mod-cm6 :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(.cm-header-2)::before {
     content: 'H2';
     margin-top: calc(var(--h2-size) - 0.2em);
+    color: var(--h2-glow);
+
 }
 .markdown-source-view.mod-cm6 :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(.cm-header-3)::before {
     content: 'H3';
     margin-top: calc(var(--h3-size) - 0.2em);
+    color: var(--h3-glow);
 }
 .markdown-source-view.mod-cm6 :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(.cm-header-4)::before {
     content: 'H4';
     margin-top: calc(var(--h4-size) - 0.3em);
+    color: var(--h4-glow);
 }
 .markdown-source-view.mod-cm6 :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(.cm-header-5)::before {
     content: 'H5';
     margin-top: calc(var(--h5-size) - 0.4em);
+    color: var(--h5-glow);
 }
 .markdown-source-view.mod-cm6 :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(.cm-header-6)::before {
     content: 'H6';
     margin-top: calc(var(--h6-size) - 0.4em);
-}
-/*------------------- Buttons and dropdowns ---------------------*/
-/*Button and Dropdown Styling*/
-button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button), .dropdown, .search-results-info .dropdown, .style-settings-export,
-.style-settings-import, .metadata-container .metadata-add-button {
-    color: var(--text-accent);
-    box-shadow: 0 0 0.2em var(--text-accent);
-    background-color: var(--interactive-normal);
-    border-image-slice: 1;
-    border-top: 3px solid;
-    border-bottom: 3px solid;
-    border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+    color: var(--h6-glow);
 }
 
+
+/*------------------- Buttons and dropdowns ---------------------*/
+/*Button and Dropdown Styling  WIP*/
+button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button), .dropdown, .search-results-info .dropdown, .style-settings-export,
+.style-settings-import, .metadata-container .metadata-add-button{
+    background-color: transparent;
+    box-shadow: inset 0em 0em 2em var(--text-accent);
+    border-radius: var(--radius-s);
+color:  var(--text-on-accent);
+}
+
+/*Button and Dropdown hover Styling*/
+button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button):hover, .dropdown:hover, .style-settings-export:hover,
+ .style-settings-import:hover, .metadata-container .metadata-add-button:hover {
+   /* animation: 0.4s fadeHoverGlow forwards, 0.2s fadeHoverBackground forwards, 0.2s bighover forwards;*/
+    box-shadow: 0em 0em 0.15em 0.1em var(--text-accent) , inset 0em 0em 2em var(--text-accent);
+    background-color: var(--text-selection);
+
+}
+/*
 @keyframes fadeHoverGlow {
     0% {    box-shadow: 0 0 0.2em var(--text-accent);}
     100% {    box-shadow: 0 0 0.5em var(--text-accent);}
@@ -2047,19 +2078,13 @@ button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button), .dr
     0% {background-color: var(--interactive-normal);}
     100% {background-color: var(--text-selection);}
 }
-
-/*Button and Dropdown hover Styling*/
-button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button):hover, .dropdown:hover, .style-settings-export:hover,
- .style-settings-import:hover, .metadata-container .metadata-add-button:hover {
-    animation: 0.4s fadeHoverGlow forwards, 0.2s fadeHoverBackground forwards, 0.2s bighover forwards;
-}
-
+*/
 /*Button and Dropdown active Styling*/
 button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button):active, .dropdown:focus, .style-settings-export:active,
 .style-settings-import:active, .metadata-container .metadata-add-button:active {
     animation: 0.3s bigpressed forwards;
-    box-shadow: 0 0 0.9em var(--text-accent);
-    background-color: var(--color-accent-active);
+    background-color: var(--text-selection);
+    box-shadow: inset 0em 0em 2em var(--text-accent);
 }
 /*Search dropdown*/
 .search-results-info .dropdown {
@@ -2086,6 +2111,8 @@ a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:hover, .graph-con
 .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:hover, .multi-select-pill-remove-button:hover{
     color: var(--text-close-color);
     background-color: var(--background-close-hover);
+    box-shadow: inset 0em 0em 0.35em var(--text-close-color);
+
 }
 /*Close Button on active*/
 .modal-close-button:active, .document-search-close-button:active, a.kanban-plugin__search-cancel-button.clickable-icon:active,
@@ -2094,6 +2121,7 @@ a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:active, .multi-se
 .graph-controls:not(.is-close) .graph-controls-button.mod-close:active {
     color: var(--text-close-color);
     background-color: var(--background-close-active);
+    box-shadow: inset 0em 0em 0.2em var(--text-close-color);
 }
 /*Pinned Tab*/
 .mod-root .mod-pinned:hover {
@@ -2243,10 +2271,10 @@ textarea:hover, input[type='text']:hover, input[type='search']:hover, input[type
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
 }
-/*Textbox active Styling*/
+/*Textbox active Styling WIP*/
 textarea:active, textarea:focus, input[type='text']:active, input[type='search']:active, input[type='email']:active, input[type='password']:active, 
 input[type='number']:active, input[type='text']:focus, input[type='search']:focus, input[type='email']:focus, input[type='password']:focus,
-input[type='number']:focus, textarea:focus-visible, input[type='text']:focus-visible, input[type='search']:focus-visible, select:focus,
+input[type='number']:focus, textarea:focus-visible, input[type='text']:focus-visible, input[type='search']:focus-visible,
 input[type='email']:focus-visible, input[type='password']:focus-visible, input[type='number']:focus-visible, 
 .workspace-leaf.mod-active .view-header-title:focus,  .metadata-property input[type='text']:focus, .metadata-property-value .multi-select-input:focus,
 .metadata-property input[type='number']:focus, .metadata-input-longtext:focus  {
@@ -2328,7 +2356,7 @@ body:not(.is-mobile) .vertical-tab-nav-item:not(.is-active):hover {
 /*Items active styling*/
 .vertical-tab-nav-item.is-active, .horizontal-tab-nav-item.is-active:active, .vertical-tab-nav-item.is-active:active,
 .horizontal-tab-nav-item.is-active:hover, .vertical-tab-nav-item.is-active:hover, .vertical-tab-nav-item:active {
-    color: var(--text-accent);
+    color: var(--text-on-accent);
     background: var(--color-accent-active);
     border-image-slice: 1;
     border-top: 2px solid;
@@ -4092,6 +4120,9 @@ background-color: transparent;
 .is-phone .modal.mod-settings .vertical-tab-content {
 	margin-top: 40px;
 }
+.modal-close-button{
+    padding: 0 2px 0 4.5px;
+}
 /*brings close button to the front for styled headers*/
 .is-phone .modal.mod-lg .modal-close-button,
 .is-phone .modal.mod-sidebar-layout .modal-close-button {
@@ -4256,7 +4287,7 @@ body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-ac
     position: absolute;
     top: 0;
     left: -22px;
-    right: -5px;
+    right: 0px;
     bottom: 0;
     box-shadow: inset 0em 0em 0.35em var(--text-accent);
 border-radius: 3px ;
@@ -4267,3 +4298,29 @@ z-index: -1;
 .markdown-source-view.mod-cm6 .cm-foldPlaceholder{
  color: var(--text-normal);
 }
+
+/*New Row/Column faint visibility and style*/
+.markdown-source-view.mod-cm6 .cm-table-widget .table-row-btn, .markdown-source-view.mod-cm6 .cm-table-widget .table-col-btn{
+opacity:0.2;
+background: var(--text-selection);
+border: none;
+box-shadow: inset 0em 0em 0.35em var(--text-accent);
+color: var(--text-normal);
+}
+.markdown-source-view.mod-cm6 .cm-table-widget .table-row-btn{
+border-radius: 0 0 5px 5px;
+}
+ .markdown-source-view.mod-cm6:not(.is-rtl) .cm-table-widget .table-col-btn{
+border-radius: 0 5px 5px 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget .table-col-drag-handle, .markdown-source-view.mod-cm6 .cm-table-widget .table-row-drag-handle{
+opacity:1;}
+
+
+.markdown-source-view.mod-cm6 .cm-table-widget .table-row-drag-handle:hover, .markdown-source-view.mod-cm6 .cm-table-widget .table-col-drag-handle:hover {
+    background-color: var(--table-drag-handle-background-active);
+    color: var(--table-drag-handle-color-active);
+    box-shadow: 0 0 0 var(--table-selection-border-width) var(--table-selection-border-color);
+}
+
