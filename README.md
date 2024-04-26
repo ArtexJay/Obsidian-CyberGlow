@@ -1,16 +1,12 @@
-# Obsidian: Cyber Glow
+![image](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/d50ef2f7-b343-4561-8457-e61a093a1761)# Obsidian: Cyber Glow
 
 **If installed version is greater than v2.0.0 PLEASE REINSTALL THIS THEME**<br>
 
-> **v1.3.0 Changelog** 
-> - Changed Active Line Highlight design
-> - Changed the color of line when hovering so its less confusing and distracting
-> - Fixed improper coloring of scrollbar
-> - Changed font sizes for headers, header 5 and 6 was previously too small
-> - Changed the color of header 3 to a more Orange/Golden color for better readability
-> - Updated the table input field style
-> - Fixed Mini Header like H1-H6 when having a tags in the header
-> - Fixed Bad Coloring of Header Ellipses when Minimized
+> **v1.3.2 Changelog**
+> - Fixed Minor issue with the active line hightlight
+> - Added Themed buttons for the New Row/Column buttons
+> - New Button design
+> - Moved the mini header sign to the gutterline
 
 This theme transforms Obsidian into a colorful sci-fi/cyberpunk experience, with a original accented design featuring glow effects. Supports a wide range of accent colors, allowing you to customize the colors of Obsidian. This theme gives you a futuristic and eye-catching look that will captivate your attention, have you staring at your notes and even motivated to create more notes all while keeping the functionality and familiarity of the default theme.
 
