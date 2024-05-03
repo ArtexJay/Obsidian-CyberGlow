@@ -2,6 +2,7 @@
 <br>
 **If installed version is greater than v2.0.0 PLEASE REINSTALL THIS THEME**<br>
 <br>
+
 > **v1.3.2 Changelog**
 > - Fixed Minor issue with the active line hightlight
 > - Added Themed buttons for the New Row/Column buttons
