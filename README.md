@@ -39,12 +39,12 @@ No additional plugins are required to have the theme working unlike many other t
 ### What to Expect
 - Completely consistent and unique design style and in dark/light mode compared to majority of themes<br>
   
-Some styles that appeared in this CyberGlow First to my knowledge
+Some styles that first appeared in this CyberGlow:
 - Adopt theme wide Accent color support for majority of the theme 
 - Unique Line Separator featuring Obsidians Logo
   ![image](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/b5381ce7-8ba0-4dbe-80d0-ea2ac235bfd2)
 - Custom headers that blend well with Canvas.
-- A single, unified active line hightlight in editor
+- A single unified active line hightlight in editor
 ![image](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/87f74ff3-9c8d-4826-ad1a-5d218d0e933e)
 - Upright Stacked tabs titles for easier reading (no need to crane your neck)
 - Custom Left Sidebar toggle in Hidden Window Frame and Obsidian Frame
