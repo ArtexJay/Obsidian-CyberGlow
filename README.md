@@ -52,6 +52,7 @@ Some styles that first appeared in this CyberGlow:
   ![ezgif-4-79722d3804](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/31e41829-cc11-4677-a161-db81d3125040)
  - Improved stacked tabs compatibility for Custom background support
 <br>
+
 - Support with Style Settings
   - Custom Background with opacity, brightness, bluryness controls
     - Improved opacity controls compared to other themes no weird Opacity gaps not being filled in properly.
