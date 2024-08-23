@@ -6,6 +6,7 @@
 > - Fixed: noticeable v16 introduced graphical bug on Desktop and Mobile
 > - Fixed: Graphical bug table
 > - Added: Stylized the new vault bar
+
 > **Known bug**
 > - Line highlighter in codeblocks not properly displaying
 > - Custom code gutterline in codeblocks not displaying properly
