@@ -1,8 +1,6 @@
-/* Cyber Glow for Obsidian built by TheEmperorArt version 1.3.X
+/* Cyber Glow for Obsidian built by TheEmperorArt version 1.3.7
 /* Please credit me if you modify or take parts for your own theme*/
 /*===================== Style Settings ======================*/
-/*
-*/
 /* @settings
 name: Cyber Glow Tweakbox
 id: CG
@@ -193,6 +191,9 @@ settings:
       -
         label: CG Old Default
         value: CG-OG-hr
+      -
+        label: No Logo
+        value: CG-None-hr
       -
         label: Classic Obsidian Outline
         value: CG-ClassicObsidian-hr	
@@ -1061,10 +1062,10 @@ body:not(.is-mobile) .workspace-split.mod-left-split, body:not(.is-mobile) .work
     padding-left: 1px;
 }
 /*Navigation Bottom Style*/
-.nav-header {
+.nav-header, body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
-    border-bottom: 3px solid;
+    border-bottom: 2px solid;
 }
 /*Unifies the right side pane background*/
 .workspace-split.mod-right-split .workspace-tabs .node-insert-event{
@@ -1409,7 +1410,7 @@ padding: 5ox;
   }
 
   .setting-item.setting-item-heading.style-settings-heading:hover,.mod-root .workspace-tabs:not(.mod-stacked)  .workspace-tab-header:hover, 
- .tree-item-self.is-clickable:hover, .menu-item:hover, .vertical-tab-nav-item:hover, .community-item:hover, .callout:hover{
+ .tree-item-self.is-clickable:hover, .menu-item:hover, .vertical-tab-nav-item:hover, .community-item:hover{
     animation: bighover 0.2s forwards;
   }
 
@@ -1420,7 +1421,7 @@ padding: 5ox;
   }
   .setting-item.setting-item-heading.style-settings-heading:active, .mod-root .workspace-tab-header:not(.mod-stacked):active,
   .tree-item-self.is-clickable:active, .menu-item:active, .suggestion-item.mod-complex:not(.mod-group):active, .vertical-tab-nav-item:active,
-  .community-item:active, .callout:active{
+  .community-item:active{
     animation: bigpressed 0.3s forwards;
   }
 
@@ -1747,7 +1748,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:active {
 }
 /*New Default CyberGlow Heading*/
 .CG-NewObsidian-hr .markdown-preview-view hr::after, body:not(.CG-OG-hr, .CG-Hyrule-hr, .CG-Apple-hr, .CG-Windows-hr, .CG-Lorule-hr,
-.CG-ClassicObsidian-hr) .markdown-preview-view hr::after {
+.CG-ClassicObsidian-hr, .CG-None-hr) .markdown-preview-view hr::after {
     content: ' ';
     -webkit-mask-image: var(--newoutlined-logo);
     -webkit-mask-size: 100%;
@@ -1759,7 +1760,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:active {
     padding: 1rem;
 }
 .CG-NewObsidian-hr .hr.cm-line hr::after, body:not(.CG-OG-hr, .CG-Hyrule-hr, .CG-Apple-hr, .CG-Windows-hr, .CG-Lorule-hr,
-.CG-ClassicObsidian-hr) .hr.cm-line hr::after {
+.CG-ClassicObsidian-hr, .CG-None-hr) .hr.cm-line hr::after {
     content: ' ';
     -webkit-mask-image: var(--newoutlined-logo);
     -webkit-mask-size: 80%;
@@ -1862,6 +1863,11 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:active {
     position: absolute;
     transform: translate(-35%, -30%);
     padding: 1rem;
+}
+
+.CG-None-hr .hr.cm-line hr, .CG-None-hr .markdown-preview-view hr{
+    content: ' ';
+border-image: linear-gradient(to left, transparent, var(--text-accent) 45%,  var(--text-accent) 5%, transparent) 3 !important;
 }
 
 /*----------------- Menu --------------------*/
@@ -3899,6 +3905,7 @@ background-color:  var(--text-accent);
 	backdrop-filter: blur(18px);
 	background: var(--background-tertiary);
 	background-attachment: fixed !important;
+    padding: 0px;
 }
 /*Edit Mode Toolbar*/
 .mobile-toolbar-options-container {
@@ -3968,6 +3975,7 @@ background-color:  var(--text-accent);
 	border-image-slice: 1;
 	border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
 	border-bottom: 2px solid;
+    margin: 0px;
 }
 /*Corrects the view from the style above*/
 .is-mobile .workspace-drawer-active-tab-container .workspace-drawer-active-tab-content .nav-files-container, .is-mobile .tag-container {
@@ -4035,6 +4043,7 @@ body.is-mobile .nav-files-container::-webkit-scrollbar-track, .is-mobile .tag-co
 	background: var(--background-tertiary);
 	background-attachment: fixed !important;
     z-index: 1;
+    padding-bottom: 7px;
 }
 /*Fixed Kanban Board View*/
 .is-mobile .kanban-plugin__board{
@@ -4202,10 +4211,6 @@ body.is-frameless.is-hidden-frameless .titlebar{
    background:transparent;
 }
 
-.workspace-tabs:not(.mod-top) .workspace-leaf-content,  .workspace-tabs:not(.mod-top) .workspace-leaf-content, .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .view-content{
-    border-radius: 0 0 5px 5px;
-}
-
 .workspace-split:not(.mod-horizontal.mod-left-split, .mod-horizontal.mod-right-split ) .workspace-tabs:not(.mod-top) .workspace-tab-header-container{
     background: transparent;
 }
@@ -4279,8 +4284,6 @@ border-bottom: 2px solid;
 .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper {
     margin-inline: auto;}
 
-
-
 /*Active Line Editor*/
 body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active:not(.cm-table-widget .table-wrapper .cm-line):not(:has(.mk-note-footer, .mk-floweditor-container))::before {
     content: "";
@@ -4324,3 +4327,22 @@ opacity:1;}
     box-shadow: 0 0 0 var(--table-selection-border-width) var(--table-selection-border-color);
 }
 
+/* .workspace-tabs:not(.mod-top) .workspace-leaf-content,  .workspace-tabs:not(.mod-top) .workspace-leaf-content, .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .view-content{
+    border-radius: 0 0 5px 5px;
+} */
+
+.workspace-split{
+     background-color: transparent;
+}
+
+/*codeblock*/
+.markdown-source-view.mod-cm6 .cm-line:hover {
+    background: transparent;
+}
+
+/*Vault Profile Bar*/
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile{
+    background-color: var(--background-tertiary);
+    border-radius: 0 0 5px 5px;
+    border-top: transparent solid 0px;
+}
