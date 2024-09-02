@@ -18,7 +18,7 @@ settings:
       title: Enable Workspace Backgound
       description: Enable Custom Wallpaper background
       type: class-toggle
-      default: CG-workspace-background-image-custom
+      default: true
    -
       id: CG-workspace-background-image
       title: Select Background Image
