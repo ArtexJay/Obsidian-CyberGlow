@@ -1,15 +1,11 @@
 # Obsidian: Cyber Glow
 
-> **v1.3.7 Changelog**
-> - Added: Style Setting option for heading line without logo
-> - Removed: "Bounce" Animation for callouts making it difficult to open/close them.
-> - Fixed: noticeable v16 introduced graphical bug on Desktop and Mobile
-> - Fixed: Graphical bug table
-> - Added: Stylized the new vault bar
+> **v1.3.8 Changelog**
+> - Fixed: Style Setting Turning off mini-headers
+> - Fixed: Returned line highlight on hover
+> - Fixed: Improperly positioning of codeblock gutterline
+> - Fixed: Background Wallpaper toggle bug
 
-> **Known bug**
-> - Line highlighter in codeblocks not properly displaying
-> - Custom code gutterline in codeblocks not displaying properly
   
 This theme transforms Obsidian into a colorful sci-fi/cyberpunk experience, with a original accented design featuring glow effects. Supports a wide range of accent colors, allowing you to customize the colors of Obsidian. This theme gives you a futuristic and eye-catching look that will captivate your attention, have you staring at your notes and even motivated to create more notes all while keeping the functionality and familiarity of the default theme.
 
