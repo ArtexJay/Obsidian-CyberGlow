@@ -1,5 +1,7 @@
 # Obsidian: Cyber Glow
 
+IF YOU ARE ON VERSION 8+ PLEASE REINSTALL THE THEME, VERSIONING NUMBER HAS BEEN REVISED TO BE MORE CONCISTENT 
+ 
 > **v1.3.8 Changelog**
 > - Fixed: Style Setting Turning off mini-headers
 > - Fixed: Returned line highlight on hover
