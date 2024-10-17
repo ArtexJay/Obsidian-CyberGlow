@@ -2,13 +2,16 @@
 
 IF YOU ARE ON VERSION 8+ PLEASE REINSTALL THE THEME, VERSIONING NUMBER HAS BEEN REVISED TO BE MORE CONCISTENT 
  
-> **v1.3.8 Changelog**
-> - Fixed: Style Setting Turning off mini-headers
-> - Fixed: Returned line highlight on hover
-> - Fixed: Improperly positioning of codeblock gutterline
-> - Fixed: Background Wallpaper toggle bug
+> **v1.4.0 Changelog**
+> - Fixed: Excalidraw color buttons were not displaying the colors properly
+> - Fixed: Excalidraw right click menu
+> - Added: Stylized Exalidraw's island
+> - Fixed: Sidebar chevron visible
+> - Updated: Behavior of Callouts 
+> - Updated: Callout style
+> - Updated: Reduced Button animation
+> - Added: Stylized the codeblock copy button
 
-  
 This theme transforms Obsidian into a colorful sci-fi/cyberpunk experience, with a original accented design featuring glow effects. Supports a wide range of accent colors, allowing you to customize the colors of Obsidian. This theme gives you a futuristic and eye-catching look that will captivate your attention, have you staring at your notes and even motivated to create more notes all while keeping the functionality and familiarity of the default theme.
 
 ### Desktop View
