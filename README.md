@@ -2,7 +2,10 @@
 
 IF YOU ARE ON VERSION 8+ PLEASE REINSTALL THE THEME, VERSIONING NUMBER HAS BEEN REVISED TO BE MORE CONSISTENT 
  
-> **v1.4.0 Changelog**
+> **v1.4.1 Changelog**
+> - Fixed: Theme custom font not showing properly #90
+> - Fixed: Minor Statusbar graphical bug
+> - **v1.4.0 Changelog**
 > - Fixed: Excalidraw color buttons were not displaying the colors properly
 > - Fixed: Excalidraw right click menu
 > - Added: Stylized Exalidraw's island
