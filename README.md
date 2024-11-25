@@ -55,9 +55,7 @@ Some styles that first appeared in this CyberGlow:
 ![image](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/87f74ff3-9c8d-4826-ad1a-5d218d0e933e)
 - Upright Stacked tabs titles for easier reading (no need to crane your neck)
 - Custom Left Sidebar toggle in Hidden Window Frame and Obsidian Frame
-- Subtle active tab idle animation.<br>
-  ![ezgif-4-79722d3804](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/31e41829-cc11-4677-a161-db81d3125040)
- - Improved stacked tabs compatibility for Custom background support
+- Improved stacked tabs compatibility for Custom background support
 <br>
 
 - Support with Style Settings
