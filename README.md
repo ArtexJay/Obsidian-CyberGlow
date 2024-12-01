@@ -2,19 +2,83 @@
 
 IF YOU ARE ON VERSION 8+ PLEASE REINSTALL THE THEME, VERSIONING NUMBER HAS BEEN REVISED TO BE MORE CONSISTENT 
  
-> **v1.4.1 Changelog**
-> - Fixed: Theme custom font not showing properly #90
-> - Fixed: Minor Statusbar graphical bug
+> ## **v2.0.0 Changelog**
+> ### 23 New Addition, 14 Fixes, 4 Removal, 25 Changes
+>  **Additions**
+> - Added: animation when hovering over toggle
+> - Added: Captions
+> - Added: Custom Bold Text Color/Glow Style Settings
+> - Added: Custom color on hover
+> - Added: Delete button to be more consistent with the delete style
+> - Added: Graph Control Scollbar (Disabled in Vanilla)
+> - Added: Grid
+> - Added: Highlightr Plugin Styling
+> - Added: Infobox Callout
+> - Added: Page highlight option in style settings
+> - Added: Return of Indent lines in code block now that Obsidian fixed the graphical bug
+> - Added: Style Kith compatible with ITS
+> - Added: Style Settings Rainbow Folder option
+> - Added: Style Settings toggle to enable styling only on active tab, for easier identification of active tab
+> - Added: Style for Mermaid Tool
+> - Added: Styled ctrl hover file popups
+> - Added: Styled Progress bar when loading Obsidian
+> - Added: Themed Elements that that become focused
+> - Added: Themed flashing for finding text
+> - Added: Themed text search highlight
+> - Added: Theming for Editing Toolbar Plugin
+> - Added: Toggle to disable default folder icons Style Settings
+> - Added: Toggle to show vanilla chevron Style Settings
+> 
+>  **Fixed**
+> - Fixed: Bullet list bugs including in source view
+> - Fixed: Button style light mode
+> - Fixed: Chevron improperly hidden
+> - Fixed: Custom Font style settings
+> - Fixed: Default Statusbar view
+> - Fixed: Dropdown Menu text from being unreadable in certain circumstances
+> - Fixed: Graphic Bug for dragging ghost
+> - Fixed: Inlink color
+> - Fixed: Line Highlight bug when gutter number line is disabled
+> - Fixed: Minor styling with stacked tabs
+> - Fixed: Note background color and transparency is more consistent with that of the sidepanels
+> - Fixed: Sidebar arrow buttons overlap
+> - Fixed: Some minor graphical bugs in the settings page
+> - Fixed: Theme lag by identified and removed code that increased PC resource unnecessarily usage (It was a looping animation)
+> 
+>  **Removed**
+> - Removed: Colored Text in order to improve readability
+> - Removed: Due to Sidepanel animations on mobile not triggering properly
+> - Removed: Inactive note text color
+> - Removed: Inactive tab text color
+> 
+> **Updated**
+> - Updated: Background Image to now extend into Titlebar when "Obsidian Frame" is selected
+> - Updated: Blockquotes style to be less bulky
+> - Updated: Canvas style
+> - Updated: Colors and style for Quote blockquote
+> - Updated: Custom active note title color
+> - Updated: Custom blockquote color
+> - Updated: Custom highlight color
+> - Updated: Custom tab color
+> - Updated: Disabled Toggle switch
+> - Updated: Hover and active Pages in File Explorer
+> - Updated: Italic, Bold, Strikeout texts
+> - Updated: Kanban Styling
+> - Updated: Light mode colors
+> - Updated: Mermaid Diagrams
+> - Updated: Overhauled the setting style
+> - Updated: Phone Notes
+> - Updated: Phone Settings
+> - Updated: Phone Sidepanels
+> - Updated: Phone Tab Scroll Style
+> - Updated: Sidebar arrow buttons overlap
+> - Updated: Table with clear differentiator for table title cells
+> - Updated: Tablet nav header
+> - Updated: Tablet Pane Spacing bringing it in line with Desktop version
+> - Updated: Tablet Sidepanels with better pinned/non pinned sidepanel design
+> - Updated: Tag style
+> - Updated: Textbox style
 
-> **v1.4.0 Changelog**
-> - Fixed: Excalidraw color buttons were not displaying the colors properly
-> - Fixed: Excalidraw right click menu
-> - Added: Stylized Exalidraw's island
-> - Fixed: Sidebar chevron visible
-> - Updated: Behavior of Callouts 
-> - Updated: Callout style
-> - Updated: Reduced Button animation
-> - Added: Stylized the codeblock copy button
 
 This theme transforms Obsidian into a colorful sci-fi/cyberpunk experience, with a original accented design featuring glow effects. Supports a wide range of accent colors, allowing you to customize the colors of Obsidian. This theme gives you a futuristic and eye-catching look that will captivate your attention, have you staring at your notes and even motivated to create more notes all while keeping the functionality and familiarity of the default theme.
 
