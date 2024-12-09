@@ -89,26 +89,26 @@ settings:
       format: "%"
    -
       id: CG-Workspace
-      title: Workspace Controls❗(New Controls)
+      title: Workspace Controls(New Controls)
       type: heading
       description: Active Page Highlight, Color Folders,Hide folder icons, Phone Header Folder Path, Full Statusbar, Sidebar Logo, Stacked tabs width
       level: 1
       collapsed: true
    -
       id: CG-active-header
-      title: ❗NEW Enable Active Header Styling❗
+      title: NEW Enable Active Header Styling
       description: Active Style will only be active on active pages, exact same behavior to previous versions of the theme
       default: false
       type: class-toggle
    -
       id: CG-active-background
-      title: ❗NEW Remove Active Page Highlight❗
+      title: NEW Remove Active Page Highlight
       description: Enable to Removes the active page highlight 
       default: false
       type: class-toggle
    -
       id: CG-colorfulFolder
-      title: ❗NEW Colorful Folders❗
+      title: NEW Colorful Folders
       description: Enable Colorful Folders 
       default: false
       type: class-toggle
@@ -126,13 +126,13 @@ settings:
         default: false
    - 
         id: CG-folder-icon
-        title: ❗Hide Folder Icon❗
+        title: Hide Folder Icon
         description: Enable to ide file explorer icon
         type: class-toggle
         default: false
    - 
         id: CG-chevron
-        title: ❗Show Chevron (Collapse Arrow)❗
+        title: Show Chevron (Collapse Arrow)
         description: Toggle the visibility of the chevron icons
         type: class-toggle
         default: false
@@ -252,7 +252,7 @@ settings:
 		default: true
    -
       id: CG-Color
-      title: ❗Color Picker❗
+      title: Color Picker
       type: heading
       description: Change Colors of certain elements
       level: 1
@@ -306,13 +306,13 @@ settings:
         format: hex
         default: '#4CADD6'
    - 
-        title: ❗Bold Text Glow❗
+        title: Bold Text Glow
         id: custom-boldText-glow
         type: variable-color
         format: hsl-values
         default: 'hsl(198, 63%, 57%)'
    - 
-        title: ❗Bold Text Color❗
+        title: Bold Text Color
         id: custom-boldText-color
         type: variable-color
         format: rgb-values
@@ -355,7 +355,7 @@ settings:
         default: '#FF00FF'
    - 
       id: CG-other
-      title: ❗Font Changer❗
+      title: Font Changer
       type: heading
       description: Change font/size for Default Font, Major/Minor/Title Headings
       level: 1
@@ -363,61 +363,61 @@ settings:
    -
 		id: default-font
 		title: Base font (UI and notes font)
-		description: Get Font from Cyber Glow's Github page. For System Default type Inter.
+		description: Change the base font by typing the name of the desired font in the textbox, For System Default type Inter.
 		type: variable-text
 		default: 'Quantico'
    -
 		id: title-heading
 		title: Title Heading (H1)
-		description: Get Font from Cyber Glow's Github page. For System Default type Inter.
+		description: Change the Heading 1 font by typing the name of the desired font in the textbox, For System Default type Inter.
 		type: variable-text
 		default: 'Space Wham'
    -
 		id: major-heading
 		title: Major Heading font (H2-3)
-		description: Get Font from Cyber Glow's Github page. For System Default type Inter
+		description: Change the Heading 2 and 3 fonts by typing the name of the desired font in the textbox, For System Default type Inter.
 		type: variable-text
 		default: 'Quantico'
    -
 		id: minor-heading 
 		title: Minor Headings font (H4-6)
-		description: Get Font from Cyber Glow's Github page. For System Default type Inter.
+		description: Change the Heading 4-6 fonts by typing the name of the desired font in the textbox, For System Default type Inter.
 		type: variable-text
 		default: 'Oxanium'
    -
 		id: h1-size
 		title: H1 font size
-		description: Enter Header 1 Font
+		description: Enter Header 1 Font size
 		type: variable-text
 		default: 2.1em
    -
 		id: h2-size
 		title: H2 font size
-		description:  Enter Header 2 Font
+		description:  Enter Header 2 Font size
 		type: variable-text
 		default: 1.85em
    -
 		id: h3-size
 		title: H3 font size
-		description:  Enter Header 3 Font
+		description:  Enter Header 3 Font size
 		type: variable-text
 		default: 1.65em
    -
 		id: h4-size
 		title: H4 font size
-		description:  Enter Header 4 Font
+		description:  Enter Header 4 Font size
 		type: variable-text
 		default: 1.45em
    -
 		id: h5-size
 		title: H5 font size
-		description:  Enter Header 5 Font
+		description:  Enter Header 5 Font size
 		type: variable-text
 		default: 1.25em		
    -
 		id: h6-size
 		title: H6 font size
-		description:  Enter Header 6 Font
+		description:  Enter Header 6 Font size
 		type: variable-text
 		default: 1.25em		
    - 
@@ -1833,15 +1833,13 @@ body:not(.line-active-disable) .markdown-source-view:has(.cm-gutters) .cm-scroll
     z-index: -1;
 }
 
-.view-content:not(:has(.kanban-plugin)) .markdown-source-view.mod-cm6 .cm-line:not(.cm-table-widget .table-wrapper .cm-line) {
+.view-content:not(:has(.kanban-plugin)) .markdown-source-view.mod-cm6:has(.cm-gutters) .cm-line:not(.cm-table-widget .table-wrapper .cm-line) {
     margin-left: -56px !important;
     margin-right: -5px !important;
     border-left: 52px solid transparent;
 }
 
 .view-content:not(:has(.kanban-plugin)) .markdown-source-view.mod-cm6:not(:has(.cm-gutters)) .cm-line:not(.cm-table-widget .table-wrapper .cm-line) {
-    margin-left: -56px !important;
-    margin-right: -5px !important;
     border-left: 10px solid transparent;
 }
 
@@ -2565,7 +2563,7 @@ textarea:active, textarea:focus, input[type='text']:active, input[type='search']
     border-image-width: 0 0 2px 0;
 }
 /*Return of Heading numbers Styled*/
-.markdown-source-view.mod-cm6 :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6)::before{
+.markdown-source-view.mod-cm6:has(.cm-gutters) :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6)::before{
     font-size: 0.7rem;
     font-weight: bold;
     margin-left: -45px;
@@ -2574,6 +2572,24 @@ textarea:active, textarea:focus, input[type='text']:active, input[type='search']
     position: absolute;
     text-shadow: none;
 }
+
+.markdown-source-view.mod-cm6:not(:has(.cm-gutters)) :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(.cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6)::before{
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-left: -10px;
+    bottom: -2px;
+    position: absolute;
+    text-shadow: none;
+}
+
+.markdown-source-view.mod-cm6:not(.cm-gutters) :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(.cm-header-1)::before{
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-right: 20px;
+    position: relative;
+    text-shadow: none;
+}
+
 /*Removes redundant heading number for links and tags*/
 .mod-cm6.is-live-preview div:not(.cm-active).cm-line .cm-header~span.cm-header::before, .mod-cm6.is-live-preview div:not(.cm-active).cm-line .cm-header.cm-hmd-internal-link::before {
     display: none;
