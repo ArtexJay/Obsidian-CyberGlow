@@ -3,9 +3,9 @@
 IF YOU ARE ON VERSION 8+ PLEASE REINSTALL THE THEME, VERSIONING NUMBER HAS BEEN REVISED TO BE MORE CONSISTENT 
  
 > ## **v2.0.1 Changelog**
-> panes not displaying properly notes and accidentally hiding portions of it when the panes are narrowed with the gutter number list disabled #99 #96
-> the mini header signs have been updated for when gutter number list is disabled as well, properly displaying close to the header.
-> Removed old font text 
+> - panes not displaying properly notes and accidentally hiding portions of it when the panes are narrowed with the gutter number list disabled #99 #96
+> - the mini header signs have been updated for when gutter number list is disabled as well, properly displaying close to the header.
+> - Removed old font text 
 
 ![Screenshot](https://github.com/user-attachments/assets/eca873d2-5aad-4719-a83e-d8d586d85416)
 
