@@ -54,6 +54,7 @@ Some styles that first appeared in this CyberGlow:
 - Upright Stacked tabs titles for easier reading (no need to crane your neck)
 - Custom Left Sidebar toggle in Hidden Window Frame and Obsidian Frame
 - Improved stacked tabs compatibility for Custom background support
+- First theme with active highlightable panes, so you know what pane is focused on.
 <br>
 
 - Support with Style Settings
