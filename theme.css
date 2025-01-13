@@ -89,27 +89,33 @@ settings:
       format: "%"
    -
       id: CG-Workspace
-      title: Workspace Controls(New Controls)
+      title: 🆕 Workspace Controls
       type: heading
-      description: Active Page Highlight, Color Folders,Hide folder icons, Phone Header Folder Path, Full Statusbar, Sidebar Logo, Stacked tabs width
+      description: Active Page Highlight, Color Folders, Hide folder icons, Disable Animation, Phone Header Folder Path, Full Statusbar, Sidebar Logo, Stacked tabs width
       level: 1
       collapsed: true
    -
       id: CG-active-header
-      title: NEW Enable Active Header Styling
+      title: Enable Active Header Styling
       description: Active Style will only be active on active pages, exact same behavior to previous versions of the theme
       default: false
       type: class-toggle
    -
       id: CG-active-background
-      title: NEW Remove Active Page Highlight
+      title: Remove Active Page Highlight
       description: Enable to Removes the active page highlight 
       default: false
       type: class-toggle
    -
       id: CG-colorfulFolder
-      title: NEW Colorful Folders
+      title: Colorful Folders
       description: Enable Colorful Folders 
+      default: false
+      type: class-toggle
+   -
+      id: CG-disableAni
+      title: 🆕 Disable Animations
+      description: Toggle to remove theme animation (Enable if you see lag, battery drain or huge resource consumption)
       default: false
       type: class-toggle
    -
@@ -715,6 +721,7 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
       
 }
 /*#region ======= Animations ======= */
+
 @keyframes scrollOpen { from { max-height: 0; opacity: 0.5; overflow: hidden; } to { max-height: 100%; /* Adjust as needed */ opacity: 1; overflow: hidden; } }
 
 @keyframes popOpen { from { transform:scale(0);  
@@ -802,8 +809,10 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
 /* #endregion*/
 
 /* #region ======= Buttons and dropdowns ======= */
+.CG-disableAni .markdown-rendered button.copy-code-button:hover, .CG-disableAni .mod-windows .titlebar-button:not(.mod-logo):hover, .CG-disableAni .status-bar-item.mod-clickable:hover, .CG-disableAni .pdf-sidebar-container .thumbnail:hover, .CG-disableAni body:not(.is-mobile) .empty-state-action:hover, .CG-disableAni .metadata-property-icon:hover, .CG-disableAni .metadata-property-icon, .CG-disableAni .sidebar-toggle-button.mod-right .clickable-icon:hover, .CG-disableAni .mod-left-split .workspace-tab-header.has-active-menu:hover, .CG-disableAni .mod-right-split .workspace-tab-header.has-active-menu:hover, .CG-disableAni .mod-left-split .workspace-tab-header.is-active:hover, .CG-disableAni .mod-right-split .workspace-tab-header.is-active:hover, .CG-disableAni .status-bar-item.plugin-obsidian-languagetool-plugin:hover, .CG-disableAni .canvas-control-item:hover, .CG-disableAni .canvas-card-menu .canvas-card-menu-button:hover { animation: none;}
+
 /*Hover button button style*/
-.clickable-icon:not(.input-right-decorator, .sidebar-toggle-button .clickable-icon, .clickable-icon.nav-action-button:active, .document-search-close-button, .graph-controls-button.mod-close, .graph-controls-button, button.clickable-icon[aria-label="Remove"]):hover, .markdown-rendered button.copy-code-button:hover, .mod-windows .titlebar-button:not(.mod-logo):hover, .status-bar-item.mod-clickable:hover, .pdf-sidebar-container .thumbnail:hover, body:not(.is-mobile) .empty-state-action:hover, .metadata-property-icon:hover, .metadata-property-icon, .sidebar-toggle-button.mod-right .clickable-icon:hover, .mod-left-split .workspace-tab-header.has-active-menu:hover, .mod-right-split .workspace-tab-header.has-active-menu:hover, .mod-left-split .workspace-tab-header.is-active:hover, .mod-right-split .workspace-tab-header.is-active:hover, .status-bar-item.plugin-obsidian-languagetool-plugin:hover, .canvas-control-item:hover, .canvas-card-menu .canvas-card-menu-button:hover  {
+.markdown-rendered button.copy-code-button:hover, .mod-windows .titlebar-button:not(.mod-logo):hover, .status-bar-item.mod-clickable:hover, .pdf-sidebar-container .thumbnail:hover, body:not(.is-mobile) .empty-state-action:hover, .metadata-property-icon:hover, .metadata-property-icon, .sidebar-toggle-button.mod-right .clickable-icon:hover, .mod-left-split .workspace-tab-header.has-active-menu:hover, .mod-right-split .workspace-tab-header.has-active-menu:hover, .mod-left-split .workspace-tab-header.is-active:hover, .mod-right-split .workspace-tab-header.is-active:hover, .status-bar-item.plugin-obsidian-languagetool-plugin:hover, .canvas-control-item:hover, .canvas-card-menu .canvas-card-menu-button:hover  {
     background-color: var(--hover-bg);
     box-shadow: inset 0em 0em 1em var(--hover-color);
     border-radius: var(--radius-s);
@@ -811,7 +820,7 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
     animation: 0.2s smallhover forwards;
     color: var(--text-on-accent);
 }
-.search-result-hover-button:hover, .input-right-decorator.clickable-icon:hover, .input-right-decorator.clickable-icon.is-active:hover,  .tree-item:not(.graph-control-section) .tree-item-self .tree-item-icon:hover, .graph-controls-button:hover, .mod-root .mod-pinned:hover, .mobile-toolbar-option:hover, #cMenuToolbarModalBar.top :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]):not(.cMenuToolbar-Divider-Line):hover, :is(#cMenuToolbarModalBar, #cMenuToolbarPopoverBar) button[class^=cMenuToolbarCommandsubItem]>.subitem button.menu-item:hover, #cMenuToolbarModalBar.cMenuToolbarDefaultAesthetic:not(.top) button[class^=cMenuToolbarCommandsubItem]:hover, #cMenuToolbarModalBar.cMenuToolbarDefaultAesthetic:not(.top) :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]):hover {
+.clickable-icon:not(.input-right-decorator, .sidebar-toggle-button .clickable-icon, .clickable-icon.nav-action-button:active, .document-search-close-button, .graph-controls-button.mod-close, .graph-controls-button, button.clickable-icon[aria-label="Remove"]):hover, .search-result-hover-button:hover, .input-right-decorator.clickable-icon:hover, .input-right-decorator.clickable-icon.is-active:hover,  .tree-item:not(.graph-control-section) .tree-item-self .tree-item-icon:hover, .graph-controls-button:hover, .mod-root .mod-pinned:hover, .mobile-toolbar-option:hover, #cMenuToolbarModalBar.top :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]):not(.cMenuToolbar-Divider-Line):hover, :is(#cMenuToolbarModalBar, #cMenuToolbarPopoverBar) button[class^=cMenuToolbarCommandsubItem]>.subitem button.menu-item:hover, #cMenuToolbarModalBar.cMenuToolbarDefaultAesthetic:not(.top) button[class^=cMenuToolbarCommandsubItem]:hover, #cMenuToolbarModalBar.cMenuToolbarDefaultAesthetic:not(.top) :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]):hover {
     background-color: var(--hover-bg);
     box-shadow: inset 0em 0em 0.7em var(--hover-color);
     border-radius: var(--radius-s);
@@ -819,7 +828,33 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
     color: var(--text-on-accent);
 }
 
-.clickable-icon:not(.input-right-decorator, .sidebar-toggle-button .clickable-icon, .clickable-icon.nav-action-button:active, .document-search-close-button, .graph-controls-button.mod-close, .graph-controls-button, button.clickable-icon[aria-label="Remove"]):active, .markdown-rendered button.copy-code-button:active, .mod-windows .titlebar-button:not(.mod-logo):active, .status-bar-item.mod-clickable:active, .clickable-icon.nav-action-button:active, .search-result-hover-button:active, .pdf-sidebar-container .thumbnail:active, body:not(.is-mobile) .empty-state-action:active, .metadata-property-icon:active, .sidebar-toggle-button.mod-right .clickable-icon:active, .status-bar-item.plugin-obsidian-languagetool-plugin:active, .canvas-control-item:active,  .canvas-card-menu .canvas-card-menu-button.mod-draggable:active, .is-mobile .workspace-drawer-tab-option-item:active, .is-mobile .workspace-drawer-header-switcher:active, .is-mobile .workspace-drawer-header-icon:active, .workspace-drawer-header-icon:active, .workspace-drawer-active-tab-icon:active, .workspace-drawer-active-tab-back-icon:active, 
+.CG-disableAni .clickable-icon:not(.input-right-decorator, .CG-disableAni .sidebar-toggle-button .clickable-icon, .CG-disableAni .clickable-icon.nav-action-button:active, .CG-disableAni .document-search-close-button, .CG-disableAni .graph-controls-button.mod-close, .CG-disableAni .graph-controls-button, button.clickable-icon[aria-label="Remove"]):active,
+.CG-disableAni .markdown-rendered button.copy-code-button:active,
+.CG-disableAni .mod-windows .titlebar-button:not(.mod-logo):active,
+.CG-disableAni .status-bar-item.mod-clickable:active,
+.CG-disableAni .clickable-icon.nav-action-button:active,
+.CG-disableAni .search-result-hover-button:active,
+.CG-disableAni .pdf-sidebar-container .thumbnail:active,
+.CG-disableAni :not(.is-mobile) .empty-state-action:active,
+.CG-disableAni .metadata-property-icon:active,
+.CG-disableAni .sidebar-toggle-button.mod-right .clickable-icon:active,
+.CG-disableAni .status-bar-item.plugin-obsidian-languagetool-plugin:active,
+.CG-disableAni .canvas-control-item:active,
+.CG-disableAni .canvas-card-menu .canvas-card-menu-button.mod-draggable:active,
+.CG-disableAni .is-mobile .workspace-drawer-tab-option-item:active,
+.CG-disableAni .is-mobile .workspace-drawer-header-switcher:active,
+.CG-disableAni .is-mobile .workspace-drawer-header-icon:active,
+.CG-disableAni .workspace-drawer-header-icon:active,
+.CG-disableAni .workspace-drawer-active-tab-icon:active,
+.CG-disableAni .workspace-drawer-active-tab-back-icon:active,
+.CG-disableAni .workspace-drawer-active-tab-title:active,
+.CG-disableAni .is-phone .modal-setting-back-button:active,
+.CG-disableAni .table-col-btn:active {
+    animation: none;
+}
+
+
+.clickable-icon:not(.input-right-decorator, .sidebar-toggle-button .clickable-icon, .clickable-icon.nav-action-button:active, .document-search-close-button, .graph-controls-button.mod-close, .graph-controls-button, button.clickable-icon[aria-label="Remove"]):active, .markdown-rendered button.copy-code-button:active, .mod-windows .titlebar-button:not(.mod-logo):active, .status-bar-item.mod-clickable:active, .clickable-icon.nav-action-button:active, .search-result-hover-button:active, .pdf-sidebar-container .thumbnail:active, :not(.is-mobile) .empty-state-action:active, .metadata-property-icon:active, .sidebar-toggle-button.mod-right .clickable-icon:active, .status-bar-item.plugin-obsidian-languagetool-plugin:active, .canvas-control-item:active,  .canvas-card-menu .canvas-card-menu-button.mod-draggable:active, .is-mobile .workspace-drawer-tab-option-item:active, .is-mobile .workspace-drawer-header-switcher:active, .is-mobile .workspace-drawer-header-icon:active, .workspace-drawer-header-icon:active, .workspace-drawer-active-tab-icon:active, .workspace-drawer-active-tab-back-icon:active, 
 .workspace-drawer-active-tab-title:active, .is-phone .modal-setting-back-button:active, .table-col-btn:active    {
     animation: 0.3s bigpressed forwards;
     background-color: var(--hover-bg2);
@@ -848,6 +883,14 @@ button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button, .exc
     background-color: var(--background-settings);
     color: var(--text-normal);
 }
+.CG-disableAni button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button, .CG-disableAni .excalidraw .color-picker__button, .CG-disableAni button.context-menu-item, .CG-disableAni .excalidraw .help-icon, .CG-disableAni .excalidraw .dropdown-menu-button, .CG-disableAni .excalidraw .ToolIcon_type_button--show, .CG-disableAni button.mod-warning):hover,
+.CG-disableAni .dropdown:hover,
+.CG-disableAni .style-settings-export:hover,
+.CG-disableAni .style-settings-import:hover,
+.CG-disableAni .metadata-container .metadata-add-button:hover,
+.CG-disableAni .excalidraw .buttonList label:hover {
+    animation: none;
+}
 
 /*Button and Dropdown hover Styling*/
 button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button, .excalidraw .color-picker__button, button.context-menu-item,  .excalidraw .help-icon, .excalidraw .dropdown-menu-button, .excalidraw .ToolIcon_type_button--show, button.mod-warning):hover, .dropdown:hover, .style-settings-export:hover, .style-settings-import:hover, .metadata-container .metadata-add-button:hover, .excalidraw .buttonList label:hover {
@@ -857,6 +900,20 @@ button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button, .exc
     transition: background-color 0.5s, box-shadow 0.5s, animation 0.5s;
 
 }
+
+.CG-disableAni button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button, .CG-disableAni button.mod-warning):active,
+.CG-disableAni .dropdown:focus,
+.CG-disableAni .style-settings-export:active,
+.CG-disableAni .style-settings-import:active,
+.CG-disableAni .metadata-container .metadata-add-button:active,
+.CG-disableAni .is-mobile .workspace-drawer-active-tab-header:active,
+.CG-disableAni .is-mobile .empty-state-action:active,
+.CG-disableAni .markdown-source-view.mod-cm6 .cm-table-widget .table-row-btn:active,
+.CG-disableAni .markdown-source-view.mod-cm6 .cm-table-widget .table-col-btn:active {
+    animation: none;
+
+}
+
 /*Button and Dropdown active Styling*/
 button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button, button.mod-warning):active, .dropdown:focus, .style-settings-export:active, .style-settings-import:active, .metadata-container .metadata-add-button:active, .is-mobile .workspace-drawer-active-tab-header:active, .is-mobile .empty-state-action:active, .markdown-source-view.mod-cm6 .cm-table-widget .table-row-btn:active, .markdown-source-view.mod-cm6 .cm-table-widget .table-col-btn:active {
     animation: 0.3s bigpressed forwards;
@@ -877,6 +934,24 @@ button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button, butt
 .modal-close-button {
     height: 23px;
 }
+
+.CG-disableAni .modal-close-button:hover,
+.CG-disableAni .document-search-close-button:hover,
+.CG-disableAni a.kanban-plugin__search-cancel-button.clickable-icon:hover,
+.CG-disableAni a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:hover,
+.CG-disableAni .graph-controls:not(.is-close) .graph-controls-button.mod-close:hover, .CG-disableAni
+.CG-disableAni .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:hover,
+.CG-disableAni .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:hover,
+.CG-disableAni .multi-select-pill-remove-button:hover,
+.CG-disableAni button.mod-warning:hover,
+.CG-disableAni .clickable-icon.document-search-close-button:hover,
+.CG-disableAni .graph-controls-button.mod-close:hover,
+.CG-disableAni .empty-state-action.tappable.mod-close:hover,
+.CG-disableAni .mobile-tab .close-button {
+    animation: none;
+}
+
+
 /*Close Button on Hover*/
 .modal-close-button:hover, .document-search-close-button:hover, a.kanban-plugin__search-cancel-button.clickable-icon:hover, a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:hover, .graph-controls:not(.is-close) .graph-controls-button.mod-close:hover,.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:hover, .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:hover, .multi-select-pill-remove-button:hover, button.mod-warning:hover, .clickable-icon.document-search-close-button:hover, .graph-controls-button.mod-close:hover, .empty-state-action.tappable.mod-close:hover, .mobile-tab .close-button{
     color: var(--text-close-color);
@@ -905,6 +980,22 @@ button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button, butt
     box-shadow: inset 0em 0em 0.2em var(--text-close-color);
 }
 
+.CG-disableAni .modal-close-button:active,
+.CG-disableAni .document-search-close-button:active,
+.CG-disableAni a.kanban-plugin__search-cancel-button.clickable-icon:active,
+.CG-disableAni a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:active,
+.CG-disableAni .multi-select-pill-remove-button:active,
+.CG-disableAni .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:active,
+.CG-disableAni .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:active,
+.CG-disableAni .graph-controls:not(.is-close) .graph-controls-button.mod-close:active,
+.CG-disableAni button.mod-warning:active,
+.CG-disableAni .clickable-icon.document-search-close-button:active,
+.CG-disableAni .empty-state-action.tappable.mod-close:active,
+.CG-disableAni .mobile-tab .close-button:active,
+.CG-disableAni .empty-state-action.tappable.mod-close:active {
+    animation: none;
+}
+
 
 /*Close Button on active*/
 .modal-close-button:active, .document-search-close-button:active, a.kanban-plugin__search-cancel-button.clickable-icon:active, a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:active, .multi-select-pill-remove-button:active, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:active, .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:active, .graph-controls:not(.is-close) .graph-controls-button.mod-close:active, button.mod-warning:active, .clickable-icon.document-search-close-button:active, .empty-state-action.tappable.mod-close:active, .mobile-tab .close-button:active, .empty-state-action.tappable.mod-close:active {
@@ -925,6 +1016,14 @@ button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button, butt
     font-size: small;
     padding: 3px;
 }
+
+.CG-disableAni .setting-item.setting-item-heading.style-settings-heading:hover, .CG-disableAni .tree-item-self.is-clickable:hover, .CG-disableAni .menu-item:hover, .CG-disableAni .vertical-tab-nav-item:hover, .CG-disableAni .community-item:hover{
+    animation: none;
+  }
+  .CG-disableAni .setting-item.setting-item-heading.style-settings-heading:active, .CG-disableAni .tree-item-self.is-clickable:active, .CG-disableAni .menu-item:active, .CG-disableAni .suggestion-item.mod-complex:not(.mod-group):active, .CG-disableAni .vertical-tab-nav-item:active, .CG-disableAni .community-item:active{
+    animation: none;
+  }
+
   .setting-item.setting-item-heading.style-settings-heading:hover, .tree-item-self.is-clickable:hover, .menu-item:hover, .vertical-tab-nav-item:hover, .community-item:hover{
     animation: bighover 0.2s forwards;
   }
@@ -944,6 +1043,14 @@ button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button, butt
     color:  var(--text-on-accent);
     user-select: none;          
 }
+
+.CG-disableAni .markdown-rendered button.copy-code-button:hover, .CG-disableAni .markdown-source-view.mod-cm6 .code-block-flair:hover{
+    animation: none;
+}
+.CG-disableAni .markdown-rendered button.copy-code-button:active, .CG-disableAni .markdown-source-view.mod-cm6 .code-block-flair:active{
+    animation: none;
+}
+
 .markdown-rendered button.copy-code-button:hover, .markdown-source-view.mod-cm6 .code-block-flair:hover{
     box-shadow: 0em 0em 0.8px 1.2px var(--text-accent) , inset 0em 0em 15px var(--text-accent);
     transition: background-color 0.2s, box-shadow 0.2s;
@@ -1206,8 +1313,26 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
     color: var(--text-on-accent);
     transition: color 0.3s;
 }
+
+.CG-disableAni .menu-item:not(.is-warning):active,
+.CG-disableAni .menu-item-icon:active,
+.CG-disableAni .menu-item.selected:not(.is-warning):not(.is-label):not(.is-disabled):active,
+.CG-disableAni :not(.is-grabbing) .tree-item-self.is-clickable:active,
+.CG-disableAni .suggestion-item.is-selected:not(.mod-group):active,
+.CG-disableAni .graph-control-section .tree-item-self:active,
+.CG-disableAni :not(.is-phone) .horizontal-tab-nav-item.is-active:active,
+.CG-disableAni :not(.is-phone) .vertical-tab-nav-item.is-active:active,
+.CG-disableAni :not(.is-phone) .horizontal-tab-nav-item.is-active:hover,
+.CG-disableAni :not(.is-phone) .vertical-tab-nav-item.is-active:hover,
+.CG-disableAni :not(.is-phone) .vertical-tab-nav-item:active,
+.CG-disableAni .workspace-tab-header:active,
+.CG-disableAni .suggestion-item.mod-complex:not(.mod-group):active {
+    animation: none;
+}
+
+
 /*Colors Menu Text on active*/
-.menu-item:not(.is-warning):active, .menu-item-icon:active, .menu-item.selected:not(.is-warning):not(.is-label):not(.is-disabled):active, body:not(.is-grabbing) .tree-item-self.is-clickable:active, .suggestion-item.is-selected:not(.mod-group):active, .graph-control-section .tree-item-self:active, body:not(.is-phone) .horizontal-tab-nav-item.is-active:active, body:not(.is-phone) .vertical-tab-nav-item.is-active:active, body:not(.is-phone) .horizontal-tab-nav-item.is-active:hover, body:not(.is-phone) .vertical-tab-nav-item.is-active:hover, body:not(.is-phone) .vertical-tab-nav-item:active, .workspace-tab-header:active, .suggestion-item.mod-complex:not(.mod-group):active{
+.menu-item:not(.is-warning):active, .menu-item-icon:active, .menu-item.selected:not(.is-warning):not(.is-label):not(.is-disabled):active, :not(.is-grabbing) .tree-item-self.is-clickable:active, .suggestion-item.is-selected:not(.mod-group):active, .graph-control-section .tree-item-self:active, :not(.is-phone) .horizontal-tab-nav-item.is-active:active, :not(.is-phone) .vertical-tab-nav-item.is-active:active, :not(.is-phone) .horizontal-tab-nav-item.is-active:hover, :not(.is-phone) .vertical-tab-nav-item.is-active:hover, :not(.is-phone) .vertical-tab-nav-item:active, .workspace-tab-header:active, .suggestion-item.mod-complex:not(.mod-group):active{
     color: var(--text-on-accent);
     animation: 0.3s bigpressed forwards;
     background-color: var(--hover-bg3);
@@ -1307,6 +1432,10 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
     border-image-source: linear-gradient(to top, transparent, var(--activetab-accent), transparent);
     border-left: 2px solid;
     background: var(--activetab-bg);
+}
+
+.CG-disableAni .workspace-tab-header.is-active.mod-active, .CG-disableAni .workspace-tab-header.tappable.is-active:hover, .CG-disableAni .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.is-active{
+    animation: none;
 }
 
 .workspace-tab-header.is-active.mod-active, .workspace-tab-header.tappable.is-active:hover, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.is-active {
@@ -1771,6 +1900,11 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
 body:not(.is-mobile) .document-search-container {
     background-color: var(--background-settings);
 }
+
+.CG-disableAni .is-flashing{
+    animation: none;
+}
+
 .is-flashing{
     animation: 0.75s highlight backwards;
     box-shadow: 0em 0em 0.15em 0.1em var(--text-accent) , inset 0em 0em 2em var(--text-accent);
@@ -1791,6 +1925,9 @@ body:not(.is-mobile) .workspace-leaf-content[data-type="markdown"] .document-sea
     --webkit-backdrop-filter: blur 120px;
     backdrop-filter: blur(8px);
     margin-left: 0px;
+}
+.CG-disableAni :not(.CG-active-header)  .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active{
+    animation: none;
 }
 
 body:not(.CG-active-header) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active{
@@ -1857,23 +1994,42 @@ background:var(--text-selection);
 /*#endregion*/
 
 /*#region -------- Notes and Tab Header -------- */
+
+.CG-disableAni .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .view-content{
+    animation: none;
+}
+
+.CG-disableAni  :not(.is-phone).modal.mod-settings {
+    animation: none;
+}
+.CG-disableAni :not(.is-phone) .modal{
+    animation: none;}
+/*left pane Animation*/
+.CG-disableAni :not(.is-mobile) .workspace-split.mod-left-split .workspace-leaf-content, body:not(.is-mobile)  .workspace-leaf-content:not(:has(.view-content)) {
+    animation: none;
+}
+/*right pane Animation*/
+.CG-disableAni :not(.is-mobile) .workspace-split.mod-right-split .workspace-leaf-content {
+    animation: none;
+}
+
 /*Note Animation*/
 .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .view-content{
     animation: 0.25s slide-down forwards;
 }
 
- body:not(.is-phone) .modal.mod-settings {
+:not(.is-phone) .modal.mod-settings {
     animation: 0.25s scrollOpen forwards;
     border-radius: 0 0 5px 5px;
 }
-body:not(.is-phone) .modal{
+:not(.is-phone) .modal{
     animation: 0.25s scrollOpen forwards;}
 /*left pane Animation*/
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-leaf-content, body:not(.is-mobile)  .workspace-leaf-content:not(:has(.view-content)) {
+:not(.is-mobile) .workspace-split.mod-left-split .workspace-leaf-content, body:not(.is-mobile)  .workspace-leaf-content:not(:has(.view-content)) {
     animation: 0.15s slide-left forwards;
 }
 /*right pane Animation*/
-body:not(.is-mobile) .workspace-split.mod-right-split .workspace-leaf-content {
+:not(.is-mobile) .workspace-split.mod-right-split .workspace-leaf-content {
     animation: 0.15s slide-right forwards;
 }
 
@@ -3952,8 +4108,11 @@ body:not(.is-phone) .vertical-tab-content-container{
 .horizontal-tab-content, .vertical-tab-content, .vertical-tab-header, .modal-sidebar {
     background: transparent;
 }
+.CG-disableAni :not(.is-phone) .modal-bg{
+    animation: none;
+}
 
-body:not(.is-phone) .modal-bg{
+:not(.is-phone) .modal-bg{
     box-shadow: inset 0em 0em 2.5em var(--text-accent);
     background-color: var(--color-accent-active);
     animation: appear 0.5s;
@@ -4088,6 +4247,9 @@ body:not(.is-phone) .modal-bg{
 button.clickable-icon[aria-label="Remove"] {
     background-color: var(--background-close);
     color: var(--text-error);
+}
+.CG-disableAni button.clickable-icon[aria-label="Remove"]:hover{
+    animation: none;
 }
 
 button.clickable-icon[aria-label="Remove"]:hover {
@@ -4737,4 +4899,5 @@ background-color: var(--background-primary);
 }
 /*#endregion*/
 /*#endregion*/
+
 
