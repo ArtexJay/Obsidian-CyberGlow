@@ -2,7 +2,9 @@
 
 IF YOU ARE ON VERSION 8+ PLEASE REINSTALL THE THEME, VERSIONING NUMBER HAS BEEN REVISED TO BE MORE CONSISTENT 
  
-> ## **v2.0.1 Changelog**
+> ## **v2.0.2 Changelog**
+> - Fixed: On some displays certain small icon's animation don't translate properly
+> - Added: Style Settings option to disable custom theme animations #97
 > - panes not displaying properly notes and accidentally hiding portions of it when the panes are narrowed with the gutter number list disabled #99 #96
 > - the mini header signs have been updated for when gutter number list is disabled as well, properly displaying close to the header.
 > - Removed old font text 
